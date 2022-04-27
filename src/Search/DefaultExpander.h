@@ -5,13 +5,25 @@
 #ifndef QUANTUMCOMPER_DEFAULTEXPANDER_H
 #define QUANTUMCOMPER_DEFAULTEXPANDER_H
 
-# include "Expander.h"
+#include "../Queue/Queue.h"
+#include "../Queue/DefaultQueue.hpp"
+#include "SearchNode.h"
+#include "../Queue/Filter.h"
+#include "../Queue/HashFilter_TOQM.hpp"
+#include "../Environment/Environment.h"
+#include <algorithm>
 # include <set>
 
-class DefaultExpander: public Expander {
+class DefaultExpander{
 private:
     Environment* env;
 public:
+    bool findBestNode;
+    int expandeNum;
+    int cycleNum;
+    int debug=0;
+    vector<ActionPath> actionPath;
+    vector<int> initialMapping;
     static int nodeCount;
 //    void DeleteVectorElement(vector<int> V,int element);
     DefaultExpander(Environment* env);

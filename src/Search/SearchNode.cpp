@@ -25,14 +25,46 @@ SearchNode::SearchNode(vector<int> nowMapping, vector<int> qubitState, vector<in
     this->computeCost1();
     this->remainGate=unscheduled_gateids;
     this->actionPath = path;
-    this->pathLength=actionPath.size();
+}
+
+SearchNode::SearchNode(vector<int> nowMapping, vector<int> qubitState, vector<vector<int>> dag_table, Environment *env,
+                       int nowtime, vector<ActionPath> path) {
+    this->l2pMapping = nowMapping;
+    this->dead = false;
+    this->qubitNum = nowMapping.size();
+    this->p2lMapping.resize(this->qubitNum);
+    this->dagTable = dag_table;
+    this->gate2Critiality();
+    this->environment = env;
+    this->logicalQubitState = qubitState;
+    this->timeStamp = nowtime;
+    this->p2lMapping.resize(this->qubitNum);
+    for (int i = 0; i < qubitNum; i++) {
+        this->p2lMapping[this->l2pMapping[i]] = i;
+    }
+    this->computeCost1();
+    findRemainGates();
+    this->actionPath = path;
+}
+
+void SearchNode::findRemainGates() {
+    int depth = this->dagTable[0].size();
+    for (int i = 0; i < depth; i++) {
+        set<int> gatesId;
+        for (int j = 0; j < this->dagTable.size(); j++) {
+            if (this->dagTable[j][i] != -1 && gatesId.find(this->dagTable[j][i]) == gatesId.end()) {
+                gatesId.insert(this->dagTable[j][i]);
+                this->remainGate.push_back(this->dagTable[j][i]);
+            }
+        }
+    }
 }
 
 int SearchNode::getReadyGateSize(){
     vector<int> newReadyGate;
     set<int> frontLayerGate;//判断是在第一层，没有依赖关系
     for(int j=0;j<this->dagTable.size();j++){
-        if(this->dagTable[j][0]!=0){
+        if(this->dagTable[j][0]!=-1){
             frontLayerGate.insert(this->dagTable[j][0]);
         }
     }
@@ -48,7 +80,7 @@ int SearchNode::getReadyGateSize(){
         }
         //two qubits gate,两比特门还要多一个判断，是不是相邻的
         else if (this->logicalQubitState[nowGate.target] == 0 && this->logicalQubitState[nowGate.control] == 0 &&
-                 this->environment->coupling_graph_list[ii][jj] == 1) {
+                 this->environment->coupling_graph_matrix[ii][jj] == 1) {
             newReadyGate.push_back(*iter);
         } else {
         }
@@ -61,9 +93,11 @@ void SearchNode::gate2Critiality() {
     for (int i = 0; i < depth; i++) {
         for (int j = 0; j < this->dagTable.size(); j++) {
             int gateid = dagTable[j][i];
-            if (this->gateCriticality.find(gateid) == this->gateCriticality.end()) {
-                int criticality = depth - i-1;
-                this->gateCriticality.insert({gateid, criticality});
+            if(gateid!=-1){
+                if (this->gateCriticality.find(gateid) == this->gateCriticality.end()) {
+                    int criticality = depth - i-1;
+                    this->gateCriticality.insert({gateid, criticality});
+                }
             }
         }
     }
@@ -73,30 +107,12 @@ int SearchNode::findFreeTime(int qubit, int gateID) {
     int path = 0;
     int i=0;
     while (dagTable[qubit][i] != gateID) {
-        if(dagTable[qubit][i]!=0){
+        if(dagTable[qubit][i]!=-1){
             path++;
         }
         i++;
     }
     path = path + this->logicalQubitState[qubit];
-    return path;
-}
-
-int SearchNode::findFreeTimePhysical(int physicalQubit) {
-    int depth = this->dagTable[0].size();
-    int path = 0;
-    int logicalQubit = this->l2pMapping[physicalQubit];
-    for (int i = 0; i < depth; i++) {
-        int gateid = dagTable[logicalQubit][i];
-        if (gateid == 0) {
-            path++;
-        } else if (this->environment->gate_info[gateid].control == -1) {
-            path++;
-        } else {
-            break;
-        }
-    }
-    path = path + this->logicalQubitState[this->l2pMapping[physicalQubit]];
     return path;
 }
 
@@ -131,9 +147,9 @@ void SearchNode::computeCost1() {
         if (length1 < length2) {
             std::swap(length1, length2);
         }
-        int minSwaps=this->environment->coupling_graph_marix[this->p2lMapping[qubit1]][this->p2lMapping[qubit2]]-1;
+        int minSwaps=this->environment->coupling_graph_matrix[this->p2lMapping[qubit1]][this->p2lMapping[qubit2]]-1;
         if(minSwaps < costT) costT = minSwaps;
-        int totalSwap = this->environment->coupling_graph_marix[this->p2lMapping[qubit1]][this->p2lMapping[qubit2]]-1;
+        int totalSwap = this->environment->coupling_graph_matrix[this->p2lMapping[qubit1]][this->p2lMapping[qubit2]]-1;
 //        cout<<this->p2lMapping[qubit1]<<" "<<this->p2lMapping[qubit2]<<endl;
 //        cout<<"total Swap is: "<<totalSwap<<endl;
         int totalSwapCost = totalSwap * 3;
@@ -174,7 +190,7 @@ vector<int> SearchNode::findFrontTwoQubitsGates() {
     int depth = this->dagTable[0].size();
     for (int i = 0; i < this->qubitNum; i++) {
         for (int j = 0; j < depth; j++) {
-            if (this->dagTable[i][j] == 0) {
+            if (this->dagTable[i][j] == -1) {
                 continue;
             } else {
                 if (this->environment->gate_info[this->dagTable[i][j]].control != -1) {
@@ -200,17 +216,27 @@ vector<int> SearchNode::findFrontTwoQubitsGates() {
 }
 
 void SearchNode::PrintNode() {
+    cout<<"---------------------------------------------"<<endl;
+    cout<<"node time "<<this->timeStamp<<endl;
     cout<<"the mapping now is : ";
     for(int i=0;i<this->l2pMapping.size();i++){
         cout<<this->l2pMapping[i]<<" ";
     }
     cout<<endl;
-    cout<<"the cost1 is : "<<this->cost1<<endl;
-    cout<<"the cost2 is : "<<this->cost2<<endl;
+    cout<<"the p2l mapping now is : ";
+    for(int i=0;i<this->p2lMapping.size();i++){
+        cout<<this->p2lMapping[i]<<" ";
+    }
     cout<<endl;
+    cout<<"the cost1 is : "<<this->cost1<<endl;
     cout<<"the qubits state are :";
     for(int i=0;i<this->qubitNum;i++){
         cout<<this->logicalQubitState[i]<<" ";
+    }
+    cout<<endl;
+    cout<<"the remain gates are:";
+    for(int i=0;i<this->remainGate.size();i++){
+        cout<<remainGate[i]<<" ";
     }
     cout<<endl;
     cout<<"the action path is : \n";

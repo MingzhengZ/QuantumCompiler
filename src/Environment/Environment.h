@@ -30,8 +30,9 @@ public:
     //chip information
     int chip_num;
     vector<vector<int>> coupling_graph_list;
-    vector<vector<int>> coupling_graph_marix;
+    vector<vector<int>> coupling_graph_matrix;
     vector<vector<int>> MakeCouplingGraph(vector<vector<int>> couplingList);
+    void PrintCoupling();
 
     //circuit information:
     char * qasm_version = NULL;//qasm version
@@ -57,8 +58,7 @@ public:
     int circuit_num;//circuit qubit num
     int cir_depth;//circuit depth
     int gate_num;//circuit gate num
-    std::vector<ParsedGate> parse(const char * fileName);
-
+    vector<ParsedGate> parse(const char * fileName);
 
     //dag depth;
     int dag_depth;

@@ -14,7 +14,7 @@
 using namespace std;
 
 struct ScheduledGate{
-    char* gateName;
+    string gateName;
     int targetQubit;
     int controlQubit;
     int gateID;
@@ -27,11 +27,9 @@ struct ActionPath{
 
 class SearchNode {
 private:
-    int pathLength;
     unordered_map<int,int> gateCriticality;
     void computeCost1();
     void gate2Critiality();
-    int findFreeTimePhysical(int physicalQubit);
     int findFreeTime(int physicalQubit,int gateID);
     int busyTime();
     //这个的主要目的是为了判断pattern的数目
@@ -59,10 +57,14 @@ public:
     int cost2;
     //unscheduled gate
     vector<int> remainGate;
+    void findRemainGates();
     //action path
     vector<ActionPath> actionPath;
-    SearchNode(vector<int>nowMapping,vector<int>qubitState,vector<int> unscheduled_gateids,Environment *env,int nowtime,vector<ActionPath> path);
 
+    //待执行的门是用vector的形式输入
+    SearchNode(vector<int>nowMapping,vector<int>qubitState,vector<int> unscheduled_gateids,Environment *env,int nowtime,vector<ActionPath> path);
+    //待执行的门用dagTable的形式输入
+    SearchNode(vector<int>nowMapping,vector<int>qubitState,vector<vector<int>> dag_table,Environment *env,int nowtime,vector<ActionPath> path);
 
     //和错误相关的数据
     float error_rate;//执行到当前结点的正确率

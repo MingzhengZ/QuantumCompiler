@@ -197,7 +197,7 @@ Environment::Environment(vector<vector<int>> coupling_list, string qasm_filename
     this->chip_num=phyQubits.size();
     //芯片的邻接表和邻接矩阵
     this->coupling_graph_list=coupling_list;
-    this->coupling_graph_marix=this->MakeCouplingGraph(coupling_list);
+    this->coupling_graph_matrix=this->MakeCouplingGraph(coupling_list);
     //读取线路,确定线路需要的比特数目，这里按照qreg里面给出的数据当作需要的qubit，真实使用的可能会更少一点。
     const char * qasm_file = qasm_filename.c_str();
     this->gate_info=parse(qasm_file);
@@ -234,11 +234,11 @@ vector<vector<int>> Environment::getNewKLayerDag(vector<int> executedgateIDs,int
             }
             if (controlQubitTime > targetQubitTime) {
                 for (int i = 0; i < controlQubitTime - targetQubitTime; i++) {
-                    newKLayerDag[targetQubit].push_back(0);
+                    newKLayerDag[targetQubit].push_back(-1);
                 }
             } else {
                 for (int i = 0; i < targetQubitTime - controlQubitTime; i++) {
-                    newKLayerDag[controlQubit].push_back(0);
+                    newKLayerDag[controlQubit].push_back(-1);
                 }
             }
             newKLayerDag[targetQubit].push_back(i);
@@ -259,7 +259,7 @@ vector<vector<int>> Environment::getNewKLayerDag(vector<int> executedgateIDs,int
     }
     for (int i = 0; i < newKLayerDag.size(); i++) {
         for (int j = newKLayerDag[i].size(); j < nowDagDepth; j++) {
-            newKLayerDag[i].push_back(0);
+            newKLayerDag[i].push_back(-1);
         }
     }
     return newKLayerDag;
@@ -272,7 +272,10 @@ vector<vector<int>> Environment::generateDag(vector<int> gateID) {
         vector<int> gateOnQubit;
         newDag.push_back(gateOnQubit);
     }
+
     for(int i=0;i<gateID.size();i++) {
+        //cout<<"gate id is : "<<gateID[i]<<endl;
+        //cout<<this->gate_info[i].type<<"  "<<this->gate_info[i].control<<" "<<this->gate_info[i].target<<endl;
         int controlQubit= this->gate_info[gateID[i]].control;
         int targetQubit= this->gate_info[gateID[i]].target;
         if (this->gate_info[gateID[i]].control!=-1) {
@@ -280,11 +283,11 @@ vector<vector<int>> Environment::generateDag(vector<int> gateID) {
             int targetQubitTime = newDag[targetQubit].size();
             if (controlQubitTime > targetQubitTime) {
                 for (int i = 0; i < controlQubitTime - targetQubitTime; i++) {
-                    newDag[targetQubit].push_back(0);
+                    newDag[targetQubit].push_back(-1);
                 }
             } else {
                 for (int i = 0; i < targetQubitTime - controlQubitTime; i++) {
-                    newDag[controlQubit].push_back(0);
+                    newDag[controlQubit].push_back(-1);
                 }
             }
             newDag[targetQubit].push_back(gateID[i]);
@@ -301,7 +304,7 @@ vector<vector<int>> Environment::generateDag(vector<int> gateID) {
     }
     for (int i = 0; i < newDag.size(); i++) {
         for (int j = newDag[i].size(); j < nowDagDepth; j++) {
-            newDag[i].push_back(0);
+            newDag[i].push_back(-1);
         }
     }
     return newDag;
@@ -502,7 +505,20 @@ std::vector<ParsedGate> Environment::parse(const char *fileName) {
     return gates;
 }
 
-
+void Environment::PrintCoupling() {
+    cout<<"coupling list :"<<endl;
+    for(int i=0;i<this->coupling_graph_list.size();i++){
+        cout<<coupling_graph_list[i][0]<<" "<<coupling_graph_list[i][1]<<endl;
+    }
+    cout<<"coupling matrix :"<<endl;
+    for(int i=0;i<this->coupling_graph_matrix.size();i++){
+        for(int j=0;j<this->coupling_graph_matrix[i].size();j++){
+            cout<<coupling_graph_matrix[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+    return ;
+}
 
 
 

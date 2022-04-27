@@ -27,7 +27,6 @@ vector<vector<int>> DefaultExpander::ComReadyGates(vector<int> readyGates) {
             temp1.push_back(readyGates[i]);
             readyGateCom.push_back(temp1);
         }
-
     }
     return readyGateCom;
 }
@@ -35,8 +34,15 @@ vector<vector<int>> DefaultExpander::ComReadyGates(vector<int> readyGates) {
 /* Input idle logic bits,
  * Output a combination of swaps that can be executed
  */
-vector<vector<vector<int>>> DefaultExpander::SwapCom(vector<int> qubitState,vector<int> l2pmapping) {
+vector<vector<vector<int>>> DefaultExpander::  SwapCom(vector<int> qubitState,vector<int> l2pmapping) {
     vector<vector<int>> possibleSwap;
+    if(debug){
+        cout<<"qubit state is: ";
+        for(int i=0;i<qubitState.size();i++){
+            cout<<qubitState[i]<<" ";
+        }
+        cout<<endl;
+    }
     for(int i=0;i<this->env->coupling_graph_list.size();i++){
         int a=this->env->coupling_graph_list[i][0];
         int b=this->env->coupling_graph_list[i][1];
@@ -61,6 +67,17 @@ vector<vector<vector<int>>> DefaultExpander::SwapCom(vector<int> qubitState,vect
                 temp1.push_back(possibleSwap[k]);
                 possibleSwapCom.push_back(temp1);
             }
+        }
+    }
+    if(debug){
+        cout<<"in comb fintion "<<endl;
+        cout<<"the possibleSwapCom.size() is "<<possibleSwapCom.size()<<endl;
+        for(int i=0;i<possibleSwapCom.size();i++){
+            cout<<"swap num is "<<possibleSwapCom[i].size()<<endl;
+            for(int j=0;j<possibleSwapCom[i].size(); j++){
+                cout<<" swap "<<possibleSwapCom[i][j][0]<<" "<<possibleSwapCom[i][j][1]<<"   ";
+            }
+            cout<<endl;
         }
     }
     return possibleSwapCom;
@@ -149,12 +166,32 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
     else{
         //先执行所有的swap组合，然后再是能执行的ready gate都执行
         vector<vector<vector<int>>> possibleSwap=this->SwapCom(node->logicalQubitState,node->l2pMapping);
-
+        if(debug){
+            cout<<"in expander ----------------------------------------------------- "<<endl;
+            cout<<"the possibleSwapCom.size() is "<<possibleSwap.size()<<endl;
+            for(int i=0;i<possibleSwap.size();i++){
+                cout<<"swap num is "<<possibleSwap[i].size()<<"   ";
+                for(int j=0;j<possibleSwap[i].size(); j++){
+                    cout<<" swap "<<possibleSwap[i][j][0]<<" "<<possibleSwap[i][j][1]<<"   ";
+                }
+                cout<<endl;
+            }
+        }
         for(int i=0; i < possibleSwap.size(); i++){
             //执行所有的swap组合
             vector<int> qubitState1=node->logicalQubitState;
             vector<int> mapping=node->l2pMapping;
             vector<ScheduledGate> thisTimeSchduledGate;
+            if(debug){
+                cout<<"in for loop ----------------------------------------------------- "<<endl;
+                cout<<"int the expander: the possibleSwap size is "<<possibleSwap.size()<<endl;
+                cout<<"this time swap comb is :\n";
+                cout<<"swap num is "<<possibleSwap[i].size()<<endl;
+                for(int j=0;j<possibleSwap[i].size(); j++){
+                    cout<<" swap "<<possibleSwap[i][j][0]<<" "<<possibleSwap[i][j][1]<<"   ";
+                }
+                cout<<endl;
+            }
             for(int j=0;j<possibleSwap[i].size(); j++){
                 int a=possibleSwap[i][j][0];
                 int b=possibleSwap[i][j][1];
@@ -176,19 +213,24 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
             for(int j=0;j<mapping.size();j++){
                 p2lmapping[mapping[j]]=j;
             }
+//            cout<<"p2lmapping is: ";
+//            for(int j=0;j<p2lmapping.size();j++){
+//                cout<<p2lmapping[j]<<" ";
+//            }
+//            cout<<endl;
             //执行所有能执行的门，依赖关系是在第一层没有前驱结点，比特要空闲，双比特门要相邻
             vector<int> newReadyGate;
             set<int> frontLayerGate;//判断是在第一层，没有依赖关系
             for(int j=0;j<node->dagTable.size();j++){
-                if(node->dagTable[j][0]!=0){
+                if(node->dagTable[j][0]!=-1){
                     frontLayerGate.insert(node->dagTable[j][0]);
                 }
             }
             //判断比特空闲,如果在上一个set里，并且空闲，那么就可以加入到newReadyGate
             for (set<int>::iterator iter = frontLayerGate.begin(); iter != frontLayerGate.end(); ++iter){
+//                cout<<"gate id is "<<*iter<<endl;
                 ParsedGate nowGate=this->env->gate_info[*iter];
-                int ii = p2lmapping[nowGate.target];
-                int jj = p2lmapping[nowGate.control];
+//                cout<<"target is :"<<nowGate.target<<" control is "<<nowGate.control<<endl;
                 if (nowGate.control == -1) {
                     if (qubitState1[nowGate.target] == 0) {
                         newReadyGate.push_back(*iter);
@@ -196,24 +238,45 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
                 }
                 //two qubits gate
                 else if (qubitState1[nowGate.target] == 0 && qubitState1[nowGate.control] == 0 &&
-                         this->env->coupling_graph_list[ii][jj] == 1) {
+                         this->env->coupling_graph_matrix[p2lmapping[nowGate.control]][p2lmapping[nowGate.target]] == 1) {
                     newReadyGate.push_back(*iter);
                 } else {
                 }
             }
-
+            if(debug){
+                cout<<"newReadyGate : ";
+                for(int j=0;j<newReadyGate.size();j++){
+                    cout<<newReadyGate[j]<<" ";
+                }
+                cout<<endl;
+                cout<<"mapping is ";
+                for(int j=0;j<mapping.size();j++){
+                    cout<<mapping[j]<<" ";
+                }
+                cout<<endl;
+                cout<<"p2lmapping is ";
+                for(int j=0;j<node->p2lMapping.size();j++){
+                    cout<<node->p2lMapping[j]<<" ";
+                }
+                cout<<endl;
+            }
             for(int j=0;j<newReadyGate.size();j++){
                 //Add the actions performed by this step
                 ScheduledGate Sg;
                 Sg.targetQubit=node->p2lMapping[this->env->gate_info[newReadyGate[j]].target];
-                if(this->env->gate_info[newReadyGate[j]].control=-1){
+                //cout<<"sg target is "<<Sg.targetQubit<<endl;
+                //cout<<"env->gate_info[newReadyGate[j]].control : "<<env->gate_info[newReadyGate[j]].control<<endl;
+                if(this->env->gate_info[newReadyGate[j]].control!=-1){
                     Sg.controlQubit=node->p2lMapping[this->env->gate_info[newReadyGate[j]].control];
                 }
                 else{
                     Sg.controlQubit=-1;
                 }
+                //cout<<"sg control is "<<Sg.controlQubit<<endl;
                 Sg.gateName=this->env->gate_info[newReadyGate[j]].type;
+                //cout<<"sg name is "<<Sg.gateName<<endl;
                 Sg.gateID=newReadyGate[j];
+                //cout<<"sg id is "<<Sg.gateID<<endl;
                 thisTimeSchduledGate.push_back(Sg);
                 //update qubit state
                 qubitState1[this->env->gate_info[newReadyGate[j]].target]=1;
@@ -221,6 +284,11 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
                     qubitState1[this->env->gate_info[newReadyGate[j]].control]=1;
                 }
             }
+//            cout<<"qubit State : ";
+//            for(int j=0;j<qubitState1.size();j++){
+//                cout<<qubitState1[j]<<" ";
+//            }
+//            cout<<endl;
             //执行完ready gate后，当前结点的状态
             vector<int> remainGate;
             for(int j=0;j<node->remainGate.size();j++){
@@ -235,10 +303,23 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
                     remainGate.push_back(node->remainGate[j]);
                 }
             }
+//            cout<<"remainGate size is:"<<remainGate.size()<<endl;
+//            for(int j=0;j<remainGate.size();j++){
+//                cout<<remainGate[j]<<" ";
+//            }
             if(remainGate.size()==0){
                 ActionPath thisAction;
                 thisAction.actions=thisTimeSchduledGate;
-                thisAction.pattern=true;
+                bool IsPattern;
+//                cout<<"node->getReadyGateSize() :"<<node->getReadyGateSize()<<endl;
+//                cout<<"newReadyGate.size():"<<newReadyGate.size()<<endl;
+                if(node->getReadyGateSize()==newReadyGate.size()){
+                    IsPattern=false;
+                }
+                else{
+                    IsPattern=true;
+                }
+                thisAction.pattern=IsPattern;
                 vector<ActionPath> path=node->actionPath;
                 path.push_back(thisAction);
                 this->actionPath=path;
@@ -271,8 +352,6 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
                 //sn->PrintNode();
                 if(!filter_T->filter(sn)){
                     //cout<<"accept"<<endl;
-                    nodeCount++;
-                    sn->nodeID=nodeCount;
                     nodes->push(sn);
                 }
             }
