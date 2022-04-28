@@ -13,6 +13,7 @@ DefaultExpander::DefaultExpander(Environment *env) {
 }
 
 
+
 /* Given the ready gates, give their combination,
  * if not all of them are combined, then the pattern is encountered
  */
@@ -213,11 +214,6 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
             for(int j=0;j<mapping.size();j++){
                 p2lmapping[mapping[j]]=j;
             }
-//            cout<<"p2lmapping is: ";
-//            for(int j=0;j<p2lmapping.size();j++){
-//                cout<<p2lmapping[j]<<" ";
-//            }
-//            cout<<endl;
             //执行所有能执行的门，依赖关系是在第一层没有前驱结点，比特要空闲，双比特门要相邻
             vector<int> newReadyGate;
             set<int> frontLayerGate;//判断是在第一层，没有依赖关系
@@ -255,8 +251,8 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
                 }
                 cout<<endl;
                 cout<<"p2lmapping is ";
-                for(int j=0;j<node->p2lMapping.size();j++){
-                    cout<<node->p2lMapping[j]<<" ";
+                for(int j=0;j<p2lmapping.size();j++){
+                    cout<<p2lmapping[j]<<" ";
                 }
                 cout<<endl;
             }
@@ -264,19 +260,23 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
                 //Add the actions performed by this step
                 ScheduledGate Sg;
                 Sg.targetQubit=node->p2lMapping[this->env->gate_info[newReadyGate[j]].target];
-                //cout<<"sg target is "<<Sg.targetQubit<<endl;
-                //cout<<"env->gate_info[newReadyGate[j]].control : "<<env->gate_info[newReadyGate[j]].control<<endl;
+                if(debug){
+                    cout<<"sg target is "<<Sg.targetQubit<<endl;
+                    cout<<"env->gate_info[newReadyGate[j]].control : "<<env->gate_info[newReadyGate[j]].control<<endl;
+                }
                 if(this->env->gate_info[newReadyGate[j]].control!=-1){
                     Sg.controlQubit=node->p2lMapping[this->env->gate_info[newReadyGate[j]].control];
                 }
                 else{
                     Sg.controlQubit=-1;
                 }
-                //cout<<"sg control is "<<Sg.controlQubit<<endl;
                 Sg.gateName=this->env->gate_info[newReadyGate[j]].type;
-                //cout<<"sg name is "<<Sg.gateName<<endl;
                 Sg.gateID=newReadyGate[j];
-                //cout<<"sg id is "<<Sg.gateID<<endl;
+                if(debug){
+                    cout<<"sg control is "<<Sg.controlQubit<<endl;
+                    cout<<"sg name is "<<Sg.gateName<<endl;
+                    cout<<"sg id is "<<Sg.gateID<<endl;
+                }
                 thisTimeSchduledGate.push_back(Sg);
                 //update qubit state
                 qubitState1[this->env->gate_info[newReadyGate[j]].target]=1;
@@ -284,11 +284,13 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
                     qubitState1[this->env->gate_info[newReadyGate[j]].control]=1;
                 }
             }
-//            cout<<"qubit State : ";
-//            for(int j=0;j<qubitState1.size();j++){
-//                cout<<qubitState1[j]<<" ";
-//            }
-//            cout<<endl;
+            if(debug){
+                cout<<"qubit State : ";
+                for(int j=0;j<qubitState1.size();j++){
+                    cout<<qubitState1[j]<<" ";
+                }
+                cout<<endl;
+            }
             //执行完ready gate后，当前结点的状态
             vector<int> remainGate;
             for(int j=0;j<node->remainGate.size();j++){
@@ -303,10 +305,12 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
                     remainGate.push_back(node->remainGate[j]);
                 }
             }
-//            cout<<"remainGate size is:"<<remainGate.size()<<endl;
-//            for(int j=0;j<remainGate.size();j++){
-//                cout<<remainGate[j]<<" ";
-//            }
+            if(debug){
+                cout<<"remainGate size is:"<<remainGate.size()<<endl;
+                for(int j=0;j<remainGate.size();j++){
+                    cout<<remainGate[j]<<" ";
+                }
+            }
             if(remainGate.size()==0){
                 ActionPath thisAction;
                 thisAction.actions=thisTimeSchduledGate;

@@ -220,9 +220,14 @@ vector<vector<int>> Environment::getNewKLayerDag(vector<int> executedgateIDs,int
     for(int i=0;i<executedgateIDs.size();i++){
         gate_state[executedgateIDs[i]]=false;
     }
+//    cout<<"gate state : ";
+//    for(int i=0;i<gate_state.size();i++){
+//        cout<<gate_state[i]<<" ";
+//    }
+//    cout<<endl;
     for(int i=0;i<gate_id_topo.size();i++) {
         bool flag = gate_state[i];
-        if(flag)
+        if(flag==false)
             continue;
         int controlQubit = this->gate_info[i].control;
         int targetQubit = this->gate_info[i].target;
@@ -249,7 +254,14 @@ vector<vector<int>> Environment::getNewKLayerDag(vector<int> executedgateIDs,int
                 break;
             newKLayerDag[targetQubit].push_back(i);
         }
-        i++;
+//        cout<<"the "<<i<<" gate : <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<";
+//        cout<<"dag depth is "<<newKLayerDag[0].size()<<endl;
+//        for(int i=0;i<newKLayerDag[0].size();i++){
+//            for(int j=0;j<newKLayerDag.size();j++){
+//                cout<<newKLayerDag[j][i]<<" ";
+//            }
+//            cout<<endl;
+//        }
     }
     int nowDagDepth=0;
     for (int i = 0; i < newKLayerDag.size(); i++) {
@@ -323,12 +335,34 @@ vector<vector<int>> Environment::MakeCouplingGraph(vector<vector<int>> coupling)
         couplingGraph[a][b]=1;
         couplingGraph[b][a]=1;
     }
+    for(int i=0;i<couplingGraph.size();i++){
+        couplingGraph[i][i]=0;
+    }
+    if(0){
+        for(int i=0;i<couplingGraph.size();i++){
+            for(int j=0;j<couplingGraph[i].size();j++){
+                cout<<couplingGraph[i][j]<<" ";
+            }
+            cout<<endl;
+        }
+        cout<<"================================================="<<endl;
+    }
     for (int i=0;i<this->chip_num;i++){
         for(int j=0;j<this->chip_num;j++){
             for(int k=0;k<this->chip_num;k++){
                 if(couplingGraph[i][k]+couplingGraph[k][j]<couplingGraph[i][j]){
                     couplingGraph[i][j]=couplingGraph[i][k]+couplingGraph[k][j];
+                    couplingGraph[j][i]=couplingGraph[i][k]+couplingGraph[k][j];
                 }
+            }
+            if(0){
+                for(int i=0;i<couplingGraph.size();i++){
+                    for(int j=0;j<couplingGraph[i].size();j++){
+                        cout<<couplingGraph[i][j]<<" ";
+                    }
+                    cout<<endl;
+                }
+                cout<<"================================================="<<endl;
             }
         }
     }

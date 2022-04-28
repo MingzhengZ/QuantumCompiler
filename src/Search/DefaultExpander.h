@@ -21,7 +21,7 @@ public:
     bool findBestNode;
     int expandeNum;
     int cycleNum;
-    int debug=0;
+    int debug=1;
     vector<ActionPath> actionPath;
     vector<int> initialMapping;
     static int nodeCount;

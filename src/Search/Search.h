@@ -31,6 +31,7 @@ struct SearchResult{
 
 class Search {
 private:
+    int debug=0;
 public:
     Environment* env;
     Search(Environment* env);

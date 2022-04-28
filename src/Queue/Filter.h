@@ -4,7 +4,7 @@
 
 #ifndef STRONGESTMAPPER_FILTER_H
 #define STRONGESTMAPPER_FILTER_H
-#include "../search/SearchNode.h"
+#include "../Search/SearchNode.h"
 #include <iostream>
 
 class Filter{

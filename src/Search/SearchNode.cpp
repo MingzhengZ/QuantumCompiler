@@ -11,16 +11,28 @@ SearchNode::SearchNode(vector<int> nowMapping, vector<int> qubitState, vector<in
                        int nowtime, vector<ActionPath> path) {
     this->l2pMapping = nowMapping;
     this->dead = false;
-    this->qubitNum = nowMapping.size();
-    this->p2lMapping.resize(this->qubitNum);
+    this->qubitNum = qubitState.size();
+    this->p2lMapping.resize(nowMapping.size());
     this->dagTable = env->generateDag(unscheduled_gateids);
     this->gate2Critiality();
     this->environment = env;
     this->logicalQubitState = qubitState;
     this->timeStamp = nowtime;
-    this->p2lMapping.resize(this->qubitNum);
-    for (int i = 0; i < qubitNum; i++) {
+    for (int i = 0; i < nowMapping.size(); i++) {
         this->p2lMapping[this->l2pMapping[i]] = i;
+    }
+    if(1){
+        cout<<"\ngenerate new node "<<endl;
+        cout<<"now Mapping :";
+        for (int i = 0; i < nowMapping.size(); i++) {
+            cout<<nowMapping[i]<<" ";
+        }
+        cout<<endl;
+        cout<<"p2l Mapping :";
+        for (int i = 0; i < p2lMapping.size(); i++) {
+            cout<<p2lMapping[i]<<" ";
+        }
+        cout<<endl;
     }
     this->computeCost1();
     this->remainGate=unscheduled_gateids;
@@ -31,15 +43,14 @@ SearchNode::SearchNode(vector<int> nowMapping, vector<int> qubitState, vector<ve
                        int nowtime, vector<ActionPath> path) {
     this->l2pMapping = nowMapping;
     this->dead = false;
-    this->qubitNum = nowMapping.size();
-    this->p2lMapping.resize(this->qubitNum);
+    this->qubitNum = qubitState.size();
+    this->p2lMapping.resize(nowMapping.size());
     this->dagTable = dag_table;
     this->gate2Critiality();
     this->environment = env;
     this->logicalQubitState = qubitState;
     this->timeStamp = nowtime;
-    this->p2lMapping.resize(this->qubitNum);
-    for (int i = 0; i < qubitNum; i++) {
+    for (int i = 0; i < nowMapping.size(); i++) {
         this->p2lMapping[this->l2pMapping[i]] = i;
     }
     this->computeCost1();
@@ -130,6 +141,11 @@ void SearchNode::computeCost1() {
     int waitTime = busyTime();
     int cost = waitTime;
     vector<int> frontLayer = this->findFrontTwoQubitsGates();
+//    cout<<"frontLayer is :";
+//    for(int i=0;i<frontLayer.size();i++){
+//        cout<<frontLayer[i]<<" ";
+//    }
+//    cout<<endl;
     int gateNum = frontLayer.size();
     int costT = 99999;
     unordered_map<int, int> gateCost;
@@ -138,10 +154,8 @@ void SearchNode::computeCost1() {
 //        cout<<"gateId : "<<gateId<<endl;
         int qubit1 = this->environment->gate_info[gateId].control;
         int qubit2 = this->environment->gate_info[gateId].target;
-//        int length1 = this->findFreeTimePhysical(this->p2lMapping[qubit1]);
         int length1 = this->findFreeTime(qubit1, gateId);
 //        cout << "logical qubit is " << qubit1 << " and the length is " << length1 <<endl;
-//        int length2 = this->findFreeTimePhysical(this->p2lMapping[qubit2]);
         int length2 = this->findFreeTime(qubit2, gateId);
 //        cout << "logical qubit is " << qubit2 << " and the length is " << length2 << endl;
         if (length1 < length2) {
@@ -226,6 +240,11 @@ void SearchNode::PrintNode() {
     cout<<"the p2l mapping now is : ";
     for(int i=0;i<this->p2lMapping.size();i++){
         cout<<this->p2lMapping[i]<<" ";
+    }
+    cout<<endl;
+    cout<<"gate criticality: ";
+    for(auto iter=this->gateCriticality.begin();iter!=this->gateCriticality.end();iter++){
+        cout<<iter->first<<" "<<iter->second<<"  ";
     }
     cout<<endl;
     cout<<"the cost1 is : "<<this->cost1<<endl;
