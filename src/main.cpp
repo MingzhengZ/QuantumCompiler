@@ -41,7 +41,7 @@ int main() {
                                                {7,8},{8,9},{9,10},{10,11},{11,12},{12,13}};
     vector<vector<int>> coupling_map_list_asp={{0,1},{0,7},{1,2},{1,14},{2,3},{2,13},{3,4},{4,5},{5,6},{6,7},{8,9},{8,15},{9,10},{10,11},{11,12},{12,13},{13,14},{14,15}};
     Environment *env = new Environment(coupling_map_list_mel,qasm_filename1);
-    //env->PrintCoupling();
+    env->PrintCoupling();
     vector<int> executed;
     vector<vector<int>> k_dag = env->getNewKLayerDag(executed,2);
     vector<int> mapping_5={0,1,2,3,4};
@@ -49,10 +49,14 @@ int main() {
     vector<int> qubitState(env->circuit_num, 0);
     vector<ActionPath> newPath;
     vector<vector<int>> allDag = env->generateDag(env->gate_id_topo);
-    SearchNode *sn =new SearchNode(mapping_14,qubitState,k_dag, env, 0, newPath);
-    Search *sr = new Search(env);
-    SearchResult a = sr->SearchCircuit(sn);
-    PrintPath(a);
+    DefaultExpander nodeExpander(env);
+    vector<vector<vector<int>>> aa=nodeExpander.SwapCom(qubitState,mapping_14);
+    cout<<"aa.size() "<<aa.size()<<endl;
+
+//    SearchNode *sn =new SearchNode(mapping_14,qubitState,k_dag, env, 0, newPath);
+//    Search *sr = new Search(env);
+//    SearchResult a = sr->SearchCircuit(sn);
+//    PrintPath(a);
 
 //    clock_t startTime,endTime;
 //    startTime=clock();

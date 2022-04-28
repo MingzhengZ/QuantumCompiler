@@ -25,6 +25,7 @@ vector<vector<vector<int>>> DefaultExpander::  SwapCom(vector<int> qubitState,ve
             possibleSwap.push_back(env->coupling_graph_list[i]);
         }
     }
+    cout<<"possibleSwap size "<<possibleSwap.size()<<endl;
     vector<vector<vector<int>>> possibleSwapCom;
     vector<vector<int>> temp;
     possibleSwapCom.push_back(temp);
@@ -141,6 +142,15 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
         //先执行所有的swap组合，然后再是能执行的ready gate都执行
         vector<vector<vector<int>>> possibleSwap=this->SwapCom(node->logicalQubitState,node->l2pMapping);
         if(debug){
+            cout<<"logical qubit state and mapping ";
+            for(int yo=0;yo<node->logicalQubitState.size();yo++){
+                cout<<node->logicalQubitState[yo]<<" ";
+            }
+            cout<<"         ////        ";
+            for(int yo=0;yo<node->l2pMapping.size();yo++){
+                cout<<node->l2pMapping[yo]<<" ";
+            }
+            cout<<endl;
             cout<<"in expander ----------------------------------------------------- "<<endl;
             cout<<"the possibleSwapCom.size() is "<<possibleSwap.size()<<endl;
             for(int i=0;i<possibleSwap.size();i++){
