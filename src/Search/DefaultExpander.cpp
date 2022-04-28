@@ -13,37 +13,11 @@ DefaultExpander::DefaultExpander(Environment *env) {
 }
 
 
-
-/* Given the ready gates, give their combination,
- * if not all of them are combined, then the pattern is encountered
- */
-vector<vector<int>> DefaultExpander::ComReadyGates(vector<int> readyGates) {
-    vector<vector<int>> readyGateCom;
-    vector<int> temp;
-    readyGateCom.push_back(temp);
-    for(int i=0;i<readyGates.size();i++){
-        int now_size=readyGateCom.size();
-        for(int j=0;j<now_size;j++){
-            vector<int> temp1=readyGateCom[j];
-            temp1.push_back(readyGates[i]);
-            readyGateCom.push_back(temp1);
-        }
-    }
-    return readyGateCom;
-}
-
 /* Input idle logic bits,
  * Output a combination of swaps that can be executed
  */
 vector<vector<vector<int>>> DefaultExpander::  SwapCom(vector<int> qubitState,vector<int> l2pmapping) {
     vector<vector<int>> possibleSwap;
-    if(debug){
-        cout<<"qubit state is: ";
-        for(int i=0;i<qubitState.size();i++){
-            cout<<qubitState[i]<<" ";
-        }
-        cout<<endl;
-    }
     for(int i=0;i<this->env->coupling_graph_list.size();i++){
         int a=this->env->coupling_graph_list[i][0];
         int b=this->env->coupling_graph_list[i][1];
@@ -70,17 +44,17 @@ vector<vector<vector<int>>> DefaultExpander::  SwapCom(vector<int> qubitState,ve
             }
         }
     }
-    if(debug){
-        cout<<"in comb fintion "<<endl;
-        cout<<"the possibleSwapCom.size() is "<<possibleSwapCom.size()<<endl;
-        for(int i=0;i<possibleSwapCom.size();i++){
-            cout<<"swap num is "<<possibleSwapCom[i].size()<<endl;
-            for(int j=0;j<possibleSwapCom[i].size(); j++){
-                cout<<" swap "<<possibleSwapCom[i][j][0]<<" "<<possibleSwapCom[i][j][1]<<"   ";
-            }
-            cout<<endl;
-        }
-    }
+//    if(debug){
+//        cout<<"in comb fintion "<<endl;
+//        cout<<"the possibleSwapCom.size() is "<<possibleSwapCom.size()<<endl;
+//        for(int i=0;i<possibleSwapCom.size();i++){
+//            cout<<"swap num is "<<possibleSwapCom[i].size()<<endl;
+//            for(int j=0;j<possibleSwapCom[i].size(); j++){
+//                cout<<" swap "<<possibleSwapCom[i][j][0]<<" "<<possibleSwapCom[i][j][1]<<"   ";
+//            }
+//            cout<<endl;
+//        }
+//    }
     return possibleSwapCom;
 }
 
@@ -154,7 +128,6 @@ bool DefaultExpander::IsCycle(vector<ActionPath> actionPath, int qubitNum) {
         return false;
     }
 }
-
 
 bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *node, HashFilter_TOQM* filter_T) {
     int countNum=0;

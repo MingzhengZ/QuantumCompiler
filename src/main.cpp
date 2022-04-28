@@ -43,25 +43,25 @@ int main() {
     Environment *env = new Environment(coupling_map_list_mel,qasm_filename1);
     //env->PrintCoupling();
     vector<int> executed;
-    vector<vector<int>> k_dag = env->generateDag(env->gate_id_topo);
+    vector<vector<int>> k_dag = env->getNewKLayerDag(executed,2);
     vector<int> mapping_5={0,1,2,3,4};
     vector<int> mapping_14={0,1,2,3,4,5,6,7,8,9,10,11,12,13};
-//    vector<int> qubitState(env->circuit_num, 0);
-//    vector<ActionPath> newPath;
-//    vector<vector<int>> allDag = env->generateDag(env->gate_id_topo);
-//    SearchNode *sn =new SearchNode(mapping,qubitState,allDag, env, 0, newPath);
-//    Search *sr = new Search(env);
-//    SearchResult a = sr->SearchCircuit(sn);
-//    PrintPath(a);
-
-    clock_t startTime,endTime;
-    startTime=clock();
+    vector<int> qubitState(env->circuit_num, 0);
+    vector<ActionPath> newPath;
+    vector<vector<int>> allDag = env->generateDag(env->gate_id_topo);
+    SearchNode *sn =new SearchNode(mapping_14,qubitState,k_dag, env, 0, newPath);
     Search *sr = new Search(env);
+    SearchResult a = sr->SearchCircuit(sn);
+    PrintPath(a);
+
+//    clock_t startTime,endTime;
+//    startTime=clock();
+//    Search *sr = new Search(env);
 
     //SearchResult a= sr->SearchFullCircuit(mapping);
-    SearchResult a= sr->SearchSmoothWithInitialMapping(mapping_14,2);
-    endTime=clock();
-    PrintPath(a);
-    cout<<"time is "<<(double)(endTime-startTime)/CLOCKS_PER_SEC<<endl;
+//    SearchResult a= sr->SearchSmoothWithInitialMapping(mapping_14,2);
+//    endTime=clock();
+//    PrintPath(a);
+//    cout<<"time is "<<(double)(endTime-startTime)/CLOCKS_PER_SEC<<endl;
     return 0;
 }
