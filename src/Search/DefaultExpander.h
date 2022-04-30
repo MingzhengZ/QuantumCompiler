@@ -45,6 +45,7 @@ public:
     vector<vector<vector<int>>> SwapCom1(vector<int> qubitState,vector<int> l2pmapping,int qubit_num,set<int> cnot_qubit);
 
     bool ExpandWithoutCnotCheck( DefaultQueue* nodes,SearchNode* node,HashFilter_TOQM* filter_T);
+    bool ExpandWithoutCnotCheckTopN(DefaultQueue *nodes, SearchNode *node, HashFilter_TOQM* filter_T ,int topN);
     bool IsCycle(vector<ActionPath> actionPath,int qubitNum);
 };
 

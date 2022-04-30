@@ -38,10 +38,14 @@ public:
 
     SearchResult SearchCircuit(SearchNode* sn);
 
+    SearchResult SearchCircuitGreedy(SearchNode *sn,int topNnum);
+
     //搜索完这个线路的所有节点
     SearchResult SearchFullCircuit(vector<int> mapping);
     //smooth search
     SearchResult SearchSmoothWithInitialMapping(vector<int> mapping,int k);
+    //smooth search with topN greedy
+    SearchResult SearchSmoothWithInitialMappingAndGreedy(vector<int> mapping,int k,int topN);
     //smooth search adapt
     SearchResult SearchSmoothWithInitialMappingAdpat(vector<int> mapping,int searchNodeNum);
     //smooth more layer

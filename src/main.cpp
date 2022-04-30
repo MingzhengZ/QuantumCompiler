@@ -53,12 +53,13 @@ int main() {
     vector<int> qubitState(env->chip_num, 0);
     vector<ActionPath> newPath;
     vector<vector<int>> allDag = env->generateDag(env->gate_id_topo);
-
-    SearchNode *sn =new SearchNode(mapping_14,qubitState,k_dag, env, 0, newPath);
-    sn->PrintNode();
+    clock_t startTime,endTime;
+    startTime=clock();
     Search *sr = new Search(env);
-    SearchResult a = sr->SearchCircuit(sn);
+    SearchResult a = sr->SearchSmoothWithInitialMappingAndGreedy(mapping_14,3,10);
+    endTime=clock();
     PrintPath(a);
+    cout<<"time is "<<(double)(endTime-startTime)/CLOCKS_PER_SEC<<endl;
 
 //    clock_t startTime,endTime;
 //    startTime=clock();
