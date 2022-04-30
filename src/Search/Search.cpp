@@ -33,6 +33,11 @@ SearchResult Search::SearchCircuit(SearchNode *sn) {
     SearchResult sr;
     sr.finalPath = nodeExpander.actionPath;
     sr.searchNodeNum = searchNum;
+    int count;
+    for (int i = 0; i < sr.searchNodeNum.size(); i++) {
+        count = count + sr.searchNodeNum[i];
+    }
+    cout << "search node number: " << count << endl;
     vector<int> queueNum;
     queueNum.push_back(nodeQueue->numPushed);
     sr.queueNum = queueNum;
@@ -192,6 +197,7 @@ SearchResult Search::SearchSmoothWithInitialMapping(vector<int> mapping, int k) 
                 searR.queueNum.push_back(queueNum);
                 searR.cycleNum=searR.cycleNum+a.cycleNum;
                 searR.swapNum=searR.swapNum+swapNum;
+                delete sr;
             }
         }
         return searR;

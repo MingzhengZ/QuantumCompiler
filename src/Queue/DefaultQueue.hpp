@@ -16,7 +16,22 @@ private:
     {
         bool operator()(const SearchNode* lhs, const SearchNode* rhs) const
         {
-            return lhs->cost1 > rhs->cost1;
+            bool ans;
+            if(lhs->cost1 > rhs->cost1){
+                ans=true;
+            }
+            else if(lhs->cost1 == rhs->cost1){
+                if(lhs->remainGate.size()>rhs->cost1){
+                    ans=true;
+                }
+                else{
+                    ans=false;
+                }
+            }
+            else{
+                ans=false;
+            }
+            return ans;
         }
     };
     std::priority_queue<SearchNode*, std::vector<SearchNode*>, CmpDefaultQueue> nodes;

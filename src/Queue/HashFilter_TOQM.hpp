@@ -152,18 +152,11 @@ public:
         //}
 
         int numQubits = newNode->qubitNum;
-
         std::size_t hash_result = hashFunc3(newNode);
-
         int swapCost = 3;
         vector<SearchNode *> *mapValue = &this->hashmap[hash_result];//Note: I'm terrified of accidentally making an actual copy of the vector here
         for (unsigned int blah = mapValue->size() - 1; blah < mapValue->size() && blah >= 0; blah--) {
             SearchNode *candidate = (*mapValue)[blah];
-
-            //if there's a very big gap between nodes' progress then we probably won't benefit from comparing them:
-            //if(candidate->cycle - newNode->cycle >= 6 || newNode->cycle - candidate->cycle >= 6) {
-            //	continue;
-            //}
 
             if (candidate->dead) {
                 continue;

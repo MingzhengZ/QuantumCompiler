@@ -21,7 +21,7 @@ public:
     bool findBestNode;
     int expandeNum;
     int cycleNum;
-    int debug=1;
+    int debug=0;
     vector<ActionPath> actionPath;
     vector<int> initialMapping;
     static int nodeCount;
@@ -42,6 +42,7 @@ public:
      * Output a combination of swaps that can be executed
      */
     vector<vector<vector<int>>> SwapCom(vector<int> qubitState,vector<int> l2pmapping);
+    vector<vector<vector<int>>> SwapCom1(vector<int> qubitState,vector<int> l2pmapping,int qubit_num,set<int> cnot_qubit);
 
     bool ExpandWithoutCnotCheck( DefaultQueue* nodes,SearchNode* node,HashFilter_TOQM* filter_T);
     bool IsCycle(vector<ActionPath> actionPath,int qubitNum);

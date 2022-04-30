@@ -29,6 +29,7 @@ public:
 
     //chip information
     int chip_num;
+    int qubitUsed;
     vector<vector<int>> coupling_graph_list;
     vector<vector<int>> coupling_graph_matrix;
     vector<vector<int>> MakeCouplingGraph(vector<vector<int>> couplingList);
@@ -42,6 +43,7 @@ public:
     vector<std::pair<int, int> > measures;//list of measurement gates; first is qbit, second is cbit
     vector<char*> qregName;
     vector<int> qregSize;
+
     int getQregOffset(char * name);
     int getCregOffset(char * name);
 

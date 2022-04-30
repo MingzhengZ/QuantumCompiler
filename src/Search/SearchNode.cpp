@@ -21,7 +21,7 @@ SearchNode::SearchNode(vector<int> nowMapping, vector<int> qubitState, vector<in
     for (int i = 0; i < nowMapping.size(); i++) {
         this->p2lMapping[this->l2pMapping[i]] = i;
     }
-    if(1){
+    if(0){
         cout<<"\ngenerate new node "<<endl;
         cout<<"now Mapping :";
         for (int i = 0; i < nowMapping.size(); i++) {
@@ -202,7 +202,7 @@ vector<int> SearchNode::findFrontTwoQubitsGates() {
     vector<int> frontTwoQubitsGates;
     map<int, int> gateCount;
     int depth = this->dagTable[0].size();
-    for (int i = 0; i < this->qubitNum; i++) {
+    for (int i = 0; i < this->dagTable.size(); i++) {
         for (int j = 0; j < depth; j++) {
             if (this->dagTable[i][j] == -1) {
                 continue;
@@ -244,7 +244,7 @@ void SearchNode::PrintNode() {
     cout<<endl;
     cout<<"gate criticality: ";
     for(auto iter=this->gateCriticality.begin();iter!=this->gateCriticality.end();iter++){
-        cout<<iter->first<<" "<<iter->second<<"  ";
+        cout<<iter->first<<"-"<<iter->second<<"  ";
     }
     cout<<endl;
     cout<<"the cost1 is : "<<this->cost1<<endl;

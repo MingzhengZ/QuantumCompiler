@@ -25,7 +25,6 @@ vector<vector<vector<int>>> DefaultExpander::  SwapCom(vector<int> qubitState,ve
             possibleSwap.push_back(env->coupling_graph_list[i]);
         }
     }
-    cout<<"possibleSwap size "<<possibleSwap.size()<<endl;
     vector<vector<vector<int>>> possibleSwapCom;
     vector<vector<int>> temp;
     possibleSwapCom.push_back(temp);
@@ -58,6 +57,53 @@ vector<vector<vector<int>>> DefaultExpander::  SwapCom(vector<int> qubitState,ve
 //    }
     return possibleSwapCom;
 }
+
+vector<vector<vector<int>>> DefaultExpander::  SwapCom1(vector<int> qubitState,vector<int> l2pmapping,int qubit_num,set<int> cnot_qubit) {
+    vector<vector<int>> possibleSwap;
+    for(int i=0;i<this->env->coupling_graph_list.size();i++){
+        int a=this->env->coupling_graph_list[i][0];
+        int b=this->env->coupling_graph_list[i][1];
+        if(qubitState[l2pmapping[a]]==0&&qubitState[l2pmapping[b]]==0){
+            if(l2pmapping[a]<qubit_num||l2pmapping[b]<qubit_num){
+                if(cnot_qubit.count(l2pmapping[a]) ||cnot_qubit.count(l2pmapping[b])){
+                    possibleSwap.push_back(env->coupling_graph_list[i]);
+                }
+            }
+        }
+    }
+    vector<vector<vector<int>>> possibleSwapCom;
+    vector<vector<int>> temp;
+    possibleSwapCom.push_back(temp);
+    for(int k=0;k<possibleSwap.size();k++) {
+        int nowSwapSize = possibleSwapCom.size();
+        for (int a = 0; a < nowSwapSize; a++) {
+            set<int> usedQubits;
+            for(int b=0;b<possibleSwapCom[a].size();b++){
+                usedQubits.insert(possibleSwapCom[a][b][0]);
+                usedQubits.insert(possibleSwapCom[a][b][1]);
+            }
+            if(usedQubits.count(possibleSwap[k][0])==0&&usedQubits.count(possibleSwap[k][1])==0){
+                vector<vector<int>> temp1;
+                temp1 = possibleSwapCom[a];
+                temp1.push_back(possibleSwap[k]);
+                possibleSwapCom.push_back(temp1);
+            }
+        }
+    }
+//    if(debug){
+//        cout<<"in comb fintion "<<endl;
+//        cout<<"the possibleSwapCom.size() is "<<possibleSwapCom.size()<<endl;
+//        for(int i=0;i<possibleSwapCom.size();i++){
+//            cout<<"swap num is "<<possibleSwapCom[i].size()<<endl;
+//            for(int j=0;j<possibleSwapCom[i].size(); j++){
+//                cout<<" swap "<<possibleSwapCom[i][j][0]<<" "<<possibleSwapCom[i][j][1]<<"   ";
+//            }
+//            cout<<endl;
+//        }
+//    }
+    return possibleSwapCom;
+}
+
 
 //Given action path to determine whether there is a loop
 bool DefaultExpander::IsCycle(vector<ActionPath> actionPath, int qubitNum) {
@@ -140,8 +186,16 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
     }
     else{
         //先执行所有的swap组合，然后再是能执行的ready gate都执行
-        vector<vector<vector<int>>> possibleSwap=this->SwapCom(node->logicalQubitState,node->l2pMapping);
-        if(debug){
+        set<int> cnot_qubit;//还有待执行的cnot的qubit
+        for(int i=0;i<node->dagTable.size();i++){
+            for(int j=0;j<node->dagTable[i].size();j++){
+                if(node->environment->gate_info[node->dagTable[i][j]].control!=-1){
+                    cnot_qubit.insert(i);
+                }
+            }
+        }
+        vector<vector<vector<int>>> possibleSwap=this->SwapCom1(node->logicalQubitState,node->l2pMapping,node->environment->qubitUsed,cnot_qubit);
+        if(0){
             cout<<"logical qubit state and mapping ";
             for(int yo=0;yo<node->logicalQubitState.size();yo++){
                 cout<<node->logicalQubitState[yo]<<" ";
@@ -151,15 +205,6 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
                 cout<<node->l2pMapping[yo]<<" ";
             }
             cout<<endl;
-            cout<<"in expander ----------------------------------------------------- "<<endl;
-            cout<<"the possibleSwapCom.size() is "<<possibleSwap.size()<<endl;
-            for(int i=0;i<possibleSwap.size();i++){
-                cout<<"swap num is "<<possibleSwap[i].size()<<"   ";
-                for(int j=0;j<possibleSwap[i].size(); j++){
-                    cout<<" swap "<<possibleSwap[i][j][0]<<" "<<possibleSwap[i][j][1]<<"   ";
-                }
-                cout<<endl;
-            }
         }
         for(int i=0; i < possibleSwap.size(); i++){
             //执行所有的swap组合
@@ -337,9 +382,13 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
                 countNum++;
                 SearchNode* sn= new SearchNode(mapping,qubitState1,remainGate,env,timeStamp,path);
                 //sn->PrintNode();
+                //cout<<"i will in queue "<<endl;
                 if(!filter_T->filter(sn)){
                     //cout<<"accept"<<endl;
                     nodes->push(sn);
+                }
+                else{
+                    //cout<<"filter"<<endl;
                 }
             }
             else{

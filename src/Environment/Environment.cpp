@@ -201,7 +201,8 @@ Environment::Environment(vector<vector<int>> coupling_list, string qasm_filename
     //读取线路,确定线路需要的比特数目，这里按照qreg里面给出的数据当作需要的qubit，真实使用的可能会更少一点。
     const char * qasm_file = qasm_filename.c_str();
     this->gate_info=parse(qasm_file);
-    this->circuit_num=this->qregSize[0];
+    this->circuit_num=this->chip_num;
+    this->qubitUsed=this->qregSize[0];
     //生成门的topo序
     for(int i=0;i<this->gate_info.size();i++){
         this->gate_id_topo.push_back(i);
