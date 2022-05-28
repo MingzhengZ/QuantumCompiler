@@ -1,0 +1,5978 @@
+2x5 top N = 10 smooth =4 filename is ../circuits/large/rd73_252.qasm
+0 h -1 2   1 t -1 8   2 t -1 6   
+-1 swap 5 0   -1 swap 9 4   -1 swap 7 6   3 t -1 2   
+
+
+-1 swap 5 0   -1 swap 9 4   4 cx 7 8   
+5 cx 2 7   
+-1 swap 8 7   
+-1 swap 5 0   -1 swap 6 1   -1 swap 9 4   
+
+6 cx 7 2   7 tdg -1 8   
+8 cx 7 8   11 t -1 2   
+-1 swap 5 0   -1 swap 7 2   -1 swap 9 4   10 tdg -1 8   
+
+
+9 tdg -1 2   12 cx 7 8   16 h -1 0   
+-1 swap 1 0   -1 swap 8 3   -1 swap 6 5   13 cx 2 7   
+15 h -1 7   
+
+-1 swap 9 4   -1 swap 7 6   14 cx 3 2   19 t -1 1   
+-1 swap 5 0   17 t -1 2   18 t -1 3   
+20 cx 3 2   
+-1 swap 2 1   -1 swap 7 6   
+-1 swap 5 0   -1 swap 9 4   
+
+-1 swap 7 6   21 cx 2 3   
+22 cx 1 2   23 tdg -1 3   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 8   
+-1 swap 7 6   
+
+-1 swap 9 8   24 cx 2 3   27 t -1 1   
+-1 swap 2 1   26 tdg -1 3   32 h -1 7   
+-1 swap 7 6   
+33 t -1 9   
+-1 swap 9 4   25 tdg -1 1   28 cx 2 3   
+-1 swap 2 1   -1 swap 5 0   35 t -1 6   
+
+
+-1 swap 5 0   -1 swap 7 6   29 cx 2 1   
+30 cx 3 2   31 h -1 1   
+-1 swap 4 3   -1 swap 9 8   34 t -1 2   
+-1 swap 1 0   
+
+-1 swap 6 5   -1 swap 9 8   36 cx 2 3   
+37 cx 7 2   
+-1 swap 3 2   
+-1 swap 5 0   -1 swap 6 1   -1 swap 9 8   
+
+38 cx 2 7   39 tdg -1 3   
+-1 swap 1 0   40 cx 2 3   43 t -1 7   
+-1 swap 7 2   42 tdg -1 3   48 h -1 5   
+51 t -1 5   
+
+41 tdg -1 7   44 cx 2 3   
+-1 swap 8 3   45 cx 7 2   
+-1 swap 2 1   
+-1 swap 9 4   -1 swap 6 5   
+46 cx 8 7   
+-1 swap 2 1   49 t -1 7   50 t -1 8   
+-1 swap 5 0   52 cx 8 7   
+-1 swap 4 3   -1 swap 7 6   
+-1 swap 2 1   
+
+-1 swap 4 3   53 cx 7 8   
+-1 swap 2 1   -1 swap 5 0   54 cx 6 7   55 tdg -1 8   
+-1 swap 7 6   
+-1 swap 9 4   
+-1 swap 1 0   -1 swap 3 2   
+56 cx 7 8   59 t -1 6   
+-1 swap 7 6   58 tdg -1 8   64 h -1 5   
+-1 swap 2 1   47 h -1 3   67 t -1 5   
+
+57 tdg -1 6   60 cx 7 8   
+-1 swap 2 1   61 cx 6 7   
+-1 swap 4 3   -1 swap 5 0   -1 swap 8 7   
+
+66 t -1 2   
+-1 swap 1 0   62 cx 7 6   63 h -1 8   
+65 t -1 7   
+-1 swap 4 3   -1 swap 6 5   -1 swap 9 8   68 cx 2 7   
+69 cx 1 2   
+-1 swap 7 2   
+-1 swap 5 0   
+
+-1 swap 9 4   70 cx 2 1   71 tdg -1 7   
+-1 swap 8 3   -1 swap 6 5   72 cx 2 7   75 t -1 1   
+-1 swap 2 1   74 tdg -1 7   
+
+80 h -1 8   81 t -1 6   
+73 tdg -1 1   76 cx 2 7   83 t -1 8   
+-1 swap 8 3   -1 swap 7 6   77 cx 1 2   
+79 h -1 2   
+
+-1 swap 3 2   -1 swap 9 4   78 cx 6 1   
+82 t -1 6   
+-1 swap 5 0   84 cx 6 7   
+-1 swap 7 2   -1 swap 8 3   -1 swap 9 4   
+
+-1 swap 1 0   
+-1 swap 9 8   85 cx 7 6   
+86 cx 2 7   87 tdg -1 6   
+-1 swap 4 3   -1 swap 5 0   -1 swap 7 6   
+-1 swap 9 8   
+
+88 cx 2 7   91 t -1 6   
+-1 swap 2 1   90 tdg -1 7   96 h -1 3   
+-1 swap 4 3   92 cx 6 7   
+
+-1 swap 5 0   -1 swap 7 2   -1 swap 9 8   89 tdg -1 1   
+93 cx 1 6   99 t -1 4   
+-1 swap 4 3   95 h -1 6   
+-1 swap 5 0   94 cx 2 1   
+-1 swap 7 6   -1 swap 9 8   97 t -1 1   98 t -1 2   
+100 cx 2 1   
+101 cx 3 2   
+-1 swap 2 1   
+-1 swap 9 4   
+-1 swap 7 6   
+102 cx 2 3   103 tdg -1 1   
+-1 swap 9 8   104 cx 2 1   107 t -1 3   
+-1 swap 3 2   -1 swap 7 6   106 tdg -1 1   
+
+
+-1 swap 5 0   -1 swap 9 4   -1 swap 8 7   105 tdg -1 3   108 cx 2 1   115 t -1 6   
+109 cx 3 2   
+-1 swap 2 1   
+112 cx 9 8   
+-1 swap 7 6   113 cx 9 4   114 h -1 8   
+-1 swap 1 0   110 cx 2 3   117 t -1 8   
+116 t -1 2   
+-1 swap 8 3   -1 swap 9 4   -1 swap 6 5   118 cx 2 7   
+-1 swap 1 0   
+
+-1 swap 6 5   119 cx 3 2   
+-1 swap 8 3   111 h -1 1   121 tdg -1 2   
+-1 swap 1 0   -1 swap 9 4   
+
+-1 swap 6 5   120 cx 7 8   
+-1 swap 1 0   -1 swap 9 4   122 cx 7 2   125 t -1 8   
+-1 swap 8 7   124 tdg -1 2   
+131 t -1 6   
+-1 swap 6 1   
+-1 swap 5 0   -1 swap 9 4   123 tdg -1 8   126 cx 7 2   
+-1 swap 8 7   
+-1 swap 6 1   
+
+127 cx 7 8   
+-1 swap 5 0   -1 swap 9 4   128 cx 2 7   129 h -1 8   
+130 h -1 8   132 t -1 7   
+-1 swap 3 2   133 t -1 8   134 cx 7 6   
+135 cx 8 7   
+-1 swap 7 6   
+-1 swap 5 0   -1 swap 9 4   
+
+136 cx 7 8   137 tdg -1 6   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   138 cx 7 6   141 t -1 8   
+-1 swap 8 7   140 tdg -1 6   
+
+-1 swap 4 3   146 h -1 9   
+-1 swap 2 1   139 tdg -1 8   142 cx 7 6   149 t -1 9   
+-1 swap 5 0   -1 swap 8 7   
+
+
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   143 cx 7 8   
+-1 swap 8 3   144 cx 6 7   
+-1 swap 7 6   
+-1 swap 1 0   
+-1 swap 4 3   
+147 t -1 6   148 t -1 7   
+150 cx 7 6   
+-1 swap 3 2   -1 swap 6 1   145 h -1 4   
+-1 swap 9 8   
+
+-1 swap 4 3   -1 swap 5 0   151 cx 2 7   
+152 cx 1 2   153 tdg -1 7   
+-1 swap 7 2   -1 swap 9 8   
+-1 swap 6 5   
+
+-1 swap 8 3   154 cx 1 2   157 t -1 7   
+-1 swap 6 1   156 tdg -1 2   
+158 cx 7 2   
+-1 swap 9 4   162 h -1 8   
+-1 swap 2 1   -1 swap 5 0   -1 swap 8 3   155 tdg -1 6   
+159 cx 6 7   
+161 h -1 7   
+-1 swap 8 3   -1 swap 9 4   160 cx 1 6   164 t -1 2   
+-1 swap 5 0   -1 swap 7 2   163 t -1 6   
+
+165 t -1 8   
+-1 swap 4 3   166 cx 7 6   
+167 cx 8 7   
+-1 swap 5 0   -1 swap 7 6   
+-1 swap 4 3   
+-1 swap 2 1   
+168 cx 7 8   169 tdg -1 6   
+-1 swap 5 0   170 cx 7 6   173 t -1 8   
+-1 swap 3 2   -1 swap 8 7   172 tdg -1 6   
+
+-1 swap 9 4   178 x -1 5   
+-1 swap 3 2   171 tdg -1 8   174 cx 7 6   180 t -1 5   
+-1 swap 5 0   -1 swap 8 7   
+-1 swap 9 4   
+
+-1 swap 1 0   175 cx 7 8   
+-1 swap 3 2   -1 swap 9 4   176 cx 6 7   177 h -1 8   
+-1 swap 8 7   181 t -1 6   
+183 cx 6 1   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   
+179 h -1 7   
+182 t -1 7   
+-1 swap 8 3   184 cx 7 6   
+185 cx 2 7   186 tdg -1 6   
+-1 swap 2 1   -1 swap 5 0   190 t -1 7   
+-1 swap 8 3   
+
+187 cx 1 6   
+-1 swap 8 3   188 tdg -1 1   189 tdg -1 6   195 h -1 4   
+191 cx 7 6   198 t -1 4   
+-1 swap 6 1   
+-1 swap 9 4   
+
+-1 swap 8 3   192 cx 6 7   
+-1 swap 5 0   -1 swap 9 4   193 cx 1 6   194 h -1 7   
+-1 swap 2 1   -1 swap 7 6   
+
+-1 swap 4 3   -1 swap 9 8   
+-1 swap 6 1   196 t -1 7   197 t -1 2   
+199 cx 2 7   
+200 cx 3 2   
+-1 swap 8 3   202 tdg -1 2   
+-1 swap 1 0   -1 swap 9 4   -1 swap 6 5   
+
+201 cx 7 8   
+-1 swap 4 3   203 cx 7 2   206 t -1 8   
+-1 swap 7 2   211 h -1 0   212 t -1 1   
+214 t -1 0   
+213 t -1 3   
+-1 swap 3 2   -1 swap 5 0   -1 swap 9 4   205 tdg -1 7   
+207 cx 8 7   
+-1 swap 8 7   
+-1 swap 9 4   -1 swap 6 5   204 tdg -1 3   215 cx 2 1   
+-1 swap 2 1   
+-1 swap 8 3   
+-1 swap 9 4   
+-1 swap 5 0   216 cx 6 1   
+-1 swap 2 1   208 cx 8 7   
+-1 swap 4 3   -1 swap 9 8   210 h -1 7   
+
+217 cx 1 6   218 tdg -1 2   
+209 cx 4 9   219 cx 1 2   222 t -1 6   
+-1 swap 6 1   -1 swap 9 4   221 tdg -1 2   
+229 t -1 3   
+
+-1 swap 5 0   220 tdg -1 6   223 cx 1 2   228 t -1 4   
+-1 swap 7 2   224 cx 6 1   231 cx 3 4   
+-1 swap 9 8   226 h -1 1   
+
+-1 swap 3 2   225 cx 7 6   
+-1 swap 9 4   227 h -1 7   
+-1 swap 6 1   230 t -1 7   
+232 cx 7 2   
+-1 swap 3 2   -1 swap 9 8   
+-1 swap 1 0   
+
+-1 swap 9 4   233 cx 8 7   234 tdg -1 3   
+-1 swap 1 0   235 cx 8 3   238 t -1 7   
+-1 swap 8 7   237 tdg -1 3   243 h -1 6   
+-1 swap 6 5   
+-1 swap 9 4   244 t -1 1   
+236 tdg -1 7   239 cx 8 3   
+240 cx 7 8   246 t -1 5   
+242 h -1 8   
+245 t -1 8   
+-1 swap 2 1   -1 swap 9 4   -1 swap 6 5   -1 swap 8 7   
+
+
+-1 swap 9 4   241 cx 3 8   247 cx 7 2   
+248 cx 6 7   
+-1 swap 7 2   
+-1 swap 4 3   
+
+-1 swap 5 0   -1 swap 9 8   249 cx 7 6   250 tdg -1 2   
+-1 swap 4 3   251 cx 7 2   254 t -1 6   
+-1 swap 7 6   253 tdg -1 2   
+260 t -1 9   
+261 t -1 3   
+-1 swap 4 3   252 tdg -1 6   255 cx 7 2   
+-1 swap 2 1   256 cx 6 7   
+-1 swap 9 8   258 h -1 7   
+-1 swap 4 3   
+-1 swap 5 0   257 cx 1 6   
+259 h -1 1   
+-1 swap 2 1   -1 swap 7 6   263 cx 3 8   
+-1 swap 5 0   
+-1 swap 9 4   
+-1 swap 6 1   -1 swap 8 7   262 t -1 2   
+264 cx 2 3   
+266 tdg -1 3   
+-1 swap 1 0   -1 swap 8 3   265 cx 7 2   
+-1 swap 6 5   270 t -1 2   
+-1 swap 9 4   
+267 cx 7 8   
+-1 swap 1 0   -1 swap 7 2   269 tdg -1 8   275 h -1 5   276 t -1 3   
+278 t -1 5   
+-1 swap 9 4   -1 swap 6 5   
+268 tdg -1 2   271 cx 7 8   
+-1 swap 8 3   272 cx 2 7   
+274 h -1 7   
+277 t -1 7   
+273 cx 3 2   279 cx 7 8   
+-1 swap 2 1   280 cx 6 7   
+-1 swap 5 0   -1 swap 8 7   
+-1 swap 4 3   
+
+-1 swap 2 1   -1 swap 5 0   281 cx 7 6   282 tdg -1 8   
+-1 swap 4 3   283 cx 7 8   286 t -1 6   
+-1 swap 7 6   285 tdg -1 8   
+-1 swap 2 1   
+-1 swap 5 0   -1 swap 9 4   293 t -1 3   
+284 tdg -1 6   287 cx 7 8   
+288 cx 6 7   292 t -1 1   
+-1 swap 2 1   -1 swap 7 6   
+
+
+-1 swap 5 0   -1 swap 9 4   289 cx 8 7   290 h -1 6   295 cx 3 2   
+-1 swap 7 2   291 h -1 8   
+294 t -1 8   
+-1 swap 6 5   296 cx 8 3   
+297 cx 7 8   298 tdg -1 3   
+-1 swap 8 3   
+-1 swap 2 1   
+
+-1 swap 9 4   -1 swap 6 5   299 cx 7 8   302 t -1 3   
+-1 swap 1 0   300 tdg -1 7   301 tdg -1 8   
+303 cx 3 8   
+-1 swap 3 2   -1 swap 6 5   
+-1 swap 1 0   
+
+304 cx 7 2   307 h -1 5   
+-1 swap 9 4   305 cx 8 7   306 h -1 2   308 t -1 1   310 t -1 5   
+-1 swap 6 5   309 t -1 2   
+311 cx 2 1   
+-1 swap 4 3   -1 swap 7 2   -1 swap 9 8   
+-1 swap 5 0   
+
+-1 swap 8 3   -1 swap 9 4   312 cx 6 7   
+-1 swap 5 0   313 cx 1 6   314 tdg -1 7   
+-1 swap 7 6   
+-1 swap 3 2   -1 swap 9 8   
+
+315 cx 1 6   318 t -1 7   
+-1 swap 8 3   316 tdg -1 1   317 tdg -1 6   
+-1 swap 5 0   319 cx 7 6   325 t -1 4   
+-1 swap 6 1   -1 swap 9 4   
+-1 swap 3 2   324 t -1 8   
+
+320 cx 6 7   327 cx 9 8   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   -1 swap 7 6   
+
+
+-1 swap 4 3   321 cx 2 7   322 h -1 6   
+-1 swap 5 0   -1 swap 6 1   -1 swap 8 7   323 h -1 2   
+326 t -1 2   
+-1 swap 9 4   328 cx 2 3   
+329 cx 7 2   330 tdg -1 3   
+-1 swap 1 0   -1 swap 7 2   
+-1 swap 9 4   
+
+331 cx 2 3   334 t -1 7   
+-1 swap 6 1   -1 swap 7 2   333 tdg -1 3   339 h -1 0   340 t -1 8   
+-1 swap 9 8   342 t -1 0   
+
+332 tdg -1 7   335 cx 2 3   
+-1 swap 8 3   336 cx 7 2   
+-1 swap 2 1   
+
+-1 swap 4 3   -1 swap 5 0   337 cx 8 7   
+338 h -1 1   341 t -1 8   
+-1 swap 2 1   -1 swap 7 6   343 cx 8 9   
+-1 swap 9 4   
+
+-1 swap 2 1   -1 swap 6 5   -1 swap 8 7   
+-1 swap 4 3   
+
+344 cx 6 7   
+-1 swap 3 2   -1 swap 6 1   346 tdg -1 7   
+-1 swap 5 0   
+
+-1 swap 9 4   345 cx 2 1   
+-1 swap 8 3   -1 swap 6 5   347 cx 2 7   350 t -1 1   
+-1 swap 2 1   349 tdg -1 7   
+-1 swap 9 4   
+356 t -1 3   
+-1 swap 8 3   348 tdg -1 1   351 cx 2 7   
+-1 swap 9 4   -1 swap 7 6   352 cx 1 2   
+-1 swap 2 1   
+
+-1 swap 7 6   357 t -1 9   
+-1 swap 1 0   -1 swap 4 3   359 cx 9 8   
+-1 swap 9 8   
+-1 swap 6 5   353 cx 7 2   
+-1 swap 1 0   -1 swap 4 3   355 h -1 7   
+358 t -1 7   
+360 cx 7 8   
+-1 swap 4 3   -1 swap 6 5   -1 swap 9 8   354 h -1 1   
+
+-1 swap 1 0   
+-1 swap 4 3   361 cx 8 7   362 tdg -1 9   
+363 cx 8 9   366 t -1 7   
+-1 swap 2 1   -1 swap 5 0   -1 swap 8 7   365 tdg -1 9   
+372 t -1 4   373 t -1 3   
+
+-1 swap 2 1   364 tdg -1 7   367 cx 8 9   
+368 cx 7 8   375 cx 3 4   
+-1 swap 4 3   -1 swap 6 5   -1 swap 8 7   
+-1 swap 1 0   
+
+-1 swap 7 2   369 cx 9 8   
+-1 swap 6 1   -1 swap 8 3   371 h -1 9   
+-1 swap 5 0   374 t -1 9   
+-1 swap 7 2   376 cx 9 4   
+-1 swap 4 3   -1 swap 6 1   377 cx 8 9   
+382 t -1 9   
+-1 swap 7 2   
+-1 swap 6 1   -1 swap 9 4   378 tdg -1 3   
+379 cx 8 3   
+-1 swap 5 0   370 h -1 2   380 tdg -1 8   381 tdg -1 3   
+-1 swap 2 1   -1 swap 7 6   383 cx 4 3   
+
+-1 swap 9 4   389 t -1 0   
+-1 swap 1 0   -1 swap 7 2   
+
+384 cx 8 9   
+-1 swap 9 4   385 cx 3 8   388 t -1 2   
+-1 swap 6 5   387 h -1 3   391 cx 1 2   
+-1 swap 2 1   390 t -1 3   
+-1 swap 9 4   -1 swap 8 7   
+-1 swap 5 0   
+392 cx 3 2   
+-1 swap 2 1   -1 swap 9 8   
+-1 swap 5 0   -1 swap 7 6   
+
+-1 swap 9 8   393 cx 2 3   394 tdg -1 1   
+395 cx 2 1   398 t -1 3   
+-1 swap 3 2   -1 swap 5 0   -1 swap 7 6   397 tdg -1 1   
+386 h -1 9   
+403 h -1 9   
+-1 swap 5 0   -1 swap 7 6   396 tdg -1 3   399 cx 2 1   406 t -1 9   
+400 cx 3 2   
+-1 swap 8 3   402 h -1 2   
+-1 swap 5 0   404 t -1 6   405 t -1 2   
+-1 swap 6 1   -1 swap 9 4   
+-1 swap 8 7   
+-1 swap 5 0   
+-1 swap 4 3   407 cx 2 1   
+401 cx 6 7   
+
+408 cx 3 2   
+-1 swap 2 1   
+-1 swap 9 4   
+-1 swap 7 6   
+409 cx 2 3   410 tdg -1 1   
+411 cx 2 1   414 t -1 3   
+-1 swap 3 2   413 tdg -1 1   419 h -1 0   420 t -1 4   
+-1 swap 5 0   -1 swap 9 4   
+-1 swap 8 7   
+412 tdg -1 3   415 cx 2 1   
+416 cx 3 2   422 t -1 5   
+418 h -1 2   
+421 t -1 2   
+-1 swap 3 2   -1 swap 9 4   -1 swap 6 5   
+-1 swap 8 7   
+
+417 cx 1 2   423 cx 3 4   
+-1 swap 5 0   -1 swap 8 3   -1 swap 7 6   
+-1 swap 2 1   
+
+424 cx 7 8   
+-1 swap 4 3   -1 swap 5 0   -1 swap 6 1   -1 swap 7 2   426 tdg -1 8   
+
+
+-1 swap 5 0   -1 swap 9 4   -1 swap 7 6   425 cx 3 2   
+427 cx 3 8   430 t -1 2   
+-1 swap 3 2   429 tdg -1 8   
+-1 swap 7 6   435 h -1 4   436 t -1 5   
+438 t -1 4   
+-1 swap 9 4   428 tdg -1 2   431 cx 3 8   
+-1 swap 1 0   -1 swap 6 5   432 cx 2 3   
+434 h -1 3   
+-1 swap 3 2   
+-1 swap 9 4   -1 swap 7 6   
+-1 swap 1 0   
+433 cx 8 3   437 t -1 2   
+-1 swap 4 3   439 cx 2 7   
+-1 swap 6 5   -1 swap 8 7   
+-1 swap 1 0   
+-1 swap 9 4   440 cx 3 2   
+-1 swap 7 2   -1 swap 6 5   441 cx 8 3   
+-1 swap 1 0   446 t -1 3   
+
+-1 swap 3 2   442 tdg -1 7   
+-1 swap 1 0   -1 swap 6 5   443 cx 8 7   
+444 tdg -1 8   445 tdg -1 7   
+-1 swap 4 3   447 cx 2 7   452 t -1 9   
+-1 swap 6 1   -1 swap 8 7   
+
+453 t -1 4   
+448 cx 7 2   455 cx 4 9   
+-1 swap 4 3   449 cx 8 7   450 h -1 2   
+-1 swap 6 5   451 h -1 8   
+-1 swap 2 1   454 t -1 8   
+456 cx 8 3   
+457 cx 9 8   458 tdg -1 3   
+-1 swap 8 3   
+-1 swap 5 0   -1 swap 6 1   -1 swap 7 2   
+
+459 cx 9 8   462 t -1 3   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   -1 swap 7 6   461 tdg -1 8   
+463 cx 3 8   
+
+-1 swap 5 0   -1 swap 7 6   -1 swap 9 8   460 tdg -1 4   469 t -1 2   
+464 cx 4 3   
+466 h -1 3   
+-1 swap 6 1   465 cx 9 4   468 t -1 7   
+-1 swap 7 2   467 h -1 9   
+-1 swap 4 3   -1 swap 9 8   
+-1 swap 5 0   -1 swap 6 1   
+471 cx 7 2   
+-1 swap 3 2   -1 swap 9 4   470 t -1 8   
+-1 swap 5 0   472 cx 8 7   
+474 tdg -1 7   
+-1 swap 7 2   473 cx 3 8   
+-1 swap 5 0   478 t -1 8   
+-1 swap 9 4   
+-1 swap 7 6   475 cx 3 2   
+-1 swap 1 0   -1 swap 8 3   477 tdg -1 2   
+484 t -1 5   
+
+476 tdg -1 8   479 cx 3 2   485 t -1 1   
+-1 swap 1 0   -1 swap 7 2   480 cx 8 3   
+-1 swap 4 3   
+
+-1 swap 5 0   -1 swap 6 1   481 cx 7 8   
+482 h -1 4   483 h -1 7   
+-1 swap 9 8   486 t -1 7   
+-1 swap 7 6   487 cx 5 0   
+-1 swap 1 0   -1 swap 3 2   
+
+-1 swap 9 4   488 cx 6 5   
+489 cx 1 6   490 tdg -1 5   
+-1 swap 6 5   
+-1 swap 4 3   
+
+-1 swap 7 2   491 cx 1 6   494 t -1 5   
+-1 swap 1 0   -1 swap 4 3   493 tdg -1 6   499 h -1 9   
+495 cx 5 6   502 t -1 9   
+-1 swap 7 2   -1 swap 9 8   
+-1 swap 4 3   -1 swap 6 1   492 tdg -1 0   
+-1 swap 5 0   
+
+-1 swap 3 2   -1 swap 6 1   
+496 cx 5 0   
+-1 swap 8 7   498 h -1 0   
+-1 swap 9 4   497 cx 6 5   500 t -1 2   501 t -1 0   
+-1 swap 1 0   
+-1 swap 8 3   -1 swap 7 6   
+-1 swap 9 4   
+503 cx 1 2   
+-1 swap 5 0   -1 swap 8 7   504 cx 6 1   
+-1 swap 2 1   
+
+
+-1 swap 5 0   505 cx 1 6   506 tdg -1 2   
+-1 swap 9 4   -1 swap 8 7   507 cx 1 2   510 t -1 6   
+-1 swap 6 1   509 tdg -1 2   
+516 t -1 0   
+515 h -1 8   
+508 tdg -1 6   511 cx 1 2   518 t -1 8   
+-1 swap 7 2   512 cx 6 1   
+514 h -1 1   
+-1 swap 9 4   517 t -1 1   
+513 cx 7 6   519 cx 1 0   
+-1 swap 2 1   -1 swap 5 0   -1 swap 8 7   
+
+-1 swap 9 4   
+-1 swap 6 5   520 cx 7 2   
+-1 swap 2 1   
+-1 swap 4 3   
+521 cx 6 7   
+-1 swap 5 0   -1 swap 7 2   -1 swap 9 8   522 tdg -1 1   
+-1 swap 4 3   523 cx 6 1   
+524 tdg -1 6   525 tdg -1 1   
+-1 swap 5 0   -1 swap 7 6   526 t -1 2   531 h -1 8   
+527 cx 2 1   532 t -1 3   534 t -1 8   
+-1 swap 8 3   -1 swap 9 4   
+-1 swap 5 0   -1 swap 6 1   528 cx 7 2   
+530 h -1 2   
+
+-1 swap 3 2   -1 swap 5 0   -1 swap 9 4   529 cx 6 7   
+533 t -1 7   
+-1 swap 6 1   535 cx 7 8   
+-1 swap 4 3   536 cx 2 7   
+-1 swap 5 0   -1 swap 8 7   
+
+-1 swap 6 1   
+-1 swap 5 0   -1 swap 9 4   537 cx 7 2   538 tdg -1 8   
+539 cx 7 8   542 t -1 2   
+-1 swap 6 1   -1 swap 7 2   541 tdg -1 8   
+548 t -1 9   
+-1 swap 5 0   -1 swap 9 4   
+540 tdg -1 2   543 cx 7 8   549 t -1 1   
+-1 swap 8 3   544 cx 2 7   
+-1 swap 2 1   -1 swap 6 5   546 h -1 7   
+
+
+-1 swap 3 2   -1 swap 5 0   -1 swap 7 6   -1 swap 9 8   
+
+
+-1 swap 9 8   545 cx 2 1   551 cx 3 4   
+-1 swap 7 6   547 h -1 2   
+-1 swap 1 0   550 t -1 2   
+552 cx 2 3   
+-1 swap 4 3   -1 swap 6 5   -1 swap 9 8   
+-1 swap 1 0   
+
+-1 swap 8 7   553 cx 3 2   554 tdg -1 4   
+555 cx 3 4   558 t -1 2   
+-1 swap 1 0   -1 swap 3 2   557 tdg -1 4   
+-1 swap 9 8   564 t -1 6   565 t -1 7   
+
+-1 swap 5 0   -1 swap 7 6   556 tdg -1 2   559 cx 3 4   
+560 cx 2 3   
+-1 swap 4 3   -1 swap 9 8   
+-1 swap 7 6   
+
+-1 swap 9 4   561 cx 3 2   
+-1 swap 1 0   563 h -1 3   567 cx 7 6   
+-1 swap 7 2   566 t -1 3   
+562 h -1 9   
+-1 swap 1 0   
+568 cx 3 2   
+-1 swap 8 3   -1 swap 7 6   570 tdg -1 2   
+-1 swap 1 0   
+
+569 cx 7 8   
+-1 swap 1 0   -1 swap 4 3   571 cx 7 2   574 t -1 8   
+-1 swap 8 7   573 tdg -1 2   
+-1 swap 6 5   
+-1 swap 9 4   580 t -1 0   581 t -1 1   
+572 tdg -1 8   575 cx 7 2   
+-1 swap 3 2   576 cx 8 7   583 cx 1 0   
+-1 swap 9 4   578 h -1 7   
+
+-1 swap 2 1   577 cx 3 8   
+-1 swap 9 4   579 h -1 3   
+-1 swap 7 6   582 t -1 3   
+-1 swap 1 0   584 cx 3 2   
+-1 swap 3 2   
+-1 swap 9 4   -1 swap 8 7   
+
+585 cx 1 2   586 tdg -1 3   
+-1 swap 2 1   
+-1 swap 9 4   -1 swap 6 5   
+-1 swap 8 7   
+587 cx 2 3   590 t -1 1   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   589 tdg -1 3   
+-1 swap 8 7   
+
+-1 swap 9 4   588 tdg -1 1   591 cx 2 3   595 h -1 0   
+-1 swap 5 0   592 cx 1 2   596 t -1 7   
+594 h -1 2   
+-1 swap 9 8   597 t -1 2   
+598 t -1 5   599 cx 2 7   
+-1 swap 2 1   -1 swap 5 0   
+-1 swap 9 8   
+-1 swap 7 6   
+593 cx 3 2   600 cx 0 1   
+-1 swap 4 3   -1 swap 5 0   -1 swap 9 8   602 tdg -1 1   
+
+-1 swap 7 2   
+601 cx 6 5   
+-1 swap 8 3   603 cx 6 1   606 t -1 5   
+-1 swap 7 2   -1 swap 6 5   605 tdg -1 1   
+-1 swap 9 4   
+-1 swap 8 3   
+604 tdg -1 5   607 cx 6 1   612 t -1 7   
+-1 swap 1 0   608 cx 5 6   
+610 h -1 6   611 h -1 3   
+-1 swap 9 8   613 t -1 6   614 t -1 3   
+609 cx 0 5   615 cx 6 7   
+-1 swap 3 2   -1 swap 6 1   
+-1 swap 5 0   
+
+-1 swap 9 4   616 cx 2 1   
+-1 swap 6 5   617 cx 7 2   618 tdg -1 1   
+-1 swap 2 1   
+-1 swap 9 8   
+-1 swap 4 3   -1 swap 6 5   
+619 cx 7 2   622 t -1 1   
+-1 swap 9 8   620 tdg -1 7   621 tdg -1 2   
+-1 swap 6 5   623 cx 1 2   627 h -1 3   
+-1 swap 2 1   630 t -1 3   
+-1 swap 8 3   -1 swap 9 4   
+
+-1 swap 6 1   624 cx 7 2   
+626 h -1 2   628 t -1 4   
+629 t -1 2   
+-1 swap 1 0   -1 swap 4 3   625 cx 6 7   
+-1 swap 6 5   -1 swap 8 7   
+
+-1 swap 1 0   -1 swap 9 4   631 cx 2 3   
+-1 swap 6 5   632 cx 7 2   
+-1 swap 3 2   
+-1 swap 9 8   
+-1 swap 5 0   -1 swap 6 1   
+633 cx 2 7   634 tdg -1 3   
+635 cx 2 3   638 t -1 7   
+-1 swap 6 1   -1 swap 7 2   637 tdg -1 3   
+-1 swap 9 8   
+
+636 tdg -1 7   639 cx 2 3   645 t -1 6   
+640 cx 7 2   644 t -1 8   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   -1 swap 8 7   
+
+
+-1 swap 5 0   -1 swap 9 4   -1 swap 7 6   641 cx 3 8   642 h -1 1   
+643 h -1 3   
+-1 swap 3 2   
+-1 swap 9 8   647 cx 7 6   
+-1 swap 5 0   -1 swap 6 1   
+646 t -1 2   
+-1 swap 9 4   648 cx 2 7   
+649 cx 1 2   650 tdg -1 7   
+-1 swap 8 3   -1 swap 7 6   654 t -1 2   
+-1 swap 9 4   
+
+651 cx 1 6   
+-1 swap 2 1   653 tdg -1 6   
+-1 swap 5 0   -1 swap 8 3   
+
+652 tdg -1 2   655 cx 1 6   
+-1 swap 8 3   -1 swap 7 6   656 cx 2 1   660 t -1 5   
+658 h -1 1   
+-1 swap 1 0   
+-1 swap 4 3   657 cx 7 2   661 t -1 8   
+-1 swap 6 5   -1 swap 8 7   
+-1 swap 1 0   
+-1 swap 9 4   
+-1 swap 3 2   659 h -1 8   663 cx 7 6   
+662 t -1 8   
+664 cx 8 7   
+-1 swap 2 1   -1 swap 4 3   -1 swap 5 0   -1 swap 7 6   
+
+
+-1 swap 2 1   665 cx 7 8   666 tdg -1 6   
+667 cx 7 6   670 t -1 8   
+-1 swap 4 3   -1 swap 5 0   -1 swap 8 7   669 tdg -1 6   
+-1 swap 2 1   677 t -1 9   
+
+-1 swap 5 0   -1 swap 9 4   668 tdg -1 8   671 cx 7 6   
+-1 swap 2 1   672 cx 8 7   
+-1 swap 7 6   
+-1 swap 4 3   
+676 t -1 2   
+-1 swap 5 0   673 cx 7 8   674 h -1 6   
+675 h -1 7   679 cx 3 2   
+-1 swap 6 1   -1 swap 8 3   -1 swap 9 4   678 t -1 7   
+
+
+-1 swap 4 3   -1 swap 5 0   680 cx 7 8   
+681 cx 2 7   682 tdg -1 8   
+-1 swap 6 1   -1 swap 8 7   
+-1 swap 9 4   
+
+-1 swap 6 1   683 cx 2 7   686 t -1 8   
+-1 swap 5 0   684 tdg -1 2   685 tdg -1 7   692 t -1 9   
+-1 swap 4 3   687 cx 8 7   
+-1 swap 7 2   691 h -1 1   
+694 t -1 1   
+
+-1 swap 5 0   688 cx 7 8   
+689 cx 2 7   690 h -1 8   
+-1 swap 2 1   -1 swap 7 6   693 t -1 8   
+695 cx 8 9   
+-1 swap 8 3   
+-1 swap 9 4   
+-1 swap 6 5   
+696 cx 2 3   
+-1 swap 4 3   
+-1 swap 1 0   -1 swap 6 5   
+-1 swap 9 8   
+697 cx 3 2   698 tdg -1 4   
+-1 swap 1 0   699 cx 3 4   702 t -1 2   
+-1 swap 3 2   -1 swap 9 8   701 tdg -1 4   707 h -1 7   
+710 t -1 7   
+-1 swap 1 0   
+-1 swap 7 6   -1 swap 9 8   700 tdg -1 2   703 cx 3 4   
+704 cx 2 3   
+-1 swap 1 0   706 h -1 3   
+-1 swap 7 6   708 t -1 9   709 t -1 3   
+-1 swap 8 3   
+
+
+-1 swap 4 3   711 cx 8 9   
+-1 swap 6 1   712 cx 7 8   
+-1 swap 5 0   -1 swap 9 8   
+705 cx 3 2   
+-1 swap 3 2   -1 swap 6 1   
+713 cx 8 7   714 tdg -1 9   
+715 cx 8 9   718 t -1 7   
+-1 swap 2 1   -1 swap 6 5   -1 swap 8 7   717 tdg -1 9   
+
+
+-1 swap 2 1   716 tdg -1 7   719 cx 8 9   723 h -1 6   725 t -1 5   
+-1 swap 4 3   -1 swap 6 5   720 cx 7 8   
+-1 swap 9 8   
+-1 swap 2 1   
+-1 swap 4 3   -1 swap 5 0   
+721 cx 8 7   722 h -1 9   
+-1 swap 2 1   -1 swap 8 7   
+726 t -1 0   
+-1 swap 4 3   
+-1 swap 1 0   -1 swap 9 8   724 t -1 7   
+727 cx 6 7   
+-1 swap 7 2   
+-1 swap 5 0   728 cx 1 6   
+-1 swap 4 3   730 tdg -1 6   
+-1 swap 7 6   -1 swap 9 8   729 cx 2 1   
+-1 swap 5 0   734 t -1 1   
+-1 swap 4 3   
+731 cx 2 7   
+-1 swap 2 1   -1 swap 5 0   733 tdg -1 7   
+-1 swap 9 4   740 t -1 8   741 t -1 3   
+-1 swap 8 3   
+732 tdg -1 1   735 cx 2 7   
+-1 swap 7 6   736 cx 1 2   
+738 h -1 2   743 cx 8 3   
+
+-1 swap 5 0   -1 swap 9 4   -1 swap 8 7   737 cx 6 1   
+739 h -1 6   
+-1 swap 3 2   742 t -1 6   
+744 cx 6 7   
+-1 swap 5 0   -1 swap 6 1   746 tdg -1 7   
+
+-1 swap 4 3   
+-1 swap 5 0   -1 swap 9 8   745 cx 2 1   
+747 cx 2 7   750 t -1 1   
+-1 swap 2 1   749 tdg -1 7   
+-1 swap 9 4   -1 swap 6 5   756 t -1 8   
+
+748 tdg -1 1   751 cx 2 7   
+-1 swap 5 0   -1 swap 7 6   -1 swap 9 8   752 cx 1 2   757 t -1 4   
+754 h -1 2   
+
+-1 swap 7 2   -1 swap 9 4   753 cx 6 1   
+755 h -1 6   
+758 t -1 6   
+759 cx 9 4   
+-1 swap 1 0   -1 swap 7 6   -1 swap 9 8   
+-1 swap 3 2   
+
+760 cx 7 8   
+-1 swap 4 3   -1 swap 7 2   762 tdg -1 8   
+-1 swap 5 0   
+
+761 cx 3 2   
+-1 swap 9 4   -1 swap 7 6   763 cx 3 8   766 t -1 2   
+-1 swap 3 2   765 tdg -1 8   
+-1 swap 1 0   
+773 t -1 6   
+-1 swap 9 4   -1 swap 6 5   764 tdg -1 2   767 cx 3 8   
+-1 swap 1 0   -1 swap 8 7   768 cx 2 3   
+770 h -1 3   
+
+-1 swap 9 4   769 cx 7 2   772 t -1 0   
+-1 swap 2 1   771 h -1 7   775 cx 5 0   
+-1 swap 6 5   774 t -1 7   
+-1 swap 9 4   
+-1 swap 8 3   
+-1 swap 1 0   776 cx 7 6   
+-1 swap 7 2   -1 swap 9 4   778 tdg -1 6   
+
+-1 swap 5 0   
+-1 swap 9 8   777 cx 1 2   
+779 cx 1 6   782 t -1 2   
+-1 swap 2 1   781 tdg -1 6   788 t -1 5   
+-1 swap 5 0   -1 swap 8 7   787 h -1 9   
+790 t -1 9   
+780 tdg -1 2   783 cx 1 6   
+-1 swap 7 6   784 cx 2 1   
+-1 swap 9 4   786 h -1 1   
+789 t -1 1   
+-1 swap 6 5   785 cx 7 2   791 cx 1 0   
+-1 swap 2 1   -1 swap 4 3   
+-1 swap 8 7   
+-1 swap 6 5   
+-1 swap 1 0   -1 swap 9 4   792 cx 3 2   
+-1 swap 3 2   -1 swap 8 7   
+
+-1 swap 6 5   
+793 cx 1 2   794 tdg -1 3   
+-1 swap 2 1   
+-1 swap 9 4   -1 swap 6 5   
+-1 swap 8 7   
+795 cx 2 3   798 t -1 1   
+-1 swap 2 1   -1 swap 5 0   797 tdg -1 3   803 h -1 4   
+806 t -1 4   
+-1 swap 9 4   
+-1 swap 7 6   796 tdg -1 1   799 cx 2 3   804 t -1 0   
+800 cx 1 2   
+-1 swap 9 8   802 h -1 2   
+-1 swap 2 1   -1 swap 6 5   
+
+-1 swap 8 7   
+801 cx 3 2   805 t -1 1   
+807 cx 1 0   
+-1 swap 5 0   -1 swap 9 4   -1 swap 7 6   
+
+-1 swap 3 2   
+-1 swap 9 8   808 cx 6 1   
+809 cx 5 6   810 tdg -1 1   
+-1 swap 6 1   
+-1 swap 9 4   
+-1 swap 7 2   
+-1 swap 8 3   811 cx 5 6   814 t -1 1   
+-1 swap 5 0   813 tdg -1 6   
+-1 swap 7 2   815 cx 1 6   
+-1 swap 8 3   -1 swap 9 4   
+-1 swap 6 5   812 tdg -1 0   
+816 cx 0 1   
+-1 swap 8 7   818 h -1 1   
+-1 swap 4 3   817 cx 5 0   820 t -1 6   821 t -1 1   
+-1 swap 5 0   823 cx 1 6   
+-1 swap 2 1   819 h -1 7   
+-1 swap 8 3   822 t -1 7   
+-1 swap 9 4   
+-1 swap 1 0   824 cx 7 2   
+825 cx 6 7   826 tdg -1 2   
+-1 swap 7 2   
+-1 swap 4 3   
+-1 swap 1 0   
+827 cx 6 7   830 t -1 2   
+-1 swap 8 3   -1 swap 9 4   828 tdg -1 6   829 tdg -1 7   
+831 cx 2 7   836 t -1 5   837 t -1 0   
+-1 swap 5 0   -1 swap 7 6   
+
+
+832 cx 7 2   839 cx 5 0   
+-1 swap 1 0   833 cx 6 7   834 h -1 2   
+835 h -1 6   
+-1 swap 7 2   -1 swap 8 3   -1 swap 9 4   838 t -1 6   
+840 cx 6 5   
+841 cx 1 6   842 tdg -1 5   
+-1 swap 1 0   -1 swap 4 3   846 t -1 6   
+-1 swap 7 2   -1 swap 9 8   
+
+843 cx 0 5   
+-1 swap 1 0   -1 swap 4 3   845 tdg -1 5   
+-1 swap 9 8   847 cx 6 5   
+
+-1 swap 3 2   -1 swap 5 0   844 tdg -1 1   
+-1 swap 9 8   848 cx 1 6   
+850 h -1 6   
+-1 swap 6 5   849 cx 0 1   
+-1 swap 1 0   -1 swap 8 7   
+-1 swap 9 4   
+-1 swap 3 2   853 t -1 6   
+851 h -1 1   852 t -1 7   
+-1 swap 9 4   854 t -1 1   855 cx 6 7   
+856 cx 1 6   
+-1 swap 2 1   858 tdg -1 6   
+
+-1 swap 5 0   
+857 cx 7 2   
+859 cx 7 6   862 t -1 2   
+-1 swap 5 0   -1 swap 7 2   -1 swap 9 4   861 tdg -1 6   
+-1 swap 8 3   
+
+860 tdg -1 2   863 cx 7 6   868 t -1 9   869 t -1 4   
+-1 swap 6 1   -1 swap 8 3   864 cx 2 7   871 cx 4 9   
+-1 swap 5 0   866 h -1 7   
+
+-1 swap 4 3   -1 swap 7 6   -1 swap 9 8   865 cx 1 2   
+867 h -1 1   
+-1 swap 2 1   
+-1 swap 6 5   
+-1 swap 8 7   
+870 t -1 2   
+-1 swap 6 1   872 cx 2 3   
+873 cx 7 2   874 tdg -1 3   
+-1 swap 3 2   
+-1 swap 5 0   -1 swap 9 8   
+
+-1 swap 6 1   875 cx 7 2   878 t -1 3   
+-1 swap 9 4   -1 swap 8 7   877 tdg -1 2   883 h -1 0   
+879 cx 3 2   886 t -1 0   
+-1 swap 1 0   
+-1 swap 7 2   -1 swap 9 4   876 tdg -1 8   
+880 cx 8 3   
+-1 swap 6 1   882 h -1 3   884 t -1 0   
+-1 swap 3 2   -1 swap 9 4   881 cx 7 8   
+
+-1 swap 1 0   -1 swap 7 6   
+-1 swap 8 3   885 t -1 2   
+
+-1 swap 6 5   887 cx 2 1   
+888 cx 7 2   
+-1 swap 2 1   
+-1 swap 5 0   -1 swap 9 8   
+-1 swap 4 3   
+889 cx 2 7   890 tdg -1 1   
+-1 swap 6 5   -1 swap 9 8   891 cx 2 1   894 t -1 7   
+-1 swap 4 3   -1 swap 7 2   893 tdg -1 1   
+
+-1 swap 9 8   899 h -1 5   900 t -1 6   
+-1 swap 4 3   -1 swap 5 0   892 tdg -1 7   895 cx 2 1   
+-1 swap 6 1   896 cx 7 2   
+898 h -1 2   
+-1 swap 8 3   901 t -1 2   902 t -1 0   
+897 cx 6 7   903 cx 2 1   
+-1 swap 1 0   -1 swap 6 5   
+-1 swap 8 3   -1 swap 9 4   
+
+904 cx 1 2   
+-1 swap 8 3   905 cx 0 1   906 tdg -1 2   
+-1 swap 1 0   -1 swap 9 4   
+-1 swap 7 6   
+
+-1 swap 8 3   907 cx 1 2   910 t -1 0   
+-1 swap 6 5   908 tdg -1 1   909 tdg -1 2   916 t -1 9   917 t -1 7   
+
+-1 swap 1 0   -1 swap 8 7   915 h -1 3   
+918 t -1 3   
+
+-1 swap 6 5   911 cx 1 2   919 cx 8 9   
+912 cx 0 1   920 cx 3 8   
+-1 swap 1 0   -1 swap 9 8   
+-1 swap 7 6   
+
+-1 swap 2 1   914 h -1 0   921 cx 8 3   922 tdg -1 9   
+-1 swap 5 0   -1 swap 7 6   923 cx 8 9   926 t -1 3   
+-1 swap 8 3   925 tdg -1 9   
+-1 swap 2 1   
+
+-1 swap 5 0   924 tdg -1 3   927 cx 8 9   
+-1 swap 9 4   913 cx 2 1   928 cx 3 8   
+930 h -1 8   932 t -1 1   933 t -1 2   
+-1 swap 5 0   -1 swap 8 7   935 cx 2 1   
+929 cx 4 3   
+-1 swap 3 2   931 h -1 4   
+-1 swap 7 6   934 t -1 4   
+-1 swap 5 0   -1 swap 9 8   
+-1 swap 2 1   936 cx 4 3   
+-1 swap 4 3   
+-1 swap 6 5   -1 swap 8 7   
+-1 swap 1 0   
+937 cx 2 3   938 tdg -1 4   
+-1 swap 3 2   -1 swap 7 6   
+-1 swap 1 0   -1 swap 9 8   
+
+939 cx 3 4   942 t -1 2   
+-1 swap 1 0   -1 swap 3 2   -1 swap 7 6   941 tdg -1 4   
+948 t -1 9   
+
+-1 swap 1 0   -1 swap 7 6   940 tdg -1 2   943 cx 3 4   
+-1 swap 9 8   944 cx 2 3   
+-1 swap 4 3   
+-1 swap 5 0   -1 swap 6 1   949 t -1 7   
+951 cx 7 8   
+-1 swap 8 7   945 cx 3 2   946 h -1 4   
+-1 swap 1 0   947 h -1 3   
+-1 swap 9 4   950 t -1 3   
+952 cx 3 8   
+-1 swap 3 2   954 tdg -1 8   
+
+-1 swap 5 0   
+-1 swap 9 4   953 cx 7 2   
+955 cx 7 8   958 t -1 2   
+-1 swap 5 0   -1 swap 7 2   957 tdg -1 8   
+
+-1 swap 9 4   
+-1 swap 6 1   956 tdg -1 2   959 cx 7 8   964 t -1 5   965 t -1 0   
+-1 swap 8 3   960 cx 2 7   967 cx 0 5   
+962 h -1 7   
+-1 swap 1 0   -1 swap 9 4   
+961 cx 3 2   
+-1 swap 3 2   -1 swap 6 5   
+
+
+-1 swap 8 3   -1 swap 9 4   -1 swap 7 6   963 h -1 2   
+966 t -1 2   
+968 cx 2 1   
+-1 swap 8 3   -1 swap 9 4   969 cx 7 2   970 tdg -1 1   
+-1 swap 2 1   -1 swap 6 5   
+
+
+971 cx 7 2   974 t -1 1   
+-1 swap 8 3   -1 swap 9 4   -1 swap 7 6   973 tdg -1 2   979 h -1 5   
+975 cx 1 2   982 t -1 5   
+
+-1 swap 5 0   -1 swap 7 2   -1 swap 9 4   972 tdg -1 6   980 t -1 8   
+-1 swap 8 3   976 cx 6 1   
+978 h -1 1   
+-1 swap 5 0   977 cx 7 6   981 t -1 1   
+-1 swap 3 2   -1 swap 9 4   
+
+-1 swap 6 5   
+-1 swap 4 3   983 cx 1 2   
+-1 swap 7 2   
+-1 swap 5 0   -1 swap 9 8   984 cx 6 1   
+986 tdg -1 1   
+-1 swap 2 1   -1 swap 4 3   985 cx 7 6   
+-1 swap 5 0   -1 swap 9 8   990 t -1 6   
+
+987 cx 7 2   
+-1 swap 1 0   -1 swap 9 4   -1 swap 7 6   989 tdg -1 2   996 t -1 8   
+
+
+988 tdg -1 6   991 cx 7 2   995 h -1 4   
+-1 swap 2 1   992 cx 6 7   998 t -1 4   
+994 h -1 7   
+997 t -1 7   
+-1 swap 6 1   999 cx 7 8   
+-1 swap 4 3   -1 swap 7 2   
+-1 swap 5 0   
+993 cx 6 1   
+-1 swap 9 4   1000 cx 3 2   
+1001 cx 8 3   1002 tdg -1 2   
+-1 swap 3 2   
+-1 swap 5 0   
+-1 swap 9 4   -1 swap 7 6   
+1003 cx 8 3   1006 t -1 2   
+-1 swap 1 0   1004 tdg -1 8   1005 tdg -1 3   
+-1 swap 9 4   -1 swap 7 6   1007 cx 2 3   
+-1 swap 8 3   
+
+-1 swap 9 4   1012 t -1 7   
+-1 swap 6 1   1008 cx 3 2   
+-1 swap 8 3   1010 h -1 2   
+1011 h -1 4   1013 t -1 2   
+-1 swap 5 0   -1 swap 6 1   1014 t -1 4   1015 cx 2 7   
+-1 swap 3 2   -1 swap 8 7   
+
+-1 swap 1 0   -1 swap 6 5   
+1009 cx 2 7   1016 cx 4 3   
+-1 swap 9 4   1018 tdg -1 3   
+-1 swap 1 0   -1 swap 6 5   
+-1 swap 7 2   
+1017 cx 8 9   
+-1 swap 1 0   1019 cx 8 3   1022 t -1 9   
+-1 swap 7 6   -1 swap 9 8   1021 tdg -1 3   
+1028 t -1 2   
+
+1020 tdg -1 9   1023 cx 8 3   1029 t -1 6   
+-1 swap 4 3   -1 swap 5 0   -1 swap 6 1   1024 cx 9 8   
+-1 swap 8 7   
+
+-1 swap 2 1   -1 swap 6 5   1025 cx 4 9   
+-1 swap 8 7   1027 h -1 4   
+-1 swap 4 3   
+1031 cx 2 1   
+-1 swap 5 0   -1 swap 6 1   -1 swap 8 7   
+1030 t -1 3   
+1032 cx 3 2   
+-1 swap 1 0   -1 swap 8 3   -1 swap 7 6   1034 tdg -1 2   
+
+-1 swap 9 4   
+-1 swap 1 0   -1 swap 6 5   1033 cx 7 8   
+1035 cx 7 2   1038 t -1 8   
+-1 swap 4 3   -1 swap 8 7   1037 tdg -1 2   
+-1 swap 6 1   1026 h -1 5   
+
+1036 tdg -1 8   1039 cx 7 2   1045 t -1 4   
+-1 swap 3 2   -1 swap 6 5   1040 cx 8 7   1044 t -1 1   
+1042 h -1 7   
+
+-1 swap 2 1   -1 swap 4 3   -1 swap 5 0   -1 swap 7 6   -1 swap 9 8   
+
+
+1041 cx 4 9   1047 cx 3 2   
+-1 swap 5 0   -1 swap 7 2   1043 h -1 4   
+-1 swap 6 1   1046 t -1 4   
+1048 cx 4 3   
+-1 swap 5 0   -1 swap 9 4   -1 swap 8 7   1050 tdg -1 3   
+-1 swap 6 1   
+
+1049 cx 8 9   
+-1 swap 5 0   -1 swap 6 1   -1 swap 7 2   1051 cx 8 3   1054 t -1 9   
+-1 swap 9 8   1053 tdg -1 3   
+
+-1 swap 5 0   -1 swap 7 2   
+1052 tdg -1 9   1055 cx 8 3   
+-1 swap 4 3   1056 cx 9 8   
+-1 swap 7 2   1058 h -1 8   1060 t -1 5   1061 t -1 0   
+-1 swap 1 0   -1 swap 6 5   
+1057 cx 4 9   
+-1 swap 3 2   1059 h -1 4   
+1062 t -1 4   1063 cx 1 6   
+-1 swap 5 0   -1 swap 8 7   
+-1 swap 2 1   -1 swap 4 3   
+
+
+-1 swap 5 0   -1 swap 9 4   -1 swap 7 6   1064 cx 3 2   
+-1 swap 8 3   1066 tdg -1 2   
+
+-1 swap 5 0   -1 swap 6 1   
+1065 cx 7 8   
+-1 swap 4 3   1067 cx 7 2   1070 t -1 8   
+-1 swap 6 5   -1 swap 8 7   1069 tdg -1 2   1075 h -1 1   
+-1 swap 1 0   
+-1 swap 9 4   1076 t -1 3   
+1068 tdg -1 8   1071 cx 7 2   
+-1 swap 3 2   1072 cx 8 7   1078 t -1 0   
+1074 h -1 7   
+1077 t -1 7   
+1073 cx 3 8   1079 cx 7 2   
+-1 swap 1 0   -1 swap 8 3   -1 swap 7 6   
+-1 swap 9 4   
+
+-1 swap 8 7   1080 cx 1 6   
+1081 cx 2 1   1082 tdg -1 6   
+-1 swap 2 1   -1 swap 4 3   
+-1 swap 5 0   
+-1 swap 9 8   
+1083 cx 1 6   1086 t -1 2   
+-1 swap 2 1   1085 tdg -1 6   1092 t -1 0   
+-1 swap 5 0   -1 swap 8 7   1091 h -1 9   
+1094 t -1 9   
+1084 tdg -1 2   1087 cx 1 6   
+-1 swap 7 6   1088 cx 2 1   
+-1 swap 5 0   -1 swap 8 3   -1 swap 9 4   1090 h -1 1   
+1093 t -1 1   
+-1 swap 7 2   
+-1 swap 4 3   -1 swap 6 5   1095 cx 1 0   
+-1 swap 9 8   
+1089 cx 2 7   
+-1 swap 3 2   
+-1 swap 7 6   
+
+-1 swap 8 3   1096 cx 2 1   
+-1 swap 1 0   -1 swap 6 5   
+
+-1 swap 8 3   -1 swap 9 4   
+1097 cx 1 2   1098 tdg -1 0   
+1099 cx 1 0   1102 t -1 2   
+-1 swap 2 1   -1 swap 8 3   -1 swap 9 4   1101 tdg -1 0   
+
+
+-1 swap 7 6   1100 tdg -1 2   1103 cx 1 0   1107 x -1 4   1109 h -1 8   1110 t -1 3   
+-1 swap 2 1   -1 swap 4 3   -1 swap 9 8   
+
+
+1104 cx 1 2   1112 t -1 9   
+-1 swap 4 3   1105 cx 0 1   1106 h -1 2   
+1108 x -1 0   
+-1 swap 1 0   -1 swap 7 6   -1 swap 9 8   
+-1 swap 3 2   
+
+-1 swap 5 0   -1 swap 9 4   -1 swap 8 7   1111 t -1 1   
+1113 cx 1 2   
+-1 swap 6 1   
+-1 swap 5 0   -1 swap 8 3   -1 swap 9 4   
+
+1114 cx 7 6   
+1115 cx 2 7   1116 tdg -1 6   
+-1 swap 1 0   -1 swap 8 3   -1 swap 9 4   -1 swap 7 6   
+
+
+-1 swap 4 3   1117 cx 2 7   1120 t -1 6   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 8   1119 tdg -1 7   
+1121 cx 6 7   
+1126 t -1 4   
+-1 swap 5 0   -1 swap 7 2   -1 swap 9 4   1118 tdg -1 1   
+-1 swap 6 1   -1 swap 8 3   
+
+-1 swap 7 2   
+-1 swap 4 3   -1 swap 5 0   -1 swap 9 8   1122 cx 6 1   
+1124 h -1 1   
+1123 cx 7 6   1125 h -1 1   
+-1 swap 2 1   1127 t -1 7   
+-1 swap 6 5   1129 cx 7 8   
+
+-1 swap 8 3   1128 t -1 2   
+-1 swap 6 1   1130 cx 2 7   
+1132 tdg -1 7   
+-1 swap 9 4   -1 swap 8 7   1131 cx 3 2   
+-1 swap 5 0   1136 t -1 2   
+
+-1 swap 9 4   -1 swap 7 6   1133 cx 3 8   
+-1 swap 1 0   -1 swap 3 2   1135 tdg -1 8   
+
+
+-1 swap 6 1   1134 tdg -1 2   1137 cx 3 8   1141 h -1 0   
+-1 swap 8 7   1138 cx 2 3   1144 t -1 0   
+-1 swap 5 0   1140 h -1 3   
+-1 swap 4 3   
+1139 cx 7 2   
+-1 swap 6 5   -1 swap 9 8   1142 t -1 2   1143 t -1 7   
+1145 cx 7 2   
+-1 swap 2 1   -1 swap 4 3   
+-1 swap 5 0   -1 swap 9 8   1146 cx 6 7   
+1148 tdg -1 7   
+-1 swap 4 3   -1 swap 7 2   1147 cx 1 6   
+1152 t -1 6   
+-1 swap 5 0   
+1149 cx 1 2   
+-1 swap 6 1   1151 tdg -1 2   1157 h -1 9   
+1160 t -1 9   
+-1 swap 4 3   -1 swap 5 0   
+1150 tdg -1 6   1153 cx 1 2   
+-1 swap 7 2   1154 cx 6 1   
+-1 swap 5 0   1156 h -1 1   
+
+-1 swap 3 2   -1 swap 9 8   1155 cx 7 6   
+-1 swap 5 0   1158 t -1 6   1159 t -1 7   
+1161 cx 7 6   
+1162 cx 8 7   
+-1 swap 7 6   
+-1 swap 1 0   -1 swap 4 3   
+
+1163 cx 7 8   1164 tdg -1 6   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   1165 cx 7 6   1168 t -1 8   
+-1 swap 8 7   1167 tdg -1 6   
+
+-1 swap 4 3   1175 t -1 2   
+-1 swap 2 1   1166 tdg -1 8   1169 cx 7 6   
+1170 cx 8 7   
+-1 swap 8 7   
+-1 swap 2 1   
+-1 swap 4 3   -1 swap 5 0   
+1171 cx 6 7   1172 h -1 8   
+-1 swap 7 6   1173 h -1 8   
+-1 swap 1 0   -1 swap 8 3   
+
+1174 t -1 7   
+-1 swap 6 1   -1 swap 9 8   1176 t -1 3   1177 cx 2 7   
+1178 cx 3 2   
+-1 swap 7 2   
+-1 swap 6 5   
+
+1179 cx 2 3   1180 tdg -1 7   
+1181 cx 2 7   1184 t -1 3   
+-1 swap 3 2   1183 tdg -1 7   
+1190 t -1 8   1191 t -1 1   
+-1 swap 5 0   
+-1 swap 6 1   1182 tdg -1 3   1185 cx 2 7   
+-1 swap 8 7   1186 cx 3 2   
+1188 h -1 2   
+
+-1 swap 5 0   1187 cx 8 3   1193 cx 6 7   
+-1 swap 3 2   1189 h -1 8   
+-1 swap 7 6   1192 t -1 8   
+
+-1 swap 4 3   
+1194 cx 8 7   
+-1 swap 1 0   -1 swap 7 6   
+
+-1 swap 3 2   
+-1 swap 5 0   1195 cx 7 8   1196 tdg -1 6   
+1197 cx 7 6   1200 t -1 8   
+-1 swap 2 1   -1 swap 9 4   -1 swap 8 7   1199 tdg -1 6   
+
+-1 swap 5 0   
+-1 swap 2 1   1198 tdg -1 8   1201 cx 7 6   
+1202 cx 8 7   
+-1 swap 7 6   
+-1 swap 4 3   -1 swap 5 0   1206 t -1 2   1207 t -1 1   
+1209 cx 1 2   
+-1 swap 2 1   1203 cx 7 8   1204 h -1 6   
+-1 swap 9 4   1205 h -1 7   
+-1 swap 5 0   1208 t -1 7   
+1210 cx 7 2   
+-1 swap 7 6   -1 swap 9 8   1212 tdg -1 2   
+
+-1 swap 4 3   
+-1 swap 5 0   -1 swap 9 8   1211 cx 1 6   
+1213 cx 1 2   1216 t -1 6   
+-1 swap 4 3   -1 swap 6 1   1215 tdg -1 2   
+-1 swap 8 7   1223 t -1 5   
+
+-1 swap 9 4   1214 tdg -1 6   1217 cx 1 2   1222 t -1 3   
+-1 swap 7 2   -1 swap 8 3   1218 cx 6 1   
+-1 swap 1 0   -1 swap 6 5   
+-1 swap 9 4   
+
+-1 swap 1 0   -1 swap 7 6   
+
+
+-1 swap 2 1   -1 swap 9 4   1219 cx 6 5   1225 cx 7 8   
+1221 h -1 6   
+1224 t -1 6   
+-1 swap 1 0   -1 swap 4 3   1220 h -1 2   1226 cx 6 7   
+-1 swap 8 7   
+
+-1 swap 5 0   -1 swap 9 4   
+-1 swap 3 2   1227 cx 7 6   1228 tdg -1 8   
+1229 cx 7 8   1232 t -1 6   
+-1 swap 5 0   -1 swap 7 6   1231 tdg -1 8   
+1237 h -1 3   
+-1 swap 2 1   -1 swap 9 4   1240 t -1 3   
+1230 tdg -1 6   1233 cx 7 8   1238 t -1 5   
+1234 cx 6 7   
+-1 swap 1 0   -1 swap 3 2   -1 swap 9 4   -1 swap 7 6   
+
+
+-1 swap 2 1   -1 swap 9 4   1235 cx 8 7   1236 h -1 6   
+-1 swap 8 7   1239 t -1 6   
+1241 cx 6 5   
+-1 swap 5 0   1242 cx 1 6   
+-1 swap 8 3   1244 tdg -1 6   
+-1 swap 7 2   
+-1 swap 6 5   1243 cx 0 1   
+-1 swap 9 8   1248 t -1 1   
+
+1245 cx 0 5   
+-1 swap 1 0   -1 swap 8 3   1247 tdg -1 5   1253 h -1 4   1254 t -1 7   
+-1 swap 7 2   1256 t -1 4   
+-1 swap 9 4   
+1246 tdg -1 1   1249 cx 0 5   
+-1 swap 6 5   -1 swap 8 7   1250 cx 1 0   
+-1 swap 9 4   1252 h -1 0   
+1255 t -1 0   
+-1 swap 1 0   -1 swap 6 5   
+-1 swap 4 3   
+-1 swap 9 8   
+-1 swap 5 0   1257 cx 1 2   
+-1 swap 3 2   
+
+-1 swap 9 4   1251 cx 0 5   
+-1 swap 5 0   -1 swap 7 6   1258 cx 2 1   
+1259 cx 3 2   1260 tdg -1 1   
+-1 swap 3 2   -1 swap 9 8   
+-1 swap 6 5   
+
+1261 cx 2 1   1264 t -1 3   
+-1 swap 3 2   -1 swap 5 0   -1 swap 7 6   1263 tdg -1 1   1269 h -1 8   
+-1 swap 9 4   1272 t -1 8   
+
+-1 swap 5 0   -1 swap 8 7   1262 tdg -1 3   1265 cx 2 1   1270 t -1 6   
+1266 cx 3 2   
+-1 swap 2 1   
+
+-1 swap 9 4   
+1267 cx 2 3   1268 h -1 1   
+-1 swap 5 0   -1 swap 7 2   -1 swap 8 3   1271 t -1 1   
+-1 swap 9 4   1273 cx 1 6   
+
+-1 swap 5 0   -1 swap 8 7   1274 cx 2 1   
+-1 swap 6 1   
+-1 swap 4 3   
+
+-1 swap 8 7   1275 cx 1 2   1276 tdg -1 6   
+1277 cx 1 6   1280 t -1 2   
+-1 swap 2 1   -1 swap 9 4   1279 tdg -1 6   
+-1 swap 5 0   -1 swap 8 7   
+
+-1 swap 4 3   1278 tdg -1 2   1281 cx 1 6   
+-1 swap 2 1   -1 swap 5 0   -1 swap 8 7   
+
+
+1282 cx 1 2   1286 t -1 8   1287 t -1 7   
+1283 cx 6 1   1284 h -1 2   1289 cx 7 8   
+-1 swap 8 3   1285 h -1 6   
+-1 swap 5 0   1288 t -1 6   
+1290 cx 6 7   
+-1 swap 3 2   -1 swap 6 1   -1 swap 9 4   1292 tdg -1 7   
+-1 swap 5 0   
+
+-1 swap 9 4   1291 cx 2 1   
+-1 swap 8 3   -1 swap 6 5   1293 cx 2 7   1296 t -1 1   
+-1 swap 2 1   1295 tdg -1 7   
+1302 t -1 0   1303 t -1 9   
+-1 swap 5 0   
+-1 swap 8 3   -1 swap 9 4   1294 tdg -1 1   1297 cx 2 7   
+1298 cx 1 2   
+1300 h -1 2   
+-1 swap 4 3   -1 swap 5 0   -1 swap 7 2   
+
+
+-1 swap 9 4   1299 cx 2 1   
+-1 swap 1 0   -1 swap 3 2   
+-1 swap 7 6   
+
+-1 swap 9 4   1301 h -1 3   1305 cx 2 1   
+-1 swap 8 7   1304 t -1 3   
+1306 cx 3 2   
+-1 swap 2 1   
+
+-1 swap 5 0   
+-1 swap 8 7   1307 cx 2 3   1308 tdg -1 1   
+1309 cx 2 1   1312 t -1 3   
+-1 swap 3 2   1311 tdg -1 1   
+-1 swap 6 5   -1 swap 8 7   
+
+1310 tdg -1 3   1313 cx 2 1   
+1314 cx 3 2   1318 t -1 8   1319 t -1 7   
+-1 swap 3 2   -1 swap 5 0   -1 swap 9 4   1321 cx 7 8   
+
+
+-1 swap 5 0   -1 swap 7 6   1315 cx 1 2   1316 h -1 3   
+-1 swap 8 3   -1 swap 9 4   1317 h -1 1   
+1320 t -1 1   
+1322 cx 1 6   
+-1 swap 3 2   -1 swap 5 0   -1 swap 9 4   -1 swap 7 6   
+
+
+-1 swap 8 3   -1 swap 9 4   1323 cx 2 1   1324 tdg -1 7   
+1325 cx 2 7   1328 t -1 1   
+-1 swap 2 1   -1 swap 6 5   1327 tdg -1 7   
+-1 swap 9 4   1333 h -1 3   1334 t -1 8   
+-1 swap 8 3   
+1326 tdg -1 1   1329 cx 2 7   
+-1 swap 7 6   1330 cx 1 2   
+1332 h -1 2   1336 t -1 8   
+-1 swap 9 4   1335 t -1 2   
+-1 swap 8 7   1331 cx 6 1   1337 cx 2 3   
+-1 swap 5 0   
+-1 swap 6 1   -1 swap 9 4   
+1338 cx 7 2   
+-1 swap 8 7   1340 tdg -1 2   
+-1 swap 1 0   
+-1 swap 9 4   
+-1 swap 6 5   1339 cx 3 8   
+1341 cx 3 2   1344 t -1 8   
+-1 swap 1 0   -1 swap 8 3   -1 swap 9 4   1343 tdg -1 2   
+1349 h -1 6   
+1352 t -1 6   
+1342 tdg -1 8   1345 cx 3 2   1350 t -1 0   
+1346 cx 8 3   
+1348 h -1 3   
+1351 t -1 3   
+-1 swap 1 0   -1 swap 3 2   -1 swap 9 4   -1 swap 7 6   
+
+
+-1 swap 5 0   1347 cx 3 8   1353 cx 2 1   
+1354 cx 7 2   
+-1 swap 2 1   
+-1 swap 5 0   -1 swap 9 8   
+-1 swap 4 3   
+1355 cx 2 7   1356 tdg -1 1   
+-1 swap 6 5   -1 swap 9 8   1357 cx 2 1   1360 t -1 7   
+-1 swap 7 2   1359 tdg -1 1   
+1366 h -1 4   
+-1 swap 4 3   
+-1 swap 5 0   -1 swap 9 8   1358 tdg -1 7   1361 cx 2 1   
+-1 swap 6 1   1362 cx 7 2   
+1364 h -1 2   1369 t -1 3   
+-1 swap 8 3   1368 t -1 0   
+1363 cx 6 7   
+1365 x -1 7   
+-1 swap 1 0   -1 swap 8 3   -1 swap 9 4   -1 swap 7 6   
+
+
+1367 t -1 6   
+-1 swap 3 2   -1 swap 9 4   1370 cx 1 6   
+-1 swap 7 6   
+
+-1 swap 5 0   -1 swap 9 4   1371 cx 2 1   
+1372 cx 7 2   1373 tdg -1 1   
+-1 swap 2 1   
+-1 swap 9 4   
+
+1374 cx 7 2   1377 t -1 1   
+-1 swap 4 3   1375 tdg -1 7   1376 tdg -1 2   
+-1 swap 6 5   1378 cx 1 2   
+-1 swap 7 2   
+-1 swap 8 3   -1 swap 9 4   
+
+1379 cx 2 1   
+-1 swap 1 0   -1 swap 4 3   1380 cx 7 2   1382 h -1 8   
+1383 t -1 2   1384 t -1 7   1385 t -1 8   
+-1 swap 6 5   1386 cx 7 2   
+-1 swap 1 0   -1 swap 4 3   1387 cx 8 7   
+-1 swap 7 2   
+
+-1 swap 4 3   1381 h -1 1   
+-1 swap 1 0   1388 cx 7 8   1389 tdg -1 2   
+1390 cx 7 2   1393 t -1 8   
+-1 swap 4 3   -1 swap 7 2   1400 t -1 5   
+-1 swap 6 5   1399 t -1 1   
+
+-1 swap 3 2   -1 swap 9 4   1392 tdg -1 7   
+1394 cx 8 7   1402 cx 6 1   
+-1 swap 7 6   
+-1 swap 8 3   1398 h -1 2   
+-1 swap 5 0   1401 t -1 2   
+1403 cx 2 7   
+-1 swap 7 6   1391 tdg -1 8   1404 cx 1 2   
+-1 swap 8 3   -1 swap 9 4   1409 t -1 2   
+
+-1 swap 5 0   -1 swap 7 2   1405 tdg -1 6   
+1395 cx 3 8   1406 cx 1 6   
+1397 h -1 8   1407 tdg -1 1   1408 tdg -1 6   
+1396 cx 2 3   1410 cx 7 6   1415 t -1 9   1416 t -1 5   
+-1 swap 6 5   
+-1 swap 3 2   
+-1 swap 9 8   
+-1 swap 5 0   -1 swap 7 6   
+
+
+1411 cx 1 6   1418 cx 7 8   
+1412 cx 0 1   1413 h -1 6   
+-1 swap 1 0   -1 swap 8 3   -1 swap 9 4   -1 swap 7 6   
+
+
+1414 h -1 1   
+1417 t -1 1   
+-1 swap 3 2   -1 swap 5 0   -1 swap 9 4   1419 cx 1 6   
+-1 swap 7 6   
+
+-1 swap 4 3   1420 cx 2 1   
+-1 swap 5 0   -1 swap 9 8   1421 tdg -1 7   1425 t -1 1   
+1422 cx 2 7   
+-1 swap 2 1   1424 tdg -1 7   1430 h -1 6   
+-1 swap 9 4   1431 t -1 0   1433 t -1 6   
+
+-1 swap 8 3   1423 tdg -1 1   1426 cx 2 7   
+-1 swap 7 6   1427 cx 1 2   
+1429 h -1 2   
+-1 swap 1 0   -1 swap 4 3   1432 t -1 2   
+-1 swap 6 5   
+
+-1 swap 8 3   1434 cx 2 1   
+1428 cx 5 0   1435 cx 7 2   
+-1 swap 2 1   -1 swap 9 4   
+
+-1 swap 5 0   
+-1 swap 9 4   1436 cx 2 7   1437 tdg -1 1   
+1438 cx 2 1   1441 t -1 7   
+-1 swap 7 2   1440 tdg -1 1   
+-1 swap 6 5   1448 t -1 0   
+
+-1 swap 9 8   1439 tdg -1 7   1442 cx 2 1   
+-1 swap 6 1   1443 cx 7 2   
+1445 h -1 2   
+-1 swap 4 3   
+1444 cx 6 7   1447 t -1 1   
+1446 h -1 6   1450 cx 0 1   
+-1 swap 5 0   -1 swap 8 3   -1 swap 9 4   1449 t -1 6   
+
+-1 swap 7 2   
+-1 swap 4 3   -1 swap 9 8   1451 cx 6 5   
+1452 cx 1 6   1453 tdg -1 5   
+-1 swap 6 5   
+
+-1 swap 8 3   -1 swap 9 4   
+1454 cx 1 6   1457 t -1 5   
+-1 swap 1 0   1456 tdg -1 6   1463 t -1 7   
+-1 swap 8 3   1458 cx 5 6   1462 h -1 4   
+-1 swap 9 4   
+-1 swap 6 1   1455 tdg -1 0   
+-1 swap 7 2   -1 swap 8 3   1459 cx 0 5   
+1461 h -1 5   1465 t -1 9   
+-1 swap 1 0   -1 swap 6 5   
+-1 swap 4 3   -1 swap 9 8   
+
+-1 swap 7 6   1460 cx 0 1   
+-1 swap 5 0   -1 swap 9 4   1464 t -1 1   
+1466 cx 1 2   
+-1 swap 6 1   -1 swap 8 7   
+
+-1 swap 4 3   
+-1 swap 1 0   -1 swap 9 8   1467 cx 7 6   
+1468 cx 2 7   1469 tdg -1 6   
+-1 swap 4 3   -1 swap 7 6   
+-1 swap 9 8   
+-1 swap 1 0   
+1470 cx 2 7   1473 t -1 6   
+-1 swap 9 4   1471 tdg -1 2   1472 tdg -1 7   
+1474 cx 6 7   1480 t -1 8   
+-1 swap 5 0   -1 swap 6 1   
+1479 t -1 9   
+1482 cx 8 9   
+1475 cx 2 1   
+1476 cx 7 2   1477 h -1 1   
+-1 swap 6 1   1478 h -1 7   
+1481 t -1 7   
+1483 cx 7 8   
+-1 swap 1 0   -1 swap 3 2   -1 swap 6 5   -1 swap 9 8   
+
+
+-1 swap 6 1   1484 cx 8 7   1485 tdg -1 9   
+1486 cx 8 9   1489 t -1 7   
+-1 swap 8 7   1488 tdg -1 9   
+-1 swap 6 1   1495 t -1 4   1496 t -1 2   
+-1 swap 4 3   
+1487 tdg -1 7   1490 cx 8 9   
+1491 cx 7 8   
+-1 swap 3 2   -1 swap 6 5   -1 swap 9 8   
+
+
+-1 swap 5 0   -1 swap 9 4   1492 cx 8 7   1498 cx 3 2   
+-1 swap 7 2   1494 h -1 8   
+1497 t -1 8   
+1493 h -1 4   1499 cx 8 3   
+1500 cx 7 8   1501 tdg -1 3   
+-1 swap 8 3   
+
+
+1502 cx 7 8   1505 t -1 3   
+-1 swap 2 1   1503 tdg -1 7   1504 tdg -1 8   1510 h -1 4   
+1506 cx 3 8   1513 t -1 4   
+-1 swap 5 0   -1 swap 9 4   -1 swap 8 7   
+1511 t -1 1   
+
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   1507 cx 8 3   
+1508 cx 7 8   1509 h -1 3   
+1512 t -1 3   
+-1 swap 6 1   1514 cx 3 2   
+1515 cx 4 3   
+-1 swap 3 2   -1 swap 9 8   
+-1 swap 6 1   
+-1 swap 5 0   
+-1 swap 8 7   1516 cx 3 4   1517 tdg -1 2   
+1518 cx 3 2   1521 t -1 4   
+-1 swap 4 3   1520 tdg -1 2   1526 h -1 6   
+-1 swap 1 0   -1 swap 6 5   1527 t -1 7   
+
+-1 swap 9 8   1519 tdg -1 4   1522 cx 3 2   
+-1 swap 6 1   1523 cx 4 3   1529 t -1 5   
+-1 swap 3 2   -1 swap 5 0   
+
+
+-1 swap 1 0   -1 swap 9 8   1524 cx 3 4   1525 h -1 2   
+1528 t -1 2   
+-1 swap 6 5   1530 cx 2 7   
+1531 cx 1 2   
+-1 swap 7 2   -1 swap 9 4   
+-1 swap 6 5   
+-1 swap 8 3   
+1532 cx 2 1   1533 tdg -1 7   
+1534 cx 2 7   1537 t -1 1   
+-1 swap 2 1   -1 swap 8 3   -1 swap 9 4   1536 tdg -1 7   
+-1 swap 5 0   
+
+1535 tdg -1 1   1538 cx 2 7   1543 t -1 4   1544 t -1 3   
+-1 swap 5 0   -1 swap 7 6   1539 cx 1 2   1546 cx 3 4   
+-1 swap 8 3   1541 h -1 2   
+-1 swap 9 4   
+1540 cx 6 1   
+-1 swap 2 1   -1 swap 5 0   -1 swap 8 7   1542 h -1 6   
+1545 t -1 6   
+
+-1 swap 4 3   -1 swap 5 0   -1 swap 7 6   -1 swap 9 8   
+-1 swap 2 1   
+
+-1 swap 5 0   -1 swap 9 4   1547 cx 7 6   
+1548 cx 8 7   1549 tdg -1 6   
+-1 swap 8 7   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   
+
+1550 cx 7 6   1553 t -1 8   
+-1 swap 1 0   -1 swap 3 2   -1 swap 9 4   -1 swap 8 7   1552 tdg -1 6   
+
+
+-1 swap 2 1   1551 tdg -1 8   1554 cx 7 6   1560 t -1 9   
+-1 swap 9 4   1555 cx 8 7   
+-1 swap 7 6   
+-1 swap 2 1   
+-1 swap 4 3   
+-1 swap 5 0   1556 cx 7 8   1557 h -1 6   
+-1 swap 6 1   1558 h -1 7   1559 t -1 2   
+-1 swap 8 7   1562 cx 3 2   
+-1 swap 5 0   -1 swap 9 4   
+-1 swap 6 1   
+-1 swap 7 2   1561 t -1 8   
+-1 swap 5 0   -1 swap 9 4   1563 cx 8 3   
+1565 tdg -1 3   
+-1 swap 3 2   1564 cx 7 8   
+-1 swap 5 0   1569 t -1 8   
+-1 swap 6 1   
+1566 cx 7 2   
+-1 swap 4 3   -1 swap 8 7   1568 tdg -1 2   
+1574 h -1 1   
+1577 t -1 1   
+-1 swap 6 1   -1 swap 9 4   1567 tdg -1 8   1570 cx 7 2   
+1571 cx 8 7   
+-1 swap 3 2   1573 h -1 7   
+-1 swap 5 0   -1 swap 6 1   1575 t -1 9   1576 t -1 7   
+-1 swap 9 8   
+-1 swap 4 3   
+-1 swap 6 1   
+-1 swap 5 0   1578 cx 7 8   
+-1 swap 3 2   1572 cx 4 9   
+1579 cx 6 7   
+-1 swap 5 0   -1 swap 8 7   
+-1 swap 2 1   -1 swap 4 3   
+
+1580 cx 7 6   1581 tdg -1 8   
+1582 cx 7 8   1585 t -1 6   
+-1 swap 9 4   -1 swap 7 6   1584 tdg -1 8   1591 t -1 1   
+
+-1 swap 3 2   
+-1 swap 1 0   1583 tdg -1 6   1586 cx 7 8   1590 h -1 9   
+1587 cx 6 7   1593 t -1 9   
+-1 swap 3 2   -1 swap 8 7   
+-1 swap 5 0   
+
+-1 swap 3 2   -1 swap 9 8   1588 cx 7 6   
+-1 swap 1 0   -1 swap 6 5   1592 t -1 7   
+
+1589 h -1 9   
+-1 swap 4 3   1594 cx 7 6   
+1595 cx 8 7   
+-1 swap 7 6   
+-1 swap 1 0   -1 swap 4 3   
+
+1596 cx 7 8   1597 tdg -1 6   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   1598 cx 7 6   1601 t -1 8   
+-1 swap 8 7   1600 tdg -1 6   
+
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   
+1599 tdg -1 8   1602 cx 7 6   
+1603 cx 8 7   
+-1 swap 3 2   -1 swap 5 0   -1 swap 9 4   -1 swap 7 6   1608 t -1 1   
+
+
+-1 swap 2 1   -1 swap 4 3   -1 swap 6 5   1604 cx 7 8   
+1606 h -1 7   
+-1 swap 9 8   1609 t -1 7   
+-1 swap 6 5   1607 t -1 3   
+1610 cx 2 3   
+1611 cx 7 2   
+-1 swap 3 2   1605 h -1 6   
+-1 swap 1 0   -1 swap 6 5   
+
+-1 swap 9 4   1612 cx 2 7   1613 tdg -1 3   
+-1 swap 5 0   -1 swap 6 1   1614 cx 2 3   1617 t -1 7   
+-1 swap 7 2   1616 tdg -1 3   
+-1 swap 9 4   
+-1 swap 6 1   1622 h -1 0   
+1615 tdg -1 7   1618 cx 2 3   1625 t -1 0   
+-1 swap 7 2   1623 t -1 9   
+-1 swap 6 1   
+-1 swap 9 8   
+1619 cx 2 7   
+-1 swap 5 0   -1 swap 6 1   1620 cx 3 2   1621 h -1 7   
+1624 t -1 7   
+1626 cx 7 8   
+-1 swap 6 5   
+-1 swap 8 3   
+
+-1 swap 9 4   1627 cx 6 7   
+-1 swap 3 2   -1 swap 6 1   1629 tdg -1 7   
+-1 swap 5 0   
+-1 swap 9 8   
+1628 cx 2 1   
+1630 cx 2 7   1633 t -1 1   
+-1 swap 2 1   1632 tdg -1 7   
+-1 swap 8 3   -1 swap 6 5   1640 t -1 9   
+-1 swap 9 4   
+1631 tdg -1 1   1634 cx 2 7   
+-1 swap 5 0   -1 swap 8 3   -1 swap 7 6   1635 cx 1 2   
+-1 swap 9 4   1637 h -1 2   
+
+-1 swap 5 0   -1 swap 7 2   1636 cx 6 1   1639 t -1 3   
+-1 swap 9 8   1638 h -1 6   
+1641 t -1 6   
+-1 swap 5 0   -1 swap 7 6   
+1642 cx 8 3   
+-1 swap 3 2   -1 swap 9 4   
+-1 swap 6 5   1643 cx 7 8   
+1645 tdg -1 8   
+-1 swap 8 3   1644 cx 2 7   
+-1 swap 6 5   1649 t -1 7   
+-1 swap 1 0   -1 swap 9 4   
+1646 cx 2 3   
+-1 swap 7 2   -1 swap 6 5   1648 tdg -1 3   
+-1 swap 1 0   
+
+-1 swap 9 4   -1 swap 6 5   1647 tdg -1 7   1650 cx 2 3   
+-1 swap 8 3   1651 cx 7 2   
+-1 swap 1 0   1653 h -1 2   
+1654 h -1 5   1655 t -1 6   
+-1 swap 3 2   1652 cx 8 7   1657 t -1 5   
+-1 swap 1 0   -1 swap 9 8   1656 t -1 7   
+1658 cx 7 6   
+-1 swap 3 2   -1 swap 6 5   
+-1 swap 9 8   
+-1 swap 1 0   
+-1 swap 4 3   1659 cx 6 7   
+-1 swap 9 8   1660 cx 5 6   1661 tdg -1 7   
+-1 swap 6 5   
+
+
+-1 swap 2 1   -1 swap 8 3   -1 swap 9 4   1662 cx 6 7   1665 t -1 5   
+-1 swap 6 5   1664 tdg -1 7   
+
+-1 swap 2 1   
+-1 swap 9 8   1663 tdg -1 5   1666 cx 6 7   
+1667 cx 5 6   
+-1 swap 6 5   1671 t -1 1   1672 t -1 2   
+-1 swap 9 8   1674 cx 2 1   
+
+-1 swap 5 0   1668 cx 7 6   
+-1 swap 6 1   -1 swap 8 3   1670 h -1 7   
+1673 t -1 7   
+-1 swap 5 0   -1 swap 9 4   1675 cx 7 2   
+1676 cx 6 7   1677 tdg -1 2   
+-1 swap 7 2   -1 swap 8 3   
+-1 swap 1 0   -1 swap 9 4   1669 h -1 5   
+
+-1 swap 8 3   1678 cx 6 7   1681 t -1 2   
+-1 swap 1 0   1679 tdg -1 6   1680 tdg -1 7   
+1682 cx 2 7   
+-1 swap 4 3   -1 swap 7 6   1687 t -1 8   
+-1 swap 9 8   
+
+1683 cx 7 2   1688 t -1 4   
+-1 swap 8 3   -1 swap 9 4   1684 cx 6 7   1685 h -1 2   
+-1 swap 1 0   -1 swap 7 2   1686 h -1 6   
+1689 t -1 6   
+1690 cx 9 4   
+-1 swap 2 1   -1 swap 7 6   -1 swap 9 8   
+
+
+1691 cx 7 8   
+-1 swap 4 3   -1 swap 7 2   1693 tdg -1 8   
+-1 swap 1 0   -1 swap 6 5   
+
+1692 cx 3 2   
+-1 swap 9 4   -1 swap 7 6   1694 cx 3 8   1697 t -1 2   
+-1 swap 3 2   1696 tdg -1 8   1702 h -1 5   1703 t -1 0   
+-1 swap 1 0   1705 t -1 5   
+
+-1 swap 9 4   -1 swap 6 5   1695 tdg -1 2   1698 cx 3 8   
+-1 swap 8 7   1699 cx 2 3   
+1701 h -1 3   
+-1 swap 2 1   -1 swap 9 4   1704 t -1 3   
+-1 swap 5 0   -1 swap 7 6   
+
+-1 swap 9 8   1706 cx 3 2   
+-1 swap 1 0   -1 swap 7 2   -1 swap 6 5   
+
+-1 swap 9 4   
+-1 swap 5 0   1707 cx 2 3   
+-1 swap 6 1   1708 cx 7 2   1709 tdg -1 3   
+-1 swap 8 7   1713 t -1 2   
+-1 swap 9 4   1700 cx 0 5   
+
+-1 swap 5 0   1710 cx 8 3   
+-1 swap 9 4   -1 swap 8 7   1712 tdg -1 3   1719 t -1 1   
+1714 cx 2 3   
+-1 swap 6 1   
+-1 swap 8 3   1711 tdg -1 7   1718 h -1 4   
+-1 swap 5 0   -1 swap 9 4   1715 cx 7 2   
+1717 h -1 2   
+-1 swap 6 1   1716 cx 8 7   1720 t -1 2   
+-1 swap 4 3   1721 t -1 9   
+-1 swap 9 8   
+-1 swap 6 5   1722 cx 2 1   
+-1 swap 3 2   
+
+
+-1 swap 2 1   1723 cx 8 3   
+-1 swap 9 4   -1 swap 8 7   1725 tdg -1 3   
+
+-1 swap 5 0   
+-1 swap 6 1   1724 cx 2 7   
+1726 cx 2 3   1729 t -1 7   
+-1 swap 7 2   1728 tdg -1 3   
+-1 swap 6 5   1735 t -1 8   1736 t -1 4   
+
+-1 swap 1 0   -1 swap 9 4   1727 tdg -1 7   1730 cx 2 3   
+1731 cx 7 2   
+-1 swap 7 2   
+-1 swap 6 5   1738 cx 9 8   
+
+-1 swap 9 4   1732 cx 3 2   1733 h -1 7   
+-1 swap 6 5   1734 h -1 3   
+-1 swap 1 0   -1 swap 7 2   1737 t -1 3   
+1739 cx 3 4   
+1740 cx 8 3   1741 tdg -1 4   
+-1 swap 1 0   -1 swap 4 3   
+
+-1 swap 7 2   -1 swap 6 5   
+1742 cx 8 3   1745 t -1 4   
+-1 swap 9 8   1744 tdg -1 3   
+-1 swap 2 1   1746 cx 4 3   1751 t -1 0   1752 t -1 5   
+
+-1 swap 8 3   -1 swap 6 5   1743 tdg -1 9   
+-1 swap 1 0   1747 cx 9 4   
+1749 h -1 4   
+-1 swap 3 2   1748 cx 8 9   
+-1 swap 5 0   1750 h -1 8   1754 cx 6 1   
+-1 swap 7 6   1753 t -1 8   
+-1 swap 2 1   -1 swap 4 3   
+-1 swap 5 0   
+1755 cx 8 7   
+-1 swap 6 1   -1 swap 8 3   -1 swap 9 4   1757 tdg -1 7   
+-1 swap 5 0   
+
+1756 cx 2 3   
+-1 swap 6 1   1758 cx 2 7   1761 t -1 3   
+-1 swap 3 2   -1 swap 9 8   1760 tdg -1 7   1767 t -1 4   
+
+-1 swap 1 0   -1 swap 6 5   
+1759 tdg -1 3   1762 cx 2 7   1766 h -1 9   
+-1 swap 8 7   1763 cx 3 2   1769 t -1 9   
+-1 swap 1 0   -1 swap 6 5   1765 h -1 2   
+-1 swap 4 3   1768 t -1 2   
+-1 swap 9 8   
+-1 swap 1 0   
+1770 cx 2 3   
+-1 swap 8 3   -1 swap 7 6   1764 cx 9 4   
+-1 swap 5 0   -1 swap 9 4   
+
+-1 swap 7 6   1771 cx 3 2   
+1772 cx 8 3   1773 tdg -1 2   
+-1 swap 3 2   -1 swap 5 0   
+-1 swap 6 1   
+
+-1 swap 9 4   1774 cx 8 3   1777 t -1 2   
+-1 swap 5 0   -1 swap 8 7   1776 tdg -1 3   
+-1 swap 6 1   1778 cx 2 3   
+-1 swap 9 4   
+-1 swap 8 3   1775 tdg -1 7   
+1779 cx 7 2   1783 h -1 6   
+-1 swap 6 1   1781 h -1 2   
+1780 cx 8 7   1785 t -1 3   
+-1 swap 3 2   -1 swap 9 4   1782 x -1 7   
+-1 swap 6 5   1784 t -1 7   1786 t -1 1   
+
+-1 swap 9 4   1787 cx 2 7   
+-1 swap 6 5   1788 cx 1 2   
+-1 swap 7 2   
+
+
+-1 swap 4 3   1789 cx 2 1   1790 tdg -1 7   
+1791 cx 2 7   1794 t -1 1   
+-1 swap 2 1   1793 tdg -1 7   
+-1 swap 5 0   -1 swap 9 8   1800 t -1 3   
+
+1792 tdg -1 1   1795 cx 2 7   
+-1 swap 7 6   1796 cx 1 2   1801 t -1 8   
+-1 swap 5 0   1798 h -1 2   1803 cx 8 3   
+
+-1 swap 8 7   1797 cx 6 1   
+-1 swap 2 1   1799 h -1 6   
+-1 swap 9 4   1802 t -1 6   
+1804 cx 6 7   
+-1 swap 3 2   -1 swap 6 1   1806 tdg -1 7   
+-1 swap 9 4   
+
+1805 cx 2 1   
+1807 cx 2 7   1810 t -1 1   
+-1 swap 2 1   -1 swap 8 3   -1 swap 9 4   1809 tdg -1 7   
+-1 swap 6 5   
+
+1808 tdg -1 1   1811 cx 2 7   1816 t -1 3   
+-1 swap 7 6   1812 cx 1 2   
+-1 swap 3 2   -1 swap 9 8   
+
+1813 cx 6 1   1817 t -1 7   
+-1 swap 4 3   1815 h -1 6   1819 cx 7 2   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 8   1818 t -1 6   
+1820 cx 6 7   
+-1 swap 4 3   1822 tdg -1 7   
+-1 swap 7 2   1821 cx 1 6   
+1826 t -1 6   
+-1 swap 4 3   
+-1 swap 5 0   -1 swap 9 8   1823 cx 1 2   
+-1 swap 6 1   1825 tdg -1 2   
+1814 h -1 4   1833 t -1 3   
+-1 swap 9 4   1832 t -1 8   
+-1 swap 5 0   1824 tdg -1 6   1827 cx 1 2   
+-1 swap 7 2   1828 cx 6 1   1835 cx 3 8   
+1830 h -1 1   
+-1 swap 5 0   
+-1 swap 3 2   1829 cx 7 6   
+1831 h -1 7   
+-1 swap 1 0   -1 swap 6 5   1834 t -1 7   
+-1 swap 9 4   1836 cx 7 2   
+1837 cx 8 7   1838 tdg -1 2   
+-1 swap 5 0   -1 swap 7 2   
+-1 swap 4 3   
+
+-1 swap 1 0   1839 cx 8 7   1842 t -1 2   
+1840 tdg -1 8   1841 tdg -1 7   1847 h -1 5   
+-1 swap 4 3   1843 cx 2 7   1850 t -1 5   
+-1 swap 6 5   -1 swap 8 7   1848 t -1 1   
+
+-1 swap 9 4   
+-1 swap 5 0   1844 cx 7 2   
+1845 cx 8 7   1846 h -1 2   
+-1 swap 7 6   1849 t -1 2   
+-1 swap 5 0   -1 swap 9 4   1851 cx 2 1   
+-1 swap 8 3   
+1852 cx 7 2   
+-1 swap 2 1   -1 swap 9 4   
+
+
+-1 swap 4 3   1853 cx 2 7   1854 tdg -1 1   
+-1 swap 6 5   -1 swap 9 8   1855 cx 2 1   1858 t -1 7   
+-1 swap 7 2   1857 tdg -1 1   
+
+-1 swap 4 3   1863 h -1 8   1864 t -1 9   
+-1 swap 5 0   -1 swap 9 8   1856 tdg -1 7   1859 cx 2 1   
+-1 swap 6 1   1860 cx 7 2   
+1862 h -1 2   
+-1 swap 9 4   1865 t -1 2   
+-1 swap 3 2   1861 cx 6 7   
+-1 swap 6 5   
+-1 swap 1 0   1866 t -1 4   
+-1 swap 7 2   1867 cx 3 8   
+-1 swap 6 5   1868 cx 4 3   
+-1 swap 1 0   -1 swap 9 4   1870 tdg -1 3   
+-1 swap 7 2   
+-1 swap 6 5   
+1869 cx 8 9   
+-1 swap 1 0   1871 cx 8 3   1874 t -1 9   
+-1 swap 7 2   -1 swap 9 8   1873 tdg -1 3   1880 t -1 4   
+
+1879 h -1 0   
+1872 tdg -1 9   1875 cx 8 3   1882 t -1 0   
+-1 swap 4 3   1876 cx 9 8   
+-1 swap 2 1   -1 swap 5 0   1878 h -1 8   
+1881 t -1 8   
+1877 cx 4 9   1883 cx 8 3   
+-1 swap 3 2   -1 swap 6 5   -1 swap 8 7   
+-1 swap 9 4   
+-1 swap 1 0   
+1884 cx 6 7   
+-1 swap 7 2   
+
+-1 swap 4 3   
+-1 swap 1 0   -1 swap 9 8   1885 cx 7 6   1886 tdg -1 2   
+1887 cx 7 2   1890 t -1 6   
+-1 swap 4 3   -1 swap 7 6   1889 tdg -1 2   
+-1 swap 9 8   
+-1 swap 5 0   
+1888 tdg -1 6   1891 cx 7 2   1896 t -1 4   
+-1 swap 2 1   1892 cx 6 7   1897 t -1 9   
+-1 swap 9 4   -1 swap 8 7   
+
+-1 swap 3 2   -1 swap 5 0   1893 cx 1 6   
+1894 h -1 8   1895 h -1 1   1899 cx 4 9   
+-1 swap 8 7   1898 t -1 1   
+-1 swap 2 1   -1 swap 4 3   -1 swap 5 0   
+
+
+-1 swap 6 1   1900 cx 2 3   
+-1 swap 5 0   -1 swap 7 2   -1 swap 9 8   1902 tdg -1 3   
+
+
+-1 swap 1 0   1901 cx 8 7   
+-1 swap 9 4   1903 cx 8 3   1906 t -1 7   
+-1 swap 8 7   1905 tdg -1 3   
+1913 t -1 1   
+1912 t -1 9   
+-1 swap 1 0   1904 tdg -1 7   1907 cx 8 3   
+-1 swap 3 2   -1 swap 9 4   1908 cx 7 8   
+1910 h -1 8   
+-1 swap 1 0   
+1909 cx 2 7   
+-1 swap 4 3   -1 swap 6 5   1911 h -1 2   
+-1 swap 2 1   -1 swap 9 8   
+
+-1 swap 5 0   
+-1 swap 8 7   1914 t -1 1   1915 cx 2 3   
+1916 cx 1 2   
+-1 swap 3 2   
+-1 swap 5 0   -1 swap 9 4   -1 swap 8 7   
+
+1917 cx 2 1   1918 tdg -1 3   
+-1 swap 7 6   -1 swap 9 8   1919 cx 2 3   1922 t -1 1   
+-1 swap 2 1   1921 tdg -1 3   
+1928 t -1 5   
+-1 swap 5 0   -1 swap 8 7   1929 t -1 9   
+1920 tdg -1 1   1923 cx 2 3   
+1924 cx 1 2   
+-1 swap 2 1   -1 swap 5 0   -1 swap 7 6   -1 swap 9 8   
+
+
+-1 swap 1 0   -1 swap 6 5   -1 swap 8 7   1925 cx 3 2   
+1927 h -1 3   
+-1 swap 3 2   -1 swap 9 4   
+-1 swap 5 0   1931 cx 7 6   
+-1 swap 6 1   
+-1 swap 4 3   -1 swap 9 8   1930 t -1 2   
+1926 h -1 5   1932 cx 2 7   
+-1 swap 6 5   1933 cx 1 2   1934 tdg -1 7   
+-1 swap 7 2   -1 swap 8 3   -1 swap 9 4   
+
+
+-1 swap 9 4   1935 cx 1 2   1938 t -1 7   
+-1 swap 5 0   -1 swap 6 1   -1 swap 8 3   1937 tdg -1 2   
+1939 cx 7 2   
+-1 swap 9 4   
+-1 swap 2 1   -1 swap 5 0   -1 swap 8 3   1936 tdg -1 6   
+1940 cx 6 7   
+1942 h -1 7   1944 t -1 9   
+-1 swap 4 3   -1 swap 5 0   -1 swap 9 8   1941 cx 1 6   1943 h -1 2   1945 t -1 7   
+1946 t -1 2   
+
+-1 swap 4 3   1947 cx 7 8   
+1948 cx 2 7   
+-1 swap 5 0   -1 swap 8 7   
+
+-1 swap 9 4   
+1949 cx 7 2   1950 tdg -1 8   
+-1 swap 6 5   1951 cx 7 8   1954 t -1 2   
+-1 swap 7 2   1953 tdg -1 8   1959 h -1 3   1960 t -1 9   
+1962 t -1 3   
+
+-1 swap 6 1   -1 swap 9 4   1952 tdg -1 2   1955 cx 7 8   
+-1 swap 5 0   1956 cx 2 7   
+1958 h -1 7   
+1961 t -1 7   
+-1 swap 1 0   -1 swap 9 4   -1 swap 6 5   -1 swap 8 7   
+
+
+-1 swap 5 0   1957 cx 7 2   1963 cx 8 9   
+-1 swap 2 1   -1 swap 7 6   1964 cx 3 8   
+-1 swap 9 8   
+
+-1 swap 6 5   
+-1 swap 2 1   1965 cx 8 3   1966 tdg -1 9   
+1967 cx 8 9   1970 t -1 3   
+-1 swap 8 3   -1 swap 6 5   1969 tdg -1 9   1975 x -1 0   
+-1 swap 7 2   1977 t -1 0   
+
+-1 swap 6 5   1968 tdg -1 3   1971 cx 8 9   
+-1 swap 1 0   -1 swap 9 4   1972 cx 3 8   
+-1 swap 8 7   
+-1 swap 6 5   
+1973 cx 4 3   
+-1 swap 3 2   1974 h -1 7   
+-1 swap 5 0   -1 swap 9 4   1976 h -1 6   
+-1 swap 7 6   
+1978 t -1 2   
+-1 swap 8 3   -1 swap 9 4   1980 cx 2 1   
+-1 swap 5 0   -1 swap 6 1   1979 t -1 7   
+1981 cx 7 2   
+-1 swap 4 3   1983 tdg -1 2   
+-1 swap 2 1   -1 swap 5 0   1982 cx 6 7   
+-1 swap 9 8   1987 t -1 7   
+
+-1 swap 3 2   1984 cx 6 1   
+-1 swap 7 6   1986 tdg -1 1   1992 h -1 8   
+-1 swap 9 8   
+-1 swap 4 3   
+1985 tdg -1 7   1988 cx 6 1   
+-1 swap 2 1   1989 cx 7 6   1995 t -1 9   
+-1 swap 8 3   -1 swap 9 4   -1 swap 6 5   
+
+1990 cx 2 7   
+-1 swap 1 0   -1 swap 4 3   1991 h -1 5   1993 t -1 7   1994 t -1 2   
+-1 swap 6 5   1996 cx 2 7   
+-1 swap 8 7   
+-1 swap 1 0   1997 cx 3 2   
+1999 tdg -1 2   
+-1 swap 7 2   -1 swap 9 4   1998 cx 8 3   
+-1 swap 6 1   2003 t -1 3   
+-1 swap 5 0   
+2000 cx 8 7   
+-1 swap 8 3   2002 tdg -1 7   2008 h -1 9   
+-1 swap 1 0   -1 swap 9 4   
+
+2001 tdg -1 3   2004 cx 8 7   
+-1 swap 6 1   -1 swap 7 2   -1 swap 9 4   2005 cx 3 8   
+-1 swap 5 0   2007 h -1 8   
+
+-1 swap 6 1   2006 cx 2 3   2011 t -1 9   
+-1 swap 5 0   -1 swap 9 8   2009 t -1 3   2010 t -1 2   
+2012 cx 2 3   
+-1 swap 6 1   -1 swap 7 2   
+
+-1 swap 5 0   
+-1 swap 6 1   -1 swap 9 4   2013 cx 8 7   
+2014 cx 3 8   2015 tdg -1 7   
+-1 swap 3 2   2019 t -1 8   
+
+-1 swap 5 0   
+2016 cx 2 7   
+-1 swap 3 2   -1 swap 9 4   2018 tdg -1 7   
+-1 swap 1 0   -1 swap 6 5   2020 cx 8 7   
+
+-1 swap 4 3   -1 swap 9 8   
+-1 swap 6 1   
+-1 swap 5 0   
+2017 tdg -1 4   2025 x -1 3   
+-1 swap 2 1   -1 swap 9 4   -1 swap 8 7   2026 h -1 6   2027 t -1 3   
+-1 swap 5 0   2029 t -1 6   
+
+-1 swap 7 6   2021 cx 9 4   2028 t -1 2   
+2022 cx 8 9   2023 h -1 4   2030 cx 2 3   
+-1 swap 5 0   -1 swap 8 3   -1 swap 9 4   
+2031 cx 7 2   
+-1 swap 6 1   2033 tdg -1 2   
+-1 swap 3 2   -1 swap 9 4   2032 cx 8 7   
+2037 t -1 7   
+-1 swap 6 5   
+-1 swap 1 0   -1 swap 9 4   2034 cx 8 3   
+-1 swap 8 7   2036 tdg -1 3   
+
+2024 x -1 4   2042 h -1 9   
+-1 swap 1 0   2035 tdg -1 7   2038 cx 8 3   2045 t -1 9   
+-1 swap 3 2   2039 cx 7 8   
+-1 swap 9 4   2041 h -1 8   
+
+-1 swap 1 0   2040 cx 2 7   
+-1 swap 4 3   -1 swap 6 5   2043 t -1 7   2044 t -1 2   
+2046 cx 2 7   
+-1 swap 1 0   -1 swap 8 7   
+-1 swap 6 5   2047 cx 3 2   
+2049 tdg -1 2   
+-1 swap 7 2   2048 cx 8 3   
+-1 swap 6 1   2053 t -1 3   
+
+-1 swap 5 0   2050 cx 8 7   
+-1 swap 6 1   -1 swap 8 3   2052 tdg -1 7   2058 h -1 2   
+-1 swap 9 4   2061 t -1 2   
+2059 t -1 5   
+-1 swap 2 1   2051 tdg -1 3   2054 cx 8 7   2060 t -1 6   
+-1 swap 9 4   2055 cx 3 8   2062 cx 6 5   
+-1 swap 8 3   
+2063 cx 1 6   
+-1 swap 9 4   -1 swap 6 5   
+2056 cx 7 8   2057 h -1 3   
+-1 swap 7 2   -1 swap 8 3   
+2064 cx 6 1   2065 tdg -1 5   
+2066 cx 6 5   2069 t -1 1   
+-1 swap 6 1   2068 tdg -1 5   
+-1 swap 8 7   2075 t -1 0   2076 t -1 3   
+-1 swap 3 2   -1 swap 9 4   
+2067 tdg -1 1   2070 cx 6 5   
+2071 cx 1 6   
+-1 swap 1 0   -1 swap 9 4   -1 swap 7 6   
+
+-1 swap 8 3   
+-1 swap 2 1   -1 swap 9 4   -1 swap 7 6   2072 cx 5 0   
+2074 h -1 5   
+-1 swap 8 3   2077 t -1 5   
+-1 swap 6 5   2078 cx 1 2   
+-1 swap 7 2   
+-1 swap 9 8   
+-1 swap 4 3   2073 h -1 5   2079 cx 6 1   
+-1 swap 5 0   2080 cx 7 6   2081 tdg -1 1   
+-1 swap 7 2   2085 t -1 6   
+-1 swap 8 3   -1 swap 9 4   
+-1 swap 5 0   
+2082 cx 2 1   
+-1 swap 7 2   -1 swap 9 8   2084 tdg -1 1   
+2086 cx 6 1   2090 h -1 5   2091 t -1 0   
+-1 swap 5 0   
+-1 swap 2 1   -1 swap 4 3   -1 swap 9 8   2083 tdg -1 7   
+2087 cx 7 6   
+2089 h -1 6   2093 t -1 0   
+-1 swap 1 0   -1 swap 9 8   2088 cx 2 7   2092 t -1 6   
+-1 swap 3 2   2094 cx 6 5   
+
+2095 cx 1 6   
+-1 swap 1 0   -1 swap 4 3   2097 tdg -1 6   
+-1 swap 9 8   
+
+-1 swap 3 2   2096 cx 5 0   
+-1 swap 8 7   2098 cx 5 6   2101 t -1 0   
+-1 swap 5 0   -1 swap 9 4   2100 tdg -1 6   
+-1 swap 2 1   
+2107 t -1 8   
+-1 swap 9 4   2099 tdg -1 0   2102 cx 5 6   
+-1 swap 6 1   -1 swap 7 2   -1 swap 8 3   2103 cx 0 5   
+2105 h -1 5   
+2108 t -1 4   
+-1 swap 4 3   -1 swap 7 2   2104 cx 1 0   
+-1 swap 5 0   2106 h -1 1   
+-1 swap 9 8   2109 t -1 1   
+-1 swap 2 1   -1 swap 7 6   2110 cx 3 4   
+
+-1 swap 9 8   
+-1 swap 1 0   -1 swap 6 5   2111 cx 2 3   
+-1 swap 4 3   
+-1 swap 9 8   
+-1 swap 5 0   -1 swap 6 1   
+2112 cx 3 2   2113 tdg -1 4   
+-1 swap 9 8   2114 cx 3 4   2117 t -1 2   
+-1 swap 3 2   -1 swap 5 0   -1 swap 7 6   2116 tdg -1 4   
+
+-1 swap 9 8   
+2115 tdg -1 2   2118 cx 3 4   2122 h -1 7   2123 t -1 5   2124 t -1 6   
+-1 swap 3 2   2125 t -1 7   2126 cx 6 5   
+2127 cx 7 6   
+-1 swap 6 5   
+-1 swap 1 0   -1 swap 9 8   2119 cx 3 2   
+2120 cx 4 3   2121 h -1 2   
+-1 swap 4 3   2128 cx 6 7   2129 tdg -1 5   
+2130 cx 6 5   2133 t -1 7   
+-1 swap 2 1   -1 swap 7 6   -1 swap 9 8   2132 tdg -1 5   
+2140 t -1 3   
+
+-1 swap 4 3   2131 tdg -1 7   2134 cx 6 5   2139 t -1 1   
+-1 swap 2 1   2135 cx 7 6   
+-1 swap 6 5   
+-1 swap 4 3   
+
+-1 swap 1 0   -1 swap 9 8   2136 cx 6 7   2137 h -1 5   
+2138 h -1 6   2142 cx 3 2   
+-1 swap 3 2   -1 swap 7 6   
+
+-1 swap 1 0   -1 swap 9 4   
+-1 swap 8 3   2141 t -1 7   
+-1 swap 6 5   2143 cx 7 2   
+-1 swap 1 0   2145 tdg -1 2   
+-1 swap 3 2   -1 swap 9 4   2144 cx 8 7   
+2149 t -1 7   
+-1 swap 6 5   
+-1 swap 2 1   2146 cx 8 3   
+-1 swap 9 4   -1 swap 8 7   2148 tdg -1 3   
+-1 swap 6 5   
+
+-1 swap 1 0   -1 swap 9 4   2147 tdg -1 7   2150 cx 8 3   
+2151 cx 7 8   2154 h -1 6   2155 t -1 5   
+2153 h -1 8   2157 t -1 6   
+2156 t -1 8   
+-1 swap 2 1   -1 swap 9 4   -1 swap 6 5   -1 swap 8 7   
+
+
+2152 cx 3 8   2158 cx 7 6   
+-1 swap 1 0   -1 swap 8 3   -1 swap 9 4   -1 swap 6 5   
+
+
+-1 swap 4 3   2159 cx 6 7   
+2160 cx 5 6   2161 tdg -1 7   
+-1 swap 1 0   -1 swap 6 5   
+-1 swap 4 3   
+-1 swap 9 8   
+2162 cx 6 7   2165 t -1 5   
+-1 swap 6 5   2164 tdg -1 7   
+2171 t -1 3   2172 t -1 9   
+-1 swap 1 0   -1 swap 4 3   -1 swap 9 8   
+2163 tdg -1 5   2166 cx 6 7   
+2167 cx 5 6   
+-1 swap 4 3   -1 swap 6 5   
+
+
+-1 swap 5 0   2168 cx 7 6   2174 cx 8 3   
+-1 swap 3 2   -1 swap 6 1   2170 h -1 7   
+2173 t -1 7   
+-1 swap 9 4   2169 h -1 0   2175 cx 7 8   
+-1 swap 5 0   2176 cx 2 7   2177 tdg -1 8   
+-1 swap 6 1   -1 swap 7 2   
+-1 swap 9 4   
+
+-1 swap 5 0   2178 cx 7 8   2181 t -1 2   
+-1 swap 4 3   -1 swap 6 1   -1 swap 7 2   2180 tdg -1 8   2187 x -1 9   
+2189 t -1 9   
+2186 x -1 5   2188 h -1 0   
+-1 swap 1 0   2179 tdg -1 2   2182 cx 7 8   
+-1 swap 6 5   2183 cx 2 7   
+-1 swap 3 2   2185 h -1 7   
+-1 swap 9 4   2191 t -1 1   
+-1 swap 7 6   
+-1 swap 2 1   2184 cx 8 3   
+2190 t -1 3   
+-1 swap 6 5   2192 cx 3 4   
+2193 cx 2 3   
+-1 swap 4 3   -1 swap 9 8   
+-1 swap 1 0   -1 swap 6 5   
+
+-1 swap 8 7   2194 cx 3 2   2195 tdg -1 4   
+2196 cx 3 4   2199 t -1 2   
+-1 swap 3 2   -1 swap 5 0   2198 tdg -1 4   
+-1 swap 8 7   2205 t -1 6   
+
+-1 swap 5 0   2197 tdg -1 2   2200 cx 3 4   
+2201 cx 2 3   2206 t -1 7   
+-1 swap 4 3   -1 swap 9 8   2208 cx 7 6   
+
+-1 swap 6 1   
+-1 swap 8 7   2202 cx 3 2   2203 h -1 4   
+2204 h -1 3   
+-1 swap 2 1   2207 t -1 3   
+2209 cx 3 8   
+-1 swap 5 0   -1 swap 8 7   
+2210 cx 2 3   
+-1 swap 6 1   2215 t -1 3   
+-1 swap 8 3   2211 tdg -1 7   
+-1 swap 5 0   -1 swap 9 4   2212 cx 2 7   
+2213 tdg -1 2   2214 tdg -1 7   2221 t -1 6   
+2216 cx 8 7   
+-1 swap 1 0   -1 swap 8 3   -1 swap 9 4   -1 swap 7 6   
+
+
+-1 swap 6 1   2217 cx 2 3   2220 h -1 4   
+-1 swap 8 7   2219 h -1 3   2223 t -1 4   
+2222 t -1 3   
+-1 swap 5 0   2218 cx 1 2   
+-1 swap 6 1   2224 cx 3 8   
+2225 cx 4 3   
+-1 swap 9 4   2227 tdg -1 3   
+-1 swap 2 1   -1 swap 5 0   
+
+2226 cx 8 9   
+-1 swap 6 1   2228 cx 8 3   2231 t -1 9   
+-1 swap 9 8   2230 tdg -1 3   
+-1 swap 7 2   
+-1 swap 5 0   -1 swap 6 1   
+2229 tdg -1 9   2232 cx 8 3   
+-1 swap 4 3   2233 cx 9 8   
+2235 h -1 8   2237 t -1 1   2238 t -1 6   
+-1 swap 5 0   2240 cx 6 1   
+-1 swap 2 1   -1 swap 7 6   2234 cx 4 9   
+-1 swap 4 3   
+
+-1 swap 1 0   -1 swap 8 7   
+2236 h -1 3   
+-1 swap 9 4   2239 t -1 3   
+-1 swap 1 0   -1 swap 6 5   2241 cx 3 8   
+2242 cx 2 3   2243 tdg -1 8   
+-1 swap 7 2   2247 t -1 3   
+-1 swap 6 1   
+
+-1 swap 5 0   2244 cx 7 8   
+-1 swap 7 2   -1 swap 9 4   2246 tdg -1 8   
+2248 cx 3 8   
+-1 swap 1 0   -1 swap 6 5   
+-1 swap 8 7   2245 tdg -1 2   2252 h -1 4   2253 t -1 9   
+-1 swap 9 4   2249 cx 2 3   
+-1 swap 1 0   -1 swap 6 5   2251 h -1 3   
+2250 cx 7 2   2254 t -1 3   
+-1 swap 8 7   2255 t -1 9   2256 cx 3 4   
+-1 swap 6 1   -1 swap 9 4   
+
+
+2257 cx 4 3   
+2258 cx 9 4   2259 tdg -1 3   
+-1 swap 4 3   
+-1 swap 2 1   
+
+-1 swap 6 5   2260 cx 9 4   2263 t -1 3   
+-1 swap 1 0   -1 swap 7 2   -1 swap 9 8   2262 tdg -1 4   
+2264 cx 3 4   
+
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   -1 swap 7 6   2261 tdg -1 8   
+2265 cx 8 3   
+2267 h -1 3   
+-1 swap 4 3   2266 cx 9 8   2269 t -1 5   
+-1 swap 2 1   -1 swap 6 5   2268 h -1 9   
+2271 t -1 9   
+-1 swap 9 8   2270 t -1 3   
+-1 swap 3 2   -1 swap 6 1   
+
+-1 swap 8 7   
+2272 cx 2 1   
+-1 swap 6 1   -1 swap 9 4   
+-1 swap 8 3   2273 cx 7 2   
+2275 tdg -1 2   
+-1 swap 2 1   2274 cx 6 7   
+-1 swap 5 0   2279 t -1 7   
+-1 swap 8 3   
+-1 swap 9 4   2276 cx 6 1   
+-1 swap 7 6   2278 tdg -1 1   
+
+-1 swap 4 3   -1 swap 5 0   2285 t -1 9   
+2277 tdg -1 7   2280 cx 6 1   
+2281 cx 7 6   
+-1 swap 3 2   -1 swap 5 0   -1 swap 7 6   -1 swap 9 8   
+
+
+2282 cx 1 6   2283 h -1 7   2284 h -1 2   
+2286 t -1 7   2287 t -1 2   
+-1 swap 4 3   -1 swap 5 0   2288 cx 7 8   
+2289 cx 2 7   
+-1 swap 8 7   
+-1 swap 5 0   -1 swap 6 1   -1 swap 9 4   
+
+2290 cx 7 2   2291 tdg -1 8   
+2292 cx 7 8   2295 t -1 2   
+-1 swap 4 3   -1 swap 5 0   -1 swap 6 1   -1 swap 7 2   2294 tdg -1 8   
+
+
+-1 swap 5 0   -1 swap 6 1   -1 swap 9 4   2293 tdg -1 2   2296 cx 7 8   
+-1 swap 8 3   2297 cx 2 7   
+2299 h -1 7   
+2301 t -1 1   2302 t -1 6   
+-1 swap 6 1   2298 cx 3 2   
+-1 swap 5 0   -1 swap 8 7   2300 h -1 3   
+-1 swap 3 2   -1 swap 9 4   
+2304 cx 1 6   
+-1 swap 7 6   
+-1 swap 8 3   -1 swap 9 4   2303 t -1 2   
+-1 swap 5 0   2305 cx 2 1   
+2306 cx 7 2   2307 tdg -1 1   
+-1 swap 2 1   
+-1 swap 9 4   -1 swap 6 5   
+-1 swap 8 3   
+2308 cx 7 2   2311 t -1 1   
+-1 swap 5 0   -1 swap 7 6   2310 tdg -1 2   
+2312 cx 1 2   
+-1 swap 9 8   
+-1 swap 4 3   -1 swap 5 0   -1 swap 7 2   2309 tdg -1 6   
+2313 cx 6 1   
+2315 h -1 1   
+-1 swap 5 0   -1 swap 8 3   -1 swap 9 4   2314 cx 7 6   2316 h -1 2   
+-1 swap 2 1   2318 t -1 6   
+
+-1 swap 4 3   -1 swap 8 7   2317 t -1 5   
+2319 t -1 1   2320 cx 6 5   
+2321 cx 1 6   
+-1 swap 1 0   -1 swap 4 3   2323 tdg -1 6   
+-1 swap 9 8   
+-1 swap 7 2   
+2322 cx 5 0   
+-1 swap 8 3   -1 swap 9 4   2324 cx 5 6   2327 t -1 0   
+-1 swap 5 0   -1 swap 7 2   2326 tdg -1 6   
+
+-1 swap 8 3   
+2325 tdg -1 0   2328 cx 5 6   2333 t -1 2   
+-1 swap 6 1   2329 cx 0 5   
+2331 h -1 5   2334 t -1 3   
+2336 cx 3 2   
+-1 swap 3 2   2330 cx 1 0   
+2332 h -1 1   
+-1 swap 9 4   2335 t -1 1   
+2337 cx 1 2   
+-1 swap 3 2   -1 swap 8 7   
+-1 swap 6 5   
+-1 swap 9 4   
+2338 cx 2 1   2339 tdg -1 3   
+-1 swap 5 0   -1 swap 7 6   2340 cx 2 3   2343 t -1 1   
+-1 swap 2 1   -1 swap 9 4   2342 tdg -1 3   
+
+-1 swap 8 7   2349 t -1 5   
+-1 swap 6 5   2341 tdg -1 1   2344 cx 2 3   
+2345 cx 1 2   
+-1 swap 2 1   -1 swap 9 4   -1 swap 8 7   
+
+
+-1 swap 9 4   2346 cx 3 2   2347 h -1 1   2348 h -1 7   
+-1 swap 5 0   -1 swap 7 2   2350 t -1 1   
+-1 swap 8 3   2352 cx 1 6   
+-1 swap 9 4   
+-1 swap 5 0   2351 t -1 2   
+2353 cx 2 1   
+-1 swap 4 3   -1 swap 6 1   -1 swap 9 8   
+-1 swap 5 0   
+
+-1 swap 9 8   2354 cx 1 2   2355 tdg -1 6   
+2356 cx 1 6   2359 t -1 2   
+-1 swap 2 1   2358 tdg -1 6   
+-1 swap 5 0   2365 t -1 7   2366 t -1 8   
+-1 swap 9 8   
+2357 tdg -1 2   2360 cx 1 6   
+2361 cx 2 1   
+-1 swap 2 1   -1 swap 9 8   
+
+
+2362 cx 6 1   2363 h -1 2   2368 cx 8 7   
+-1 swap 8 7   2364 h -1 6   
+-1 swap 1 0   -1 swap 3 2   -1 swap 9 4   2367 t -1 6   
+
+2369 cx 6 7   
+-1 swap 7 6   
+-1 swap 1 0   
+-1 swap 4 3   
+2370 cx 8 7   2371 tdg -1 6   
+-1 swap 5 0   -1 swap 8 7   
+-1 swap 2 1   -1 swap 9 4   
+
+2372 cx 7 6   2375 t -1 8   
+-1 swap 5 0   -1 swap 9 4   -1 swap 8 7   2374 tdg -1 6   2380 h -1 3   
+-1 swap 2 1   2383 t -1 3   
+
+-1 swap 5 0   -1 swap 9 4   2373 tdg -1 8   2376 cx 7 6   
+2377 cx 8 7   
+-1 swap 7 6   
+2381 t -1 9   
+
+-1 swap 6 1   2378 cx 7 8   
+-1 swap 7 2   2382 t -1 8   
+-1 swap 5 0   2384 cx 8 9   
+2379 h -1 1   2385 cx 3 8   
+-1 swap 7 2   -1 swap 9 8   
+-1 swap 6 5   
+-1 swap 1 0   
+2386 cx 8 3   2387 tdg -1 9   
+2388 cx 8 9   2391 t -1 3   
+-1 swap 8 3   2390 tdg -1 9   
+-1 swap 2 1   2397 t -1 6   2398 t -1 0   
+-1 swap 5 0   -1 swap 7 6   
+2389 tdg -1 3   2392 cx 8 9   
+-1 swap 9 4   2393 cx 3 8   
+-1 swap 6 5   2395 h -1 8   
+-1 swap 1 0   -1 swap 8 3   
+-1 swap 9 4   
+-1 swap 7 6   
+
+-1 swap 2 1   -1 swap 4 3   -1 swap 5 0   2394 cx 9 8   
+2396 h -1 9   2400 cx 7 6   
+-1 swap 9 8   
+-1 swap 6 1   
+-1 swap 5 0   
+2399 t -1 8   
+2401 cx 8 7   
+-1 swap 2 1   -1 swap 5 0   -1 swap 8 3   2403 tdg -1 7   
+
+-1 swap 9 4   
+-1 swap 6 1   2402 cx 2 3   
+2404 cx 2 7   2407 t -1 3   
+-1 swap 3 2   -1 swap 9 4   2406 tdg -1 7   
+2413 t -1 5   2414 t -1 1   
+-1 swap 1 0   -1 swap 6 5   
+-1 swap 9 4   2405 tdg -1 3   2408 cx 2 7   
+2409 cx 3 2   
+-1 swap 1 0   -1 swap 7 2   
+
+
+-1 swap 9 4   2410 cx 2 3   2411 h -1 7   2416 cx 1 6   
+-1 swap 5 0   -1 swap 7 6   2412 h -1 2   
+2415 t -1 2   
+-1 swap 8 3   -1 swap 9 4   2417 cx 2 1   
+-1 swap 5 0   2418 cx 7 2   2419 tdg -1 1   
+-1 swap 7 6   2423 t -1 2   
+
+-1 swap 4 3   
+-1 swap 5 0   -1 swap 9 8   2420 cx 6 1   
+-1 swap 7 6   2422 tdg -1 1   
+2424 cx 2 1   
+-1 swap 4 3   2429 t -1 9   
+-1 swap 5 0   -1 swap 6 1   2421 tdg -1 7   
+-1 swap 9 8   2425 cx 7 2   
+2427 h -1 2   
+-1 swap 4 3   2426 cx 6 7   2428 h -1 1   2430 t -1 2   
+-1 swap 5 0   -1 swap 8 7   2431 t -1 1   
+
+-1 swap 9 4   
+-1 swap 5 0   -1 swap 8 3   2432 cx 2 7   
+2433 cx 1 2   
+-1 swap 7 2   
+
+-1 swap 4 3   
+-1 swap 5 0   -1 swap 9 8   2434 cx 2 1   2435 tdg -1 7   
+2436 cx 2 7   2439 t -1 1   
+-1 swap 2 1   -1 swap 4 3   2438 tdg -1 7   
+2445 t -1 9   
+-1 swap 5 0   
+-1 swap 8 3   -1 swap 9 4   2437 tdg -1 1   2440 cx 2 7   
+-1 swap 7 6   2441 cx 1 2   
+2443 h -1 2   
+-1 swap 3 2   -1 swap 5 0   -1 swap 9 8   
+2442 cx 6 1   
+
+2444 h -1 8   2446 t -1 3   
+-1 swap 2 1   2447 t -1 8   2448 cx 3 4   
+-1 swap 5 0   2449 cx 8 3   
+-1 swap 4 3   
+-1 swap 7 2   
+
+-1 swap 6 5   2450 cx 3 8   2451 tdg -1 4   
+-1 swap 7 2   2452 cx 3 4   2455 t -1 8   
+-1 swap 8 3   2454 tdg -1 4   
+-1 swap 6 1   2462 t -1 5   
+-1 swap 5 0   2461 t -1 2   
+2453 tdg -1 8   2456 cx 3 4   
+-1 swap 2 1   -1 swap 9 4   2457 cx 8 3   
+-1 swap 5 0   -1 swap 7 6   2459 h -1 3   
+
+-1 swap 4 3   2458 cx 9 8   
+-1 swap 6 5   2460 h -1 9   
+-1 swap 7 2   2463 t -1 9   
+-1 swap 9 8   
+2464 cx 6 1   
+-1 swap 5 0   -1 swap 7 6   
+-1 swap 3 2   -1 swap 9 4   
+
+2465 cx 8 7   
+-1 swap 2 1   -1 swap 5 0   -1 swap 8 3   2467 tdg -1 7   
+
+-1 swap 9 4   
+-1 swap 6 1   2466 cx 2 3   
+2468 cx 2 7   2471 t -1 3   
+-1 swap 3 2   -1 swap 9 4   2470 tdg -1 7   
+2477 t -1 6   2478 t -1 5   
+-1 swap 1 0   -1 swap 6 5   
+-1 swap 9 4   2469 tdg -1 3   2472 cx 2 7   
+-1 swap 8 7   2473 cx 3 2   
+2475 h -1 2   2480 cx 6 5   
+
+-1 swap 1 0   -1 swap 9 4   -1 swap 7 6   2474 cx 8 3   
+2476 h -1 8   
+-1 swap 3 2   2479 t -1 8   
+-1 swap 1 0   -1 swap 9 4   -1 swap 6 5   2481 cx 8 7   
+-1 swap 8 7   
+-1 swap 3 2   
+-1 swap 5 0   -1 swap 9 4   
+2482 cx 6 7   2483 tdg -1 8   
+-1 swap 3 2   -1 swap 7 6   
+-1 swap 5 0   
+-1 swap 9 4   
+2484 cx 7 8   2487 t -1 6   
+-1 swap 3 2   -1 swap 5 0   -1 swap 7 6   2486 tdg -1 8   
+-1 swap 9 4   
+
+-1 swap 3 2   2485 tdg -1 6   2488 cx 7 8   
+-1 swap 1 0   2489 cx 6 7   
+2491 h -1 7   
+2492 h -1 3   2493 t -1 2   2494 t -1 7   
+2495 t -1 3   2496 cx 7 2   
+-1 swap 8 7   
+-1 swap 5 0   -1 swap 9 4   
+
+2490 cx 7 6   2497 cx 3 8   
+2498 cx 2 3   2499 tdg -1 8   
+-1 swap 5 0   -1 swap 6 1   -1 swap 7 2   2503 t -1 3   
+-1 swap 9 4   
+
+-1 swap 1 0   2500 cx 7 8   
+-1 swap 7 2   -1 swap 9 4   -1 swap 6 5   2502 tdg -1 8   
+2504 cx 3 8   
+-1 swap 1 0   
+-1 swap 9 4   -1 swap 6 5   -1 swap 8 7   2501 tdg -1 2   
+2505 cx 2 3   
+-1 swap 1 0   2507 h -1 3   
+-1 swap 6 5   2506 cx 7 2   2508 h -1 4   
+-1 swap 4 3   -1 swap 9 8   2510 t -1 7   
+-1 swap 2 1   
+-1 swap 5 0   2509 t -1 6   
+2511 t -1 3   2512 cx 7 6   
+-1 swap 8 3   
+-1 swap 9 4   
+-1 swap 2 1   
+2513 cx 8 7   
+-1 swap 5 0   -1 swap 9 4   -1 swap 7 6   
+-1 swap 2 1   
+
+-1 swap 5 0   -1 swap 9 4   2514 cx 7 8   2515 tdg -1 6   
+2516 cx 7 6   2519 t -1 8   
+-1 swap 3 2   -1 swap 8 7   2518 tdg -1 6   
+-1 swap 5 0   2525 t -1 9   
+
+-1 swap 2 1   2517 tdg -1 8   2520 cx 7 6   2526 t -1 3   
+2521 cx 8 7   
+-1 swap 9 4   -1 swap 7 6   
+
+
+-1 swap 6 1   2522 cx 7 8   2528 cx 3 4   
+-1 swap 3 2   -1 swap 9 4   2524 h -1 7   
+2527 t -1 7   
+-1 swap 1 0   
+-1 swap 9 8   2529 cx 7 2   
+-1 swap 3 2   -1 swap 6 5   
+-1 swap 1 0   
+2530 cx 8 7   
+-1 swap 7 2   2531 tdg -1 3   
+-1 swap 6 1   2532 cx 8 3   
+2533 tdg -1 8   2534 tdg -1 3   2541 t -1 9   
+-1 swap 8 7   2535 t -1 2   
+-1 swap 9 4   2523 h -1 6   2536 cx 2 3   
+-1 swap 1 0   2540 h -1 6   
+-1 swap 8 3   -1 swap 6 5   2537 cx 7 2   
+-1 swap 9 4   2539 h -1 2   
+-1 swap 1 0   2542 t -1 2   
+2538 cx 8 7   2543 t -1 5   
+-1 swap 7 2   -1 swap 6 5   -1 swap 9 8   
+-1 swap 1 0   
+
+-1 swap 4 3   2544 cx 7 8   
+-1 swap 2 1   -1 swap 5 0   2545 cx 6 7   
+-1 swap 8 7   
+-1 swap 9 4   
+-1 swap 2 1   -1 swap 5 0   
+2546 cx 7 6   2547 tdg -1 8   
+2548 cx 7 8   2551 t -1 6   
+-1 swap 7 6   2550 tdg -1 8   
+-1 swap 5 0   -1 swap 9 4   2557 t -1 2   
+-1 swap 2 1   
+2549 tdg -1 6   2552 cx 7 8   
+-1 swap 9 4   2553 cx 6 7   
+-1 swap 2 1   2555 h -1 7   
+-1 swap 5 0   -1 swap 7 6   
+-1 swap 4 3   
+
+-1 swap 5 0   2554 cx 8 7   
+2556 h -1 8   2558 t -1 3   
+-1 swap 9 4   -1 swap 7 6   2559 t -1 8   2560 cx 3 2   
+2561 cx 8 3   
+-1 swap 3 2   -1 swap 5 0   
+-1 swap 9 4   
+
+-1 swap 7 6   2562 cx 3 8   2563 tdg -1 2   
+-1 swap 9 4   2564 cx 3 2   2567 t -1 8   
+-1 swap 5 0   -1 swap 8 3   2566 tdg -1 2   
+-1 swap 6 1   
+
+-1 swap 9 4   2565 tdg -1 8   2568 cx 3 2   2572 h -1 0   
+2569 cx 8 3   2573 t -1 1   2575 t -1 0   
+-1 swap 5 0   -1 swap 8 7   2571 h -1 3   
+-1 swap 4 3   
+
+-1 swap 6 5   -1 swap 9 8   2570 cx 2 7   
+-1 swap 2 1   2574 t -1 7   
+
+
+-1 swap 8 3   -1 swap 9 4   2576 cx 7 2   
+2577 cx 6 7   
+-1 swap 1 0   -1 swap 7 2   
+-1 swap 9 4   
+
+2578 cx 7 6   2579 tdg -1 2   
+2580 cx 7 2   2583 t -1 6   
+-1 swap 8 3   -1 swap 7 6   2582 tdg -1 2   
+2590 t -1 4   
+
+-1 swap 4 3   2581 tdg -1 6   2584 cx 7 2   2589 t -1 8   
+-1 swap 2 1   2585 cx 6 7   
+2587 h -1 7   
+2592 cx 3 8   
+-1 swap 3 2   -1 swap 8 7   2586 cx 1 6   
+2588 h -1 1   
+-1 swap 5 0   2591 t -1 1   
+2593 cx 1 2   
+-1 swap 6 1   2595 tdg -1 2   
+
+
+-1 swap 8 3   2594 cx 7 6   
+-1 swap 5 0   2596 cx 7 2   2599 t -1 6   
+-1 swap 7 6   2598 tdg -1 2   
+-1 swap 4 3   
+-1 swap 5 0   
+2597 tdg -1 6   2600 cx 7 2   
+-1 swap 2 1   -1 swap 9 8   2601 cx 6 7   2606 t -1 3   
+2603 h -1 7   2605 t -1 0   
+-1 swap 6 5   
+-1 swap 1 0   -1 swap 3 2   -1 swap 9 4   -1 swap 8 7   
+
+
+2602 cx 0 5   2608 cx 2 1   
+-1 swap 2 1   2604 h -1 0   
+-1 swap 7 6   -1 swap 9 8   2607 t -1 0   
+
+2609 cx 0 1   
+-1 swap 2 1   
+-1 swap 7 6   -1 swap 9 8   
+-1 swap 4 3   
+2610 cx 1 0   2611 tdg -1 2   
+2612 cx 1 2   2615 t -1 0   
+-1 swap 1 0   -1 swap 4 3   2614 tdg -1 2   2620 h -1 8   2621 t -1 5   
+2623 t -1 8   
+-1 swap 6 5   -1 swap 9 8   
+2613 tdg -1 0   2616 cx 1 2   
+2617 cx 0 1   
+-1 swap 2 1   -1 swap 9 4   -1 swap 7 6   
+
+
+-1 swap 4 3   -1 swap 6 5   -1 swap 9 8   2618 cx 1 0   2619 h -1 2   
+2622 t -1 2   
+-1 swap 1 0   2624 cx 2 7   
+-1 swap 6 5   2625 cx 3 2   
+-1 swap 7 2   -1 swap 9 4   
+
+-1 swap 1 0   -1 swap 6 5   
+2626 cx 2 3   2627 tdg -1 7   
+2628 cx 2 7   2631 t -1 3   
+-1 swap 3 2   2630 tdg -1 7   2636 h -1 4   2637 t -1 9   
+-1 swap 1 0   -1 swap 9 4   -1 swap 6 5   
+
+2629 tdg -1 3   2632 cx 2 7   
+-1 swap 1 0   -1 swap 8 7   2633 cx 3 2   2639 t -1 9   
+-1 swap 4 3   2635 h -1 2   
+2638 t -1 2   
+-1 swap 6 1   -1 swap 9 8   
+2640 cx 2 3   
+-1 swap 7 2   
+-1 swap 6 5   2634 cx 9 4   
+-1 swap 9 4   
+-1 swap 2 1   2641 cx 8 7   
+2642 cx 3 8   2643 tdg -1 7   
+-1 swap 8 3   -1 swap 9 4   -1 swap 6 5   
+-1 swap 2 1   
+
+2644 cx 8 7   2647 t -1 3   
+-1 swap 1 0   -1 swap 8 3   2646 tdg -1 7   
+-1 swap 9 4   -1 swap 6 5   
+
+2645 tdg -1 3   2648 cx 8 7   
+-1 swap 1 0   -1 swap 7 2   2649 cx 3 8   2653 t -1 9   2654 t -1 4   
+-1 swap 6 5   2651 h -1 8   2656 cx 4 9   
+-1 swap 9 8   
+2650 cx 2 3   
+-1 swap 4 3   -1 swap 5 0   2652 h -1 2   
+-1 swap 7 6   2655 t -1 2   
+
+2657 cx 2 3   
+-1 swap 1 0   -1 swap 8 3   
+-1 swap 7 6   
+-1 swap 9 4   
+-1 swap 5 0   2658 cx 3 2   2659 tdg -1 8   
+2660 cx 3 8   2663 t -1 2   
+-1 swap 3 2   -1 swap 9 4   2662 tdg -1 8   
+-1 swap 5 0   2670 t -1 6   
+
+2661 tdg -1 2   2664 cx 3 8   
+-1 swap 8 7   2665 cx 2 3   2669 t -1 5   
+2667 h -1 3   2672 cx 6 5   
+
+-1 swap 1 0   2666 cx 7 2   
+-1 swap 9 8   2668 h -1 7   
+-1 swap 4 3   2671 t -1 7   
+-1 swap 1 0   2673 cx 7 6   
+-1 swap 6 5   
+
+-1 swap 1 0   -1 swap 8 3   
+2674 cx 6 7   2675 tdg -1 5   
+2676 cx 6 5   2679 t -1 7   
+-1 swap 7 6   2678 tdg -1 5   2684 h -1 4   2685 t -1 2   
+-1 swap 2 1   2687 t -1 4   
+-1 swap 4 3   -1 swap 9 8   
+2677 tdg -1 7   2680 cx 6 5   
+-1 swap 2 1   2681 cx 7 6   
+2683 h -1 6   
+-1 swap 8 3   -1 swap 7 6   
+-1 swap 1 0   -1 swap 9 4   
+
+2682 cx 5 6   2686 t -1 7   
+-1 swap 6 1   -1 swap 9 4   2688 cx 7 2   
+-1 swap 5 0   2689 cx 8 7   
+-1 swap 8 3   2691 tdg -1 7   
+-1 swap 6 1   
+
+2690 cx 2 3   
+2692 cx 2 7   2695 t -1 3   
+-1 swap 3 2   2694 tdg -1 7   2700 h -1 4   
+2703 t -1 4   
+
+2693 tdg -1 3   2696 cx 2 7   
+-1 swap 8 7   2697 cx 3 2   
+-1 swap 6 1   2699 h -1 2   
+
+-1 swap 9 4   2698 cx 8 3   
+2701 t -1 3   2702 t -1 8   
+-1 swap 5 0   -1 swap 7 2   2704 cx 8 3   
+-1 swap 6 1   2705 cx 9 8   
+-1 swap 8 3   
+-1 swap 5 0   
+-1 swap 2 1   -1 swap 7 6   
+2706 cx 8 9   2707 tdg -1 3   
+-1 swap 5 0   2708 cx 8 3   2711 t -1 9   
+-1 swap 6 1   -1 swap 9 8   2710 tdg -1 3   
+-1 swap 7 2   
+-1 swap 5 0   
+2709 tdg -1 9   2712 cx 8 3   
+-1 swap 2 1   -1 swap 4 3   2713 cx 9 8   
+-1 swap 6 5   2715 h -1 8   2718 t -1 0   
+
+-1 swap 3 2   2714 cx 4 9   2717 t -1 1   
+-1 swap 1 0   2716 h -1 4   
+-1 swap 9 8   2719 t -1 4   
+-1 swap 4 3   -1 swap 6 5   
+2720 cx 1 0   
+
+-1 swap 3 2   -1 swap 5 0   -1 swap 9 4   
+-1 swap 7 6   
+
+-1 swap 8 3   2721 cx 2 1   
+-1 swap 7 2   -1 swap 6 5   2723 tdg -1 1   
+
+-1 swap 9 8   
+-1 swap 5 0   2722 cx 6 7   
+2724 cx 6 1   2727 t -1 7   
+-1 swap 7 6   2726 tdg -1 1   
+-1 swap 3 2   2733 t -1 5   
+-1 swap 5 0   -1 swap 9 8   
+2725 tdg -1 7   2728 cx 6 1   
+-1 swap 2 1   2729 cx 7 6   2734 t -1 3   
+-1 swap 9 8   2731 h -1 6   
+
+-1 swap 6 5   2730 cx 2 7   
+-1 swap 1 0   -1 swap 3 2   -1 swap 9 4   
+
+-1 swap 6 5   -1 swap 8 7   
+2732 h -1 3   2736 cx 2 1   
+2735 t -1 3   
+2737 cx 3 2   
+-1 swap 2 1   
+-1 swap 9 4   
+-1 swap 7 6   
+2738 cx 2 3   2739 tdg -1 1   
+2740 cx 2 1   2743 t -1 3   
+-1 swap 3 2   -1 swap 5 0   2742 tdg -1 1   
+-1 swap 9 4   2749 t -1 6   
+
+-1 swap 6 5   2741 tdg -1 3   2744 cx 2 1   2750 t -1 0   
+-1 swap 9 4   2745 cx 3 2   
+-1 swap 3 2   
+2752 cx 0 5   
+-1 swap 9 4   
+2746 cx 1 2   2747 h -1 3   
+-1 swap 6 5   2748 h -1 1   
+-1 swap 3 2   2751 t -1 1   
+-1 swap 9 8   2753 cx 1 0   
+2754 cx 6 1   2755 tdg -1 0   
+-1 swap 1 0   
+
+-1 swap 3 2   
+2756 cx 6 1   2759 t -1 0   
+-1 swap 6 5   2758 tdg -1 1   
+-1 swap 8 7   2760 cx 0 1   2764 h -1 3   2765 t -1 2   
+2767 t -1 3   
+-1 swap 6 1   2757 tdg -1 5   
+-1 swap 8 3   2761 cx 5 0   
+-1 swap 9 4   2763 h -1 0   
+-1 swap 2 1   2762 cx 6 5   2766 t -1 0   
+-1 swap 8 7   
+-1 swap 9 4   
+2768 cx 0 1   
+-1 swap 5 0   -1 swap 8 3   -1 swap 7 6   
+
+
+-1 swap 7 2   -1 swap 9 4   2769 cx 6 5   
+2770 cx 1 6   2771 tdg -1 5   
+-1 swap 1 0   -1 swap 8 3   2775 t -1 6   
+-1 swap 7 2   -1 swap 9 4   
+
+2772 cx 0 5   
+-1 swap 1 0   -1 swap 8 3   2774 tdg -1 5   2781 t -1 9   
+-1 swap 7 2   2776 cx 6 5   
+-1 swap 9 4   
+-1 swap 5 0   2773 tdg -1 1   2780 h -1 8   
+-1 swap 6 1   2783 t -1 8   
+-1 swap 4 3   
+-1 swap 5 0   
+2777 cx 6 1   
+-1 swap 9 4   -1 swap 8 7   2779 h -1 1   
+-1 swap 3 2   2778 cx 5 6   2782 t -1 1   
+
+-1 swap 7 6   
+-1 swap 4 3   -1 swap 5 0   -1 swap 9 8   2784 cx 1 2   
+
+2785 cx 6 1   
+-1 swap 2 1   -1 swap 5 0   -1 swap 8 3   -1 swap 9 4   
+
+
+-1 swap 5 0   2786 cx 1 6   2787 tdg -1 2   
+-1 swap 9 4   -1 swap 8 7   2788 cx 1 2   2791 t -1 6   
+-1 swap 6 1   2790 tdg -1 2   2796 h -1 3   
+2799 t -1 3   
+2797 t -1 9   
+2789 tdg -1 6   2792 cx 1 2   
+-1 swap 8 3   -1 swap 9 4   2793 cx 6 1   
+-1 swap 2 1   
+-1 swap 5 0   
+-1 swap 4 3   -1 swap 8 7   
+2794 cx 1 6   2795 h -1 2   
+-1 swap 6 5   2798 t -1 2   
+-1 swap 9 4   2800 cx 2 3   
+-1 swap 1 0   2801 cx 7 2   
+-1 swap 3 2   
+-1 swap 9 8   
+-1 swap 5 0   -1 swap 6 1   
+2802 cx 2 7   2803 tdg -1 3   
+2804 cx 2 3   2807 t -1 7   
+-1 swap 6 1   -1 swap 7 2   2806 tdg -1 3   
+-1 swap 9 8   2813 t -1 0   2814 t -1 5   
+
+2805 tdg -1 7   2808 cx 2 3   
+-1 swap 5 0   -1 swap 8 3   -1 swap 9 4   2809 cx 7 2   
+2811 h -1 2   
+
+-1 swap 5 0   2810 cx 8 7   
+-1 swap 7 6   2812 h -1 8   
+-1 swap 3 2   2815 t -1 8   
+2816 cx 5 0   
+-1 swap 1 0   -1 swap 6 5   -1 swap 8 7   
+-1 swap 9 4   
+
+2817 cx 7 6   
+-1 swap 6 1   
+-1 swap 4 3   
+
+2818 cx 6 7   2819 tdg -1 1   
+-1 swap 4 3   -1 swap 5 0   2820 cx 6 1   2823 t -1 7   
+-1 swap 7 6   2822 tdg -1 1   
+2829 t -1 9   2830 t -1 8   
+-1 swap 8 3   
+2821 tdg -1 7   2824 cx 6 1   
+-1 swap 2 1   -1 swap 9 4   2825 cx 7 6   
+2827 h -1 6   
+
+2826 cx 2 7   2832 cx 3 4   
+-1 swap 6 1   2828 h -1 2   
+2831 t -1 2   
+2833 cx 2 3   
+-1 swap 1 0   -1 swap 4 3   
+-1 swap 6 5   -1 swap 9 8   
+
+-1 swap 1 0   2834 cx 3 2   2835 tdg -1 4   
+-1 swap 7 6   2836 cx 3 4   2839 t -1 2   
+-1 swap 3 2   -1 swap 9 8   2838 tdg -1 4   
+-1 swap 5 0   
+2845 t -1 7   
+-1 swap 6 1   -1 swap 8 7   2837 tdg -1 2   2840 cx 3 4   2846 t -1 9   
+2841 cx 2 3   
+-1 swap 3 2   
+-1 swap 1 0   2848 cx 9 8   
+
+-1 swap 8 7   2842 cx 4 3   2843 h -1 2   
+-1 swap 1 0   2844 h -1 4   
+-1 swap 6 5   2847 t -1 4   
+-1 swap 8 7   2849 cx 4 9   
+-1 swap 1 0   -1 swap 4 3   2851 tdg -1 9   
+-1 swap 6 5   
+
+-1 swap 2 1   2850 cx 8 3   
+2852 cx 8 9   2855 t -1 3   
+-1 swap 8 3   -1 swap 7 6   2854 tdg -1 9   2861 t -1 4   
+-1 swap 5 0   2860 h -1 1   
+-1 swap 2 1   
+2853 tdg -1 3   2856 cx 8 9   
+-1 swap 9 4   2857 cx 3 8   
+-1 swap 7 2   2859 h -1 8   
+-1 swap 6 1   2862 t -1 8   
+-1 swap 5 0   2858 cx 4 3   2864 cx 8 9   
+-1 swap 4 3   2863 t -1 7   
+-1 swap 2 1   2865 cx 7 8   
+-1 swap 9 8   
+-1 swap 6 5   
+
+-1 swap 3 2   2866 cx 8 7   2867 tdg -1 9   
+-1 swap 6 5   2868 cx 8 9   2871 t -1 7   
+-1 swap 8 7   2870 tdg -1 9   2876 h -1 1   2877 t -1 0   
+-1 swap 3 2   2879 t -1 1   
+-1 swap 5 0   
+-1 swap 6 1   2869 tdg -1 7   2872 cx 8 9   
+-1 swap 4 3   2873 cx 7 8   
+-1 swap 8 7   
+-1 swap 6 1   
+
+2874 cx 9 8   2875 h -1 7   
+-1 swap 6 5   2878 t -1 7   
+-1 swap 2 1   
+-1 swap 4 3   -1 swap 9 8   
+-1 swap 5 0   2880 cx 7 6   
+2881 cx 2 7   
+-1 swap 2 1   -1 swap 8 3   2883 tdg -1 7   
+-1 swap 9 4   
+
+-1 swap 8 3   2882 cx 6 1   
+2884 cx 6 7   2887 t -1 1   
+-1 swap 1 0   -1 swap 6 5   2886 tdg -1 7   2893 h -1 2   2895 t -1 9   
+-1 swap 4 3   -1 swap 9 8   2896 t -1 2   
+
+-1 swap 5 0   -1 swap 7 6   
+
+-1 swap 3 2   -1 swap 9 4   
+2885 tdg -1 0   2888 cx 5 6   2892 x -1 7   
+-1 swap 6 1   2889 cx 0 5   2894 t -1 7   
+-1 swap 9 4   2891 h -1 5   2897 cx 8 7   
+2898 cx 3 8   
+-1 swap 1 0   -1 swap 8 7   
+-1 swap 9 4   
+
+2890 cx 0 1   2899 cx 8 3   2900 tdg -1 7   
+2901 cx 8 7   2904 t -1 3   
+-1 swap 1 0   -1 swap 8 3   2903 tdg -1 7   
+2911 t -1 9   
+-1 swap 6 5   
+-1 swap 1 0   -1 swap 9 4   2902 tdg -1 3   2905 cx 8 7   
+2906 cx 3 8   
+-1 swap 6 5   -1 swap 8 7   
+-1 swap 1 0   
+
+-1 swap 7 6   2907 cx 8 3   
+-1 swap 4 3   -1 swap 5 0   2909 h -1 8   2910 t -1 1   
+-1 swap 2 1   2912 t -1 8   
+2908 h -1 6   
+
+-1 swap 6 1   2913 cx 3 2   
+2914 cx 8 3   
+-1 swap 3 2   
+-1 swap 7 6   
+
+-1 swap 1 0   2915 cx 3 8   2916 tdg -1 2   
+2917 cx 3 2   2920 t -1 8   
+-1 swap 8 3   -1 swap 6 5   2919 tdg -1 2   
+-1 swap 9 4   
+-1 swap 1 0   
+2918 tdg -1 8   2921 cx 3 2   2926 t -1 6   
+-1 swap 9 4   -1 swap 7 6   2922 cx 8 3   
+-1 swap 3 2   
+
+2927 t -1 9   
+2923 cx 3 8   2924 h -1 2   
+-1 swap 8 7   2925 h -1 3   
+-1 swap 1 0   -1 swap 4 3   -1 swap 6 5   
+
+-1 swap 7 2   2929 cx 9 8   
+-1 swap 1 0   -1 swap 8 3   2928 t -1 4   
+2930 cx 4 9   
+-1 swap 7 2   2932 tdg -1 9   
+-1 swap 5 0   -1 swap 9 8   2931 cx 3 4   
+2936 t -1 4   
+-1 swap 7 6   
+-1 swap 5 0   2933 cx 3 8   
+-1 swap 4 3   2935 tdg -1 8   
+-1 swap 2 1   
+-1 swap 5 0   
+2934 tdg -1 4   2937 cx 3 8   
+-1 swap 9 8   2938 cx 4 3   
+-1 swap 2 1   2940 h -1 3   2942 t -1 5   2943 t -1 0   
+-1 swap 4 3   -1 swap 6 5   
+-1 swap 9 8   
+-1 swap 2 1   
+-1 swap 5 0   
+-1 swap 9 4   2939 cx 8 3   
+-1 swap 2 1   -1 swap 8 7   
+2945 cx 5 6   
+-1 swap 6 5   
+-1 swap 8 3   2941 h -1 7   
+-1 swap 1 0   2944 t -1 7   
+2946 cx 7 6   
+-1 swap 3 2   -1 swap 6 5   
+-1 swap 9 8   
+-1 swap 1 0   
+2947 cx 6 7   2948 tdg -1 5   
+-1 swap 9 8   2949 cx 6 5   2952 t -1 7   
+-1 swap 4 3   -1 swap 7 6   2951 tdg -1 5   
+-1 swap 2 1   
+2957 h -1 9   2958 t -1 8   
+-1 swap 8 3   -1 swap 9 4   2950 tdg -1 7   2953 cx 6 5   
+2954 cx 7 6   
+-1 swap 1 0   -1 swap 7 6   
+-1 swap 3 2   -1 swap 9 4   
+
+-1 swap 5 0   -1 swap 6 1   2956 h -1 7   
+2959 t -1 7   2960 t -1 9   
+-1 swap 9 8   2961 cx 7 2   
+2955 cx 0 1   
+-1 swap 3 2   -1 swap 6 1   
+-1 swap 5 0   2962 cx 8 7   
+2964 tdg -1 7   
+-1 swap 7 2   2963 cx 3 8   
+-1 swap 5 0   2968 t -1 8   
+-1 swap 9 4   
+-1 swap 7 6   2965 cx 3 2   
+-1 swap 8 3   2967 tdg -1 2   2974 t -1 1   
+-1 swap 5 0   2973 h -1 9   
+2976 t -1 9   
+2966 tdg -1 8   2969 cx 3 2   
+-1 swap 7 2   -1 swap 6 5   2970 cx 8 3   
+-1 swap 9 4   2972 h -1 3   
+2975 t -1 3   
+-1 swap 2 1   2971 cx 7 8   
+-1 swap 5 0   
+
+-1 swap 9 8   2977 cx 3 2   
+-1 swap 6 1   2978 cx 4 3   
+-1 swap 3 2   
+-1 swap 8 7   
+
+-1 swap 5 0   2979 cx 3 4   2980 tdg -1 2   
+-1 swap 6 1   -1 swap 8 7   2981 cx 3 2   2984 t -1 4   
+-1 swap 4 3   2983 tdg -1 2   
+2989 h -1 5   
+-1 swap 6 1   2990 t -1 8   2992 t -1 5   
+-1 swap 9 8   2982 tdg -1 4   2985 cx 3 2   
+2986 cx 4 3   
+-1 swap 6 5   2988 h -1 3   
+-1 swap 1 0   -1 swap 9 8   2991 t -1 3   
+
+
+2993 cx 3 8   
+-1 swap 3 2   -1 swap 5 0   -1 swap 6 1   
+-1 swap 8 7   
+
+2987 cx 3 4   2994 cx 1 2   
+-1 swap 6 1   2996 tdg -1 2   
+-1 swap 4 3   
+-1 swap 5 0   
+2995 cx 7 6   
+2997 cx 7 2   3000 t -1 6   
+-1 swap 1 0   -1 swap 8 3   -1 swap 9 4   -1 swap 7 6   2999 tdg -1 2   
+
+
+-1 swap 4 3   2998 tdg -1 6   3001 cx 7 2   3006 t -1 8   3007 t -1 9   
+-1 swap 2 1   3002 cx 6 7   3009 cx 9 8   
+-1 swap 5 0   3004 h -1 7   
+
+-1 swap 6 1   -1 swap 9 8   
+
+
+-1 swap 5 0   -1 swap 9 4   -1 swap 8 7   3003 cx 6 1   
+3005 h -1 6   
+-1 swap 2 1   3008 t -1 6   
+-1 swap 4 3   -1 swap 7 6   
+-1 swap 9 8   
+-1 swap 1 0   
+-1 swap 3 2   3010 cx 7 6   
+-1 swap 9 4   3012 tdg -1 6   
+-1 swap 6 1   
+3011 cx 2 7   
+-1 swap 9 4   3016 t -1 7   
+-1 swap 5 0   -1 swap 8 3   3013 cx 2 1   
+-1 swap 7 2   3015 tdg -1 1   
+3022 t -1 4   
+-1 swap 4 3   -1 swap 5 0   
+3014 tdg -1 7   3017 cx 2 1   
+-1 swap 6 1   3018 cx 7 2   
+-1 swap 8 3   -1 swap 9 4   3020 h -1 2   
+
+-1 swap 2 1   3019 cx 6 7   
+-1 swap 5 0   3021 h -1 6   3023 t -1 9   
+-1 swap 7 6   -1 swap 9 8   
+
+-1 swap 4 3   -1 swap 5 0   
+-1 swap 6 1   3024 t -1 7   3025 cx 8 9   
+3026 cx 7 8   
+-1 swap 3 2   -1 swap 5 0   -1 swap 9 8   
+-1 swap 6 1   
+
+-1 swap 3 2   3027 cx 8 7   3028 tdg -1 9   
+-1 swap 6 5   3029 cx 8 9   3032 t -1 7   
+-1 swap 1 0   -1 swap 8 7   3031 tdg -1 9   
+-1 swap 3 2   
+3039 t -1 6   
+3030 tdg -1 7   3033 cx 8 9   3038 t -1 1   
+-1 swap 6 1   3034 cx 7 8   
+-1 swap 5 0   -1 swap 8 7   
+
+-1 swap 4 3   -1 swap 6 1   
+3035 cx 9 8   3036 h -1 7   
+3037 h -1 9   
+3040 t -1 9   3041 cx 6 1   
+-1 swap 5 0   -1 swap 7 6   -1 swap 9 8   
+-1 swap 2 1   -1 swap 4 3   
+
+3042 cx 8 7   
+-1 swap 5 0   -1 swap 6 1   -1 swap 7 2   
+-1 swap 4 3   
+
+-1 swap 1 0   -1 swap 6 5   3043 cx 7 8   3044 tdg -1 2   
+3045 cx 7 2   3048 t -1 8   
+-1 swap 9 4   -1 swap 8 7   3047 tdg -1 2   
+-1 swap 5 0   -1 swap 6 1   
+
+3046 tdg -1 8   3049 cx 7 2   3054 t -1 4   
+-1 swap 4 3   3050 cx 8 7   3053 h -1 5   
+3052 h -1 7   3056 t -1 5   
+-1 swap 1 0   -1 swap 6 5   3055 t -1 7   
+-1 swap 3 2   
+-1 swap 9 4   
+
+-1 swap 8 3   3057 cx 7 2   
+3058 cx 6 7   
+-1 swap 7 2   -1 swap 9 4   
+-1 swap 1 0   3051 cx 8 3   
+-1 swap 8 3   
+3059 cx 7 6   3060 tdg -1 2   
+3061 cx 7 2   3064 t -1 6   
+-1 swap 8 3   -1 swap 7 6   3063 tdg -1 2   3069 h -1 1   3070 t -1 5   
+3072 t -1 1   
+-1 swap 5 0   
+-1 swap 8 3   -1 swap 9 4   3062 tdg -1 6   3065 cx 7 2   
+3066 cx 6 7   
+-1 swap 5 0   -1 swap 7 6   
+-1 swap 4 3   -1 swap 9 8   
+
+3067 cx 2 7   3068 h -1 6   
+-1 swap 8 3   3071 t -1 6   
+-1 swap 7 2   3073 cx 6 5   
+-1 swap 9 4   3074 cx 1 6   
+-1 swap 6 5   
+-1 swap 3 2   
+-1 swap 9 4   
+3075 cx 6 1   3076 tdg -1 5   
+-1 swap 7 2   -1 swap 8 3   3077 cx 6 5   3080 t -1 1   
+-1 swap 6 1   3079 tdg -1 5   3085 h -1 0   
+3088 t -1 0   
+-1 swap 4 3   3086 t -1 7   
+-1 swap 7 2   3078 tdg -1 1   3081 cx 6 5   
+-1 swap 5 0   3082 cx 1 6   
+-1 swap 8 3   -1 swap 9 4   3084 h -1 6   
+-1 swap 7 2   3087 t -1 6   
+3083 cx 0 1   
+-1 swap 4 3   
+-1 swap 2 1   -1 swap 9 8   3089 cx 6 7   
+3090 cx 5 6   
+-1 swap 4 3   -1 swap 7 6   
+-1 swap 9 8   
+-1 swap 1 0   
+3091 cx 6 5   3092 tdg -1 7   
+-1 swap 9 8   3093 cx 6 7   3096 t -1 5   
+-1 swap 1 0   -1 swap 6 5   3095 tdg -1 7   
+-1 swap 4 3   3102 t -1 2   
+-1 swap 9 8   
+-1 swap 2 1   3094 tdg -1 5   3097 cx 6 7   
+3098 cx 5 6   3103 t -1 3   
+3100 h -1 6   
+-1 swap 3 2   -1 swap 6 5   
+
+
+-1 swap 5 0   3099 cx 7 6   3105 cx 2 1   
+-1 swap 6 1   -1 swap 8 3   3101 h -1 7   
+3104 t -1 7   
+3106 cx 7 2   
+-1 swap 1 0   -1 swap 8 3   3107 cx 6 7   3108 tdg -1 2   
+-1 swap 7 2   
+
+
+-1 swap 8 3   3109 cx 6 7   3112 t -1 2   
+-1 swap 5 0   -1 swap 6 1   3111 tdg -1 7   
+3113 cx 2 7   3119 t -1 4   
+-1 swap 4 3   
+-1 swap 5 0   -1 swap 7 6   -1 swap 9 8   3110 tdg -1 1   
+3114 cx 1 2   
+3116 h -1 2   3118 t -1 4   
+-1 swap 8 3   -1 swap 9 4   3115 cx 6 1   
+-1 swap 2 1   3117 h -1 6   
+-1 swap 5 0   -1 swap 7 6   
+3121 cx 8 9   
+-1 swap 3 2   
+-1 swap 1 0   -1 swap 6 5   3120 t -1 7   
+3122 cx 7 8   
+-1 swap 9 8   
+-1 swap 6 5   
+
+-1 swap 3 2   3123 cx 8 7   3124 tdg -1 9   
+-1 swap 6 5   3125 cx 8 9   3128 t -1 7   
+-1 swap 1 0   -1 swap 8 7   3127 tdg -1 9   
+-1 swap 3 2   
+
+3126 tdg -1 7   3129 cx 8 9   3133 h -1 1   
+-1 swap 2 1   -1 swap 4 3   -1 swap 5 0   3130 cx 7 8   
+-1 swap 9 8   
+
+-1 swap 1 0   3134 t -1 4   3136 t -1 2   
+-1 swap 3 2   -1 swap 6 5   3131 cx 8 7   3132 h -1 9   
+3135 t -1 9   
+3137 cx 9 4   
+-1 swap 4 3   
+-1 swap 2 1   -1 swap 6 5   
+-1 swap 8 7   
+3138 cx 4 9   
+3139 cx 3 4   3140 tdg -1 9   
+-1 swap 1 0   -1 swap 8 3   3144 t -1 4   
+
+-1 swap 7 2   
+-1 swap 6 5   3141 cx 8 9   
+-1 swap 1 0   -1 swap 8 3   3143 tdg -1 9   
+-1 swap 7 2   3145 cx 4 9   
+3150 t -1 5   
+-1 swap 5 0   -1 swap 9 8   3142 tdg -1 3   
+-1 swap 4 3   3149 h -1 2   
+-1 swap 7 2   
+-1 swap 1 0   -1 swap 9 8   
+3146 cx 4 3   
+3148 h -1 3   3152 t -1 7   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   3151 t -1 3   
+-1 swap 8 7   
+
+-1 swap 6 1   3147 cx 4 9   3153 cx 3 2   
+-1 swap 9 4   3154 cx 8 3   
+-1 swap 3 2   
+
+-1 swap 7 6   
+-1 swap 9 4   3155 cx 3 8   3156 tdg -1 2   
+3157 cx 3 2   3160 t -1 8   
+-1 swap 5 0   -1 swap 8 3   -1 swap 7 6   3159 tdg -1 2   
+-1 swap 9 4   
+
+-1 swap 5 0   3158 tdg -1 8   3161 cx 3 2   
+-1 swap 7 2   3162 cx 8 3   3166 t -1 4   3167 t -1 9   
+3164 h -1 3   3169 cx 9 4   
+-1 swap 4 3   -1 swap 5 0   
+3163 cx 7 8   
+-1 swap 6 1   -1 swap 9 8   3165 h -1 7   
+-1 swap 3 2   3168 t -1 7   
+
+-1 swap 9 4   3170 cx 7 8   
+-1 swap 1 0   -1 swap 6 5   3171 cx 2 7   3172 tdg -1 8   
+-1 swap 8 7   
+
+
+-1 swap 1 0   3173 cx 2 7   3176 t -1 8   
+-1 swap 3 2   -1 swap 6 5   3175 tdg -1 7   
+3177 cx 8 7   
+-1 swap 9 4   3183 t -1 1   
+-1 swap 1 0   -1 swap 7 2   3174 tdg -1 3   
+-1 swap 6 5   3178 cx 3 8   
+3180 h -1 8   
+3179 cx 2 3   3182 t -1 7   
+-1 swap 1 0   -1 swap 9 4   -1 swap 7 6   3181 h -1 2   
+-1 swap 8 3   3184 t -1 2   
+
+-1 swap 5 0   -1 swap 9 4   3185 cx 1 6   
+-1 swap 8 7   3186 cx 2 1   
+-1 swap 6 1   
+-1 swap 9 4   
+-1 swap 5 0   
+-1 swap 8 3   3187 cx 1 2   3188 tdg -1 6   
+3189 cx 1 6   3192 t -1 2   
+-1 swap 2 1   -1 swap 9 4   3191 tdg -1 6   3198 t -1 7   
+3197 h -1 8   
+-1 swap 5 0   3200 t -1 8   
+-1 swap 9 4   3190 tdg -1 2   3193 cx 1 6   
+-1 swap 7 6   3194 cx 2 1   
+3196 h -1 1   
+-1 swap 5 0   -1 swap 9 4   3199 t -1 1   
+3195 cx 7 2   3201 cx 1 6   
+-1 swap 2 1   -1 swap 8 3   
+-1 swap 9 4   -1 swap 7 6   
+-1 swap 5 0   
+3202 cx 3 2   
+-1 swap 6 1   -1 swap 8 3   3204 tdg -1 2   
+
+-1 swap 9 4   
+-1 swap 1 0   -1 swap 6 5   3203 cx 7 8   
+3205 cx 7 2   3208 t -1 8   
+-1 swap 4 3   -1 swap 8 7   3207 tdg -1 2   
+-1 swap 5 0   3216 h -1 6   
+
+-1 swap 6 1   -1 swap 9 4   3206 tdg -1 8   3209 cx 7 2   
+-1 swap 3 2   3210 cx 8 7   3214 x -1 0   
+3212 h -1 7   
+3215 x -1 7   3219 t -1 1   
+3211 cx 3 8   
+-1 swap 2 1   3213 x -1 8   3218 t -1 3   
+3217 t -1 8   
+-1 swap 7 6   3220 cx 3 8   
+3221 cx 2 3   
+-1 swap 1 0   -1 swap 8 3   
+-1 swap 7 6   
+-1 swap 9 4   
+-1 swap 5 0   3222 cx 3 2   3223 tdg -1 8   
+3224 cx 3 8   3227 t -1 2   
+-1 swap 3 2   -1 swap 9 4   3226 tdg -1 8   
+-1 swap 7 6   3234 t -1 1   
+-1 swap 5 0   
+3225 tdg -1 2   3228 cx 3 8   
+-1 swap 8 7   3229 cx 2 3   3233 t -1 6   
+3231 h -1 3   3236 cx 1 6   
+
+-1 swap 6 1   3230 cx 7 2   
+3232 h -1 7   
+-1 swap 3 2   3235 t -1 7   
+3237 cx 7 6   
+-1 swap 6 1   
+-1 swap 5 0   -1 swap 8 3   -1 swap 9 4   
+
+3238 cx 6 7   3239 tdg -1 1   
+-1 swap 4 3   -1 swap 5 0   3240 cx 6 1   3243 t -1 7   
+-1 swap 7 6   -1 swap 9 8   3242 tdg -1 1   3248 h -1 2   
+3251 t -1 2   
+-1 swap 5 0   
+-1 swap 4 3   3241 tdg -1 7   3244 cx 6 1   3249 t -1 9   
+-1 swap 2 1   -1 swap 9 8   3245 cx 7 6   
+-1 swap 5 0   3247 h -1 6   
+3250 t -1 6   
+-1 swap 2 1   -1 swap 7 6   
+-1 swap 9 4   
+-1 swap 5 0   
+3246 cx 1 6   3252 cx 7 8   
+3253 cx 2 7   
+-1 swap 3 2   3255 tdg -1 7   
+-1 swap 1 0   
+
+3254 cx 8 3   
+3256 cx 8 7   3259 t -1 3   
+-1 swap 1 0   -1 swap 8 3   3258 tdg -1 7   
+-1 swap 9 4   3265 t -1 6   
+
+-1 swap 1 0   -1 swap 6 5   3257 tdg -1 3   3260 cx 8 7   
+-1 swap 7 2   -1 swap 9 4   3261 cx 3 8   
+3263 h -1 8   
+3266 t -1 0   
+3262 cx 2 3   3268 cx 0 5   
+-1 swap 1 0   -1 swap 9 4   -1 swap 7 6   3264 h -1 2   
+-1 swap 8 3   3267 t -1 2   
+
+-1 swap 9 4   3269 cx 2 1   
+-1 swap 7 2   -1 swap 8 3   -1 swap 6 5   3271 tdg -1 1   
+
+-1 swap 9 4   
+-1 swap 8 3   3270 cx 6 7   
+3272 cx 6 1   3275 t -1 7   
+-1 swap 5 0   -1 swap 7 6   3274 tdg -1 1   3280 h -1 2   
+3281 t -1 8   3283 t -1 2   
+
+-1 swap 5 0   -1 swap 8 3   -1 swap 9 4   3273 tdg -1 7   3276 cx 6 1   
+3277 cx 7 6   
+3279 h -1 6   
+-1 swap 8 3   -1 swap 9 4   -1 swap 7 6   
+
+
+-1 swap 9 4   3278 cx 1 6   3282 t -1 7   
+-1 swap 5 0   -1 swap 6 1   3284 cx 7 8   
+3285 cx 2 7   
+-1 swap 9 4   -1 swap 8 7   
+-1 swap 6 5   
+-1 swap 1 0   
+-1 swap 4 3   3286 cx 7 2   3287 tdg -1 8   
+3288 cx 7 8   3291 t -1 2   
+-1 swap 1 0   -1 swap 7 2   3290 tdg -1 8   
+-1 swap 4 3   -1 swap 6 5   
+
+3289 tdg -1 2   3292 cx 7 8   3297 t -1 1   
+-1 swap 8 3   3293 cx 2 7   3298 t -1 6   
+-1 swap 6 1   3295 h -1 7   
+
+-1 swap 9 4   3294 cx 3 2   
+-1 swap 5 0   -1 swap 8 7   3296 h -1 3   3300 cx 1 6   
+-1 swap 2 1   3299 t -1 3   
+
+-1 swap 5 0   
+3301 cx 3 2   
+-1 swap 8 3   -1 swap 9 4   -1 swap 7 6   3303 tdg -1 2   
+-1 swap 1 0   
+
+3302 cx 7 8   
+-1 swap 1 0   -1 swap 4 3   3304 cx 7 2   3307 t -1 8   
+-1 swap 8 7   3306 tdg -1 2   
+
+-1 swap 1 0   -1 swap 9 4   -1 swap 6 5   
+3305 tdg -1 8   3308 cx 7 2   
+3309 cx 8 7   
+-1 swap 8 3   3311 h -1 7   3312 h -1 9   3313 t -1 0   
+-1 swap 1 0   -1 swap 6 5   3314 t -1 7   3315 t -1 9   
+
+3310 cx 2 3   
+-1 swap 2 1   
+-1 swap 5 0   -1 swap 9 8   
+
+-1 swap 4 3   3316 cx 7 2   
+3317 cx 8 7   
+-1 swap 7 2   
+-1 swap 6 1   
+-1 swap 9 4   
+3318 cx 7 8   3319 tdg -1 2   
+-1 swap 5 0   -1 swap 6 1   3320 cx 7 2   3323 t -1 8   
+-1 swap 8 7   3322 tdg -1 2   
+3329 t -1 9   
+3330 t -1 1   
+3321 tdg -1 8   3324 cx 7 2   
+-1 swap 2 1   -1 swap 4 3   3325 cx 8 7   
+-1 swap 5 0   -1 swap 8 7   
+
+-1 swap 9 4   
+-1 swap 3 2   -1 swap 5 0   -1 swap 7 6   3327 h -1 8   
+
+-1 swap 9 8   
+3326 cx 1 6   3332 cx 3 4   
+-1 swap 3 2   3328 h -1 1   
+-1 swap 6 5   -1 swap 8 7   3331 t -1 1   
+
+-1 swap 4 3   3333 cx 1 2   
+-1 swap 2 1   -1 swap 6 5   
+-1 swap 8 7   
+
+3334 cx 3 2   3335 tdg -1 1   
+-1 swap 3 2   -1 swap 5 0   -1 swap 9 4   
+-1 swap 7 6   
+
+-1 swap 9 8   3336 cx 2 1   3339 t -1 3   
+-1 swap 3 2   -1 swap 5 0   3338 tdg -1 1   
+
+-1 swap 9 4   -1 swap 7 6   3344 h -1 8   
+3337 tdg -1 3   3340 cx 2 1   3346 t -1 5   3347 t -1 8   
+-1 swap 3 2   
+-1 swap 6 5   -1 swap 8 7   
+-1 swap 9 4   
+3341 cx 2 3   
+-1 swap 7 6   3342 cx 1 2   3343 h -1 3   
+-1 swap 1 0   -1 swap 8 3   -1 swap 9 4   3345 t -1 2   
+
+3348 cx 7 2   
+-1 swap 2 1   -1 swap 5 0   3349 cx 6 7   
+-1 swap 9 8   3351 tdg -1 7   
+
+-1 swap 7 2   3350 cx 1 6   
+-1 swap 5 0   -1 swap 8 3   3355 t -1 6   
+
+-1 swap 9 4   3352 cx 1 2   
+-1 swap 2 1   -1 swap 6 5   -1 swap 8 7   3360 x -1 0   3361 h -1 3   
+3364 t -1 3   
+-1 swap 4 3   
+-1 swap 6 1   3353 tdg -1 2   
+
+-1 swap 9 4   3363 t -1 3   
+-1 swap 2 1   3354 tdg -1 6   
+3356 cx 5 6   
+-1 swap 5 0   -1 swap 7 6   -1 swap 9 8   
+3362 t -1 2   
+3365 cx 3 2   
+-1 swap 1 0   -1 swap 7 2   -1 swap 9 4   3366 cx 8 3   
+-1 swap 6 5   3368 tdg -1 3   
+
+3357 cx 0 1   3367 cx 7 8   
+-1 swap 1 0   -1 swap 9 4   -1 swap 6 5   -1 swap 8 7   
+
+
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   3369 cx 8 3   3372 t -1 7   
+-1 swap 8 7   3371 tdg -1 3   
+
+3358 cx 1 2   3359 h -1 5   3378 t -1 0   
+-1 swap 1 0   3370 tdg -1 7   3373 cx 8 3   
+-1 swap 3 2   3374 cx 7 8   
+3376 h -1 8   
+-1 swap 9 8   3379 t -1 0   
+3375 cx 2 7   3381 cx 0 1   
+-1 swap 4 3   3377 h -1 2   
+-1 swap 1 0   -1 swap 6 5   -1 swap 8 7   3380 t -1 2   
+
+-1 swap 9 4   
+3382 cx 2 1   
+-1 swap 1 0   -1 swap 6 5   
+-1 swap 8 7   
+-1 swap 9 4   
+3383 cx 1 2   3384 tdg -1 0   
+-1 swap 8 3   -1 swap 6 5   3385 cx 1 0   3388 t -1 2   
+-1 swap 2 1   -1 swap 9 4   3387 tdg -1 0   
+
+-1 swap 8 3   -1 swap 6 5   
+3386 tdg -1 2   3389 cx 1 0   3394 t -1 9   
+-1 swap 9 4   3390 cx 2 1   
+-1 swap 1 0   -1 swap 8 7   3395 t -1 3   
+-1 swap 6 5   
+3397 cx 3 4   
+3391 cx 1 2   3392 h -1 0   
+-1 swap 3 2   -1 swap 5 0   -1 swap 7 6   3393 h -1 1   
+-1 swap 9 8   3396 t -1 1   
+
+-1 swap 4 3   -1 swap 5 0   -1 swap 7 6   3398 cx 1 2   
+-1 swap 2 1   -1 swap 9 8   
+
+-1 swap 5 0   
+3399 cx 3 2   3400 tdg -1 1   
+-1 swap 3 2   -1 swap 9 8   
+-1 swap 6 5   
+
+3401 cx 2 1   3404 t -1 3   
+-1 swap 3 2   -1 swap 5 0   3403 tdg -1 1   3409 h -1 6   3410 t -1 4   
+-1 swap 8 7   3412 t -1 6   
+
+3402 tdg -1 3   3405 cx 2 1   
+3406 cx 3 2   
+-1 swap 3 2   -1 swap 5 0   -1 swap 7 6   
+
+
+-1 swap 6 5   -1 swap 8 7   3407 cx 1 2   3408 h -1 3   
+3411 t -1 3   
+-1 swap 2 1   3413 cx 3 4   
+3414 cx 8 3   
+-1 swap 4 3   -1 swap 6 5   
+-1 swap 1 0   
+
+3415 cx 3 8   3416 tdg -1 4   
+-1 swap 5 0   -1 swap 7 2   3417 cx 3 4   3420 t -1 8   
+-1 swap 6 1   -1 swap 8 3   3419 tdg -1 4   3426 t -1 9   
+
+-1 swap 7 2   
+-1 swap 5 0   -1 swap 6 1   3418 tdg -1 8   3421 cx 3 4   
+-1 swap 9 4   3422 cx 8 3   
+3424 h -1 3   
+3425 h -1 6   3427 t -1 3   
+3423 cx 9 8   3428 t -1 6   3429 cx 3 4   
+-1 swap 3 2   -1 swap 9 4   -1 swap 7 6   
+
+
+-1 swap 9 8   3430 cx 7 2   
+-1 swap 1 0   -1 swap 6 5   3432 tdg -1 2   
+-1 swap 3 2   
+3431 cx 8 7   
+-1 swap 1 0   -1 swap 9 4   3436 t -1 7   
+3433 cx 8 3   
+-1 swap 6 5   -1 swap 8 7   3435 tdg -1 3   
+-1 swap 2 1   3442 t -1 4   3443 t -1 9   
+-1 swap 9 4   
+-1 swap 5 0   3434 tdg -1 7   3437 cx 8 3   
+-1 swap 3 2   3438 cx 7 8   
+3440 h -1 8   3445 cx 4 9   
+
+-1 swap 4 3   3439 cx 2 7   
+-1 swap 5 0   -1 swap 6 1   3441 h -1 2   
+-1 swap 9 8   3444 t -1 2   
+3446 cx 2 3   
+-1 swap 6 1   -1 swap 7 2   3448 tdg -1 3   
+-1 swap 9 4   
+
+-1 swap 1 0   3447 cx 8 7   
+-1 swap 9 4   3449 cx 8 3   3452 t -1 7   
+-1 swap 6 5   -1 swap 8 7   3451 tdg -1 3   
+3458 t -1 1   3459 t -1 0   
+
+-1 swap 1 0   3450 tdg -1 7   3453 cx 8 3   
+-1 swap 3 2   3454 cx 7 8   
+3456 h -1 8   
+3461 cx 1 0   
+-1 swap 9 4   3455 cx 2 7   
+-1 swap 5 0   -1 swap 7 6   3457 h -1 2   
+-1 swap 8 3   3460 t -1 2   
+3462 cx 2 1   
+-1 swap 7 2   -1 swap 9 4   -1 swap 6 5   3464 tdg -1 1   
+-1 swap 8 3   
+
+-1 swap 9 4   3463 cx 6 7   
+-1 swap 3 2   3465 cx 6 1   3468 t -1 7   
+-1 swap 7 6   3467 tdg -1 1   3473 h -1 8   3474 t -1 5   
+3476 t -1 8   
+-1 swap 8 3   
+-1 swap 9 4   3466 tdg -1 7   3469 cx 6 1   
+-1 swap 2 1   3470 cx 7 6   
+3472 h -1 6   
+-1 swap 9 4   3475 t -1 6   
+3471 cx 2 7   3477 cx 6 5   
+-1 swap 3 2   -1 swap 5 0   -1 swap 6 1   
+
+
+3478 cx 2 1   
+-1 swap 1 0   
+-1 swap 4 3   
+-1 swap 6 5   -1 swap 8 7   
+3479 cx 1 2   3480 tdg -1 0   
+-1 swap 9 4   3481 cx 1 0   3484 t -1 2   
+-1 swap 1 0   -1 swap 6 5   3490 h -1 3   
+-1 swap 8 7   3493 t -1 3   
+3492 t -1 9   
+3482 tdg -1 0   3483 tdg -1 1   3489 x -1 6   
+3485 cx 2 1   3491 t -1 6   
+-1 swap 1 0   -1 swap 7 6   -1 swap 9 8   
+
+
+-1 swap 9 4   3486 cx 1 2   3494 cx 8 7   
+-1 swap 6 5   3487 cx 0 1   3488 h -1 2   3495 cx 3 8   
+-1 swap 3 2   3497 tdg -1 8   
+
+-1 swap 9 4   
+-1 swap 6 1   3496 cx 7 2   
+3498 cx 7 8   3501 t -1 2   
+-1 swap 7 2   3500 tdg -1 8   
+-1 swap 4 3   3507 t -1 0   3508 t -1 1   
+-1 swap 5 0   -1 swap 6 1   
+3499 tdg -1 2   3502 cx 7 8   
+-1 swap 8 3   3503 cx 2 7   
+-1 swap 5 0   -1 swap 6 1   3505 h -1 7   
+
+-1 swap 9 8   3504 cx 3 2   
+3506 h -1 3   3510 cx 1 0   
+-1 swap 6 5   3509 t -1 3   
+-1 swap 3 2   -1 swap 9 8   
+
+-1 swap 6 5   
+3511 cx 2 1   
+-1 swap 1 0   -1 swap 4 3   
+-1 swap 6 5   -1 swap 9 8   
+
+3512 cx 1 2   3513 tdg -1 0   
+-1 swap 8 3   -1 swap 7 6   3514 cx 1 0   3517 t -1 2   
+-1 swap 2 1   3516 tdg -1 0   
+3523 t -1 5   3524 t -1 9   
+
+-1 swap 7 6   3515 tdg -1 2   3518 cx 1 0   
+-1 swap 9 8   3519 cx 2 1   
+-1 swap 2 1   
+
+-1 swap 6 5   -1 swap 8 7   
+-1 swap 3 2   3520 cx 0 1   
+-1 swap 1 0   -1 swap 9 4   
+3526 cx 7 6   
+-1 swap 7 2   3521 h -1 3   
+-1 swap 8 3   3522 h -1 1   
+-1 swap 5 0   -1 swap 9 4   3525 t -1 1   
+3527 cx 1 2   
+3528 cx 6 1   3529 tdg -1 2   
+-1 swap 2 1   
+-1 swap 8 7   
+
+-1 swap 5 0   3530 cx 6 1   3533 t -1 2   
+-1 swap 7 6   3532 tdg -1 1   
+-1 swap 9 4   3534 cx 2 1   
+3539 t -1 5   
+-1 swap 5 0   -1 swap 6 1   -1 swap 8 3   3531 tdg -1 7   
+3535 cx 7 2   3540 t -1 4   
+3537 h -1 2   
+-1 swap 2 1   -1 swap 4 3   -1 swap 9 8   3536 cx 6 7   
+3538 h -1 6   
+-1 swap 7 6   
+-1 swap 1 0   -1 swap 3 2   
+
+3541 t -1 7   
+-1 swap 8 3   3542 cx 2 1   
+3543 cx 7 2   
+-1 swap 2 1   -1 swap 9 4   
+
+-1 swap 5 0   
+-1 swap 9 4   3544 cx 2 7   3545 tdg -1 1   
+-1 swap 8 3   3546 cx 2 1   3549 t -1 7   
+-1 swap 7 2   3548 tdg -1 1   3554 h -1 5   3555 t -1 6   
+3557 t -1 5   
+-1 swap 4 3   
+-1 swap 5 0   -1 swap 9 8   3547 tdg -1 7   3550 cx 2 1   
+-1 swap 6 1   3551 cx 7 2   
+3553 h -1 2   
+-1 swap 8 3   3556 t -1 2   
+3552 cx 6 7   3558 cx 2 1   
+-1 swap 1 0   -1 swap 6 5   
+-1 swap 8 7   
+
+3559 cx 1 2   
+3560 cx 0 1   3561 tdg -1 2   
+-1 swap 1 0   -1 swap 8 3   
+-1 swap 7 6   
+
+-1 swap 8 3   3562 cx 1 2   3565 t -1 0   
+-1 swap 1 0   -1 swap 9 4   -1 swap 7 6   3564 tdg -1 2   
+
+
+-1 swap 7 6   3563 tdg -1 0   3566 cx 1 2   3570 h -1 9   
+3567 cx 0 1   3573 t -1 9   
+-1 swap 8 3   -1 swap 9 4   3569 h -1 1   
+-1 swap 2 1   -1 swap 6 5   3571 t -1 7   
+
+-1 swap 4 3   -1 swap 9 8   
+-1 swap 6 5   3568 cx 1 0   3572 t -1 2   
+3574 cx 2 7   
+3575 cx 3 2   
+-1 swap 5 0   -1 swap 6 1   -1 swap 7 2   
+
+-1 swap 9 4   
+-1 swap 6 1   3576 cx 2 3   3577 tdg -1 7   
+3578 cx 2 7   3581 t -1 3   
+-1 swap 3 2   -1 swap 5 0   -1 swap 9 4   3580 tdg -1 7   3587 t -1 8   
+-1 swap 6 1   
+
+3579 tdg -1 3   3582 cx 2 7   3586 h -1 9   
+-1 swap 8 7   3583 cx 3 2   3589 t -1 9   
+3585 h -1 2   
+-1 swap 1 0   3588 t -1 2   
+-1 swap 6 5   3584 cx 8 3   3590 cx 2 7   
+-1 swap 3 2   -1 swap 9 8   
+
+-1 swap 6 5   
+-1 swap 1 0   -1 swap 9 4   3591 cx 8 3   
+3592 cx 7 8   3593 tdg -1 3   
+-1 swap 7 2   3597 t -1 8   
+-1 swap 5 0   -1 swap 6 1   -1 swap 9 4   
+
+3594 cx 2 3   
+-1 swap 9 4   -1 swap 7 6   3595 tdg -1 2   3596 tdg -1 3   
+-1 swap 1 0   3598 cx 8 3   
+
+-1 swap 8 3   -1 swap 7 6   3604 t -1 4   
+
+
+-1 swap 8 7   3599 cx 2 3   
+-1 swap 4 3   
+-1 swap 5 0   -1 swap 6 1   
+3600 cx 7 2   3603 t -1 8   
+-1 swap 9 4   3602 h -1 7   3606 cx 3 8   
+-1 swap 3 2   -1 swap 5 0   -1 swap 6 1   3605 t -1 7   
+
+-1 swap 9 4   
+-1 swap 6 5   3607 cx 7 2   
+3608 cx 8 7   3609 tdg -1 2   
+-1 swap 8 3   3601 h -1 4   3613 t -1 7   
+
+
+-1 swap 6 1   3610 cx 3 2   
+-1 swap 8 3   -1 swap 9 4   3612 tdg -1 2   
+-1 swap 5 0   3614 cx 7 2   
+3619 t -1 1   
+-1 swap 3 2   3611 tdg -1 8   
+-1 swap 1 0   3615 cx 8 7   3620 t -1 5   
+-1 swap 9 4   3617 h -1 7   
+-1 swap 7 2   -1 swap 6 5   3616 cx 3 8   
+-1 swap 1 0   3618 h -1 3   
+3621 t -1 3   
+-1 swap 3 2   
+3622 cx 6 1   
+-1 swap 7 6   
+-1 swap 5 0   -1 swap 9 4   
+
+3623 cx 2 7   
+3624 cx 1 2   3625 tdg -1 7   
+-1 swap 2 1   
+-1 swap 8 3   -1 swap 9 4   -1 swap 6 5   
+
+3626 cx 2 7   3629 t -1 1   
+-1 swap 2 1   -1 swap 4 3   -1 swap 6 5   -1 swap 9 8   3628 tdg -1 7   
+3636 t -1 0   
+
+3627 tdg -1 1   3630 cx 2 7   3635 t -1 8   
+-1 swap 8 3   -1 swap 7 6   3631 cx 1 2   
+3633 h -1 2   
+
+3632 cx 6 1   
+-1 swap 1 0   -1 swap 3 2   -1 swap 9 4   3634 h -1 6   
+-1 swap 8 7   3637 t -1 6   
+
+-1 swap 9 4   3638 cx 1 2   
+3639 cx 6 1   
+-1 swap 2 1   -1 swap 8 7   
+-1 swap 9 4   
+
+-1 swap 5 0   -1 swap 8 3   3640 cx 1 6   3641 tdg -1 2   
+3642 cx 1 2   3645 t -1 6   
+-1 swap 6 1   -1 swap 9 4   3644 tdg -1 2   
+-1 swap 5 0   3650 h -1 8   
+3653 t -1 8   
+-1 swap 9 8   3643 tdg -1 6   3646 cx 1 2   
+-1 swap 7 2   3647 cx 6 1   3651 t -1 0   
+-1 swap 4 3   3649 h -1 1   
+-1 swap 9 8   3652 t -1 1   
+-1 swap 5 0   -1 swap 6 1   
+-1 swap 3 2   
+-1 swap 9 4   -1 swap 8 7   
+3654 cx 6 5   
+-1 swap 2 1   
+-1 swap 8 3   3655 cx 7 6   
+-1 swap 6 5   
+
+-1 swap 1 0   3648 cx 3 2   
+-1 swap 3 2   3656 cx 6 7   3657 tdg -1 5   
+3658 cx 6 5   3661 t -1 7   
+-1 swap 7 6   -1 swap 9 8   3660 tdg -1 5   3666 h -1 4   3667 t -1 0   
+-1 swap 1 0   3669 t -1 4   
+
+-1 swap 8 3   -1 swap 9 4   3659 tdg -1 7   3662 cx 6 5   
+3663 cx 7 6   
+-1 swap 2 1   3665 h -1 6   
+-1 swap 8 3   -1 swap 7 6   
+
+
+-1 swap 1 0   -1 swap 9 8   3664 cx 5 6   3668 t -1 7   
+3670 cx 7 2   
+-1 swap 3 2   -1 swap 6 5   
+-1 swap 9 4   3671 cx 8 7   
+-1 swap 1 0   3673 tdg -1 7   
+-1 swap 7 2   -1 swap 6 5   3672 cx 3 8   
+3677 t -1 8   
+-1 swap 1 0   
+-1 swap 9 4   -1 swap 7 6   3674 cx 3 2   
+-1 swap 8 3   3676 tdg -1 2   
+-1 swap 5 0   3684 h -1 1   
+-1 swap 9 4   
+3675 tdg -1 8   3678 cx 3 2   
+-1 swap 7 2   3679 cx 8 3   3687 t -1 1   
+-1 swap 6 5   3681 h -1 3   
+3683 x -1 3   
+3680 cx 7 8   3685 t -1 3   
+-1 swap 3 2   -1 swap 6 1   3682 x -1 8   3686 t -1 7   
+-1 swap 9 8   
+-1 swap 5 0   
+-1 swap 4 3   3688 cx 7 2   
+3689 cx 6 7   
+-1 swap 6 1   3691 tdg -1 7   
+-1 swap 4 3   
+
+3690 cx 2 1   
+-1 swap 4 3   -1 swap 5 0   3692 cx 2 7   3695 t -1 1   
+-1 swap 2 1   -1 swap 9 8   3694 tdg -1 7   
+
+-1 swap 4 3   -1 swap 5 0   
+3693 tdg -1 1   3696 cx 2 7   
+-1 swap 7 6   3697 cx 1 2   
+-1 swap 3 2   -1 swap 5 0   -1 swap 9 4   
+
+-1 swap 8 7   3698 cx 6 1   
+-1 swap 5 0   3699 h -1 3   3700 h -1 9   3701 t -1 1   3702 t -1 6   
+-1 swap 4 3   3703 t -1 9   3704 cx 6 1   
+-1 swap 7 6   -1 swap 9 8   
+-1 swap 2 1   
+-1 swap 4 3   
+3705 cx 8 7   
+-1 swap 7 2   
+-1 swap 6 1   
+-1 swap 9 4   
+3706 cx 7 8   3707 tdg -1 2   
+-1 swap 5 0   -1 swap 6 1   3708 cx 7 2   3711 t -1 8   
+-1 swap 4 3   -1 swap 8 7   3710 tdg -1 2   
+
+-1 swap 5 0   
+-1 swap 9 4   3709 tdg -1 8   3712 cx 7 2   3718 t -1 3   
+-1 swap 3 2   3713 cx 8 7   
+3715 h -1 7   
+3716 h -1 7   
+-1 swap 5 0   -1 swap 6 1   -1 swap 9 4   3714 cx 3 8   3719 t -1 7   
+3717 t -1 3   
+3720 cx 2 3   
+-1 swap 1 0   -1 swap 8 3   3721 cx 7 2   
+-1 swap 6 5   3723 tdg -1 2   
+-1 swap 9 4   
+-1 swap 3 2   3722 cx 8 7   
+3727 t -1 7   
+-1 swap 1 0   
+-1 swap 9 4   -1 swap 6 5   3724 cx 8 3   
+-1 swap 8 7   3726 tdg -1 3   
+
+3733 t -1 9   3734 t -1 6   
+-1 swap 1 0   3725 tdg -1 7   3728 cx 8 3   
+-1 swap 3 2   3729 cx 7 8   
+3731 h -1 8   
+
+3730 cx 2 7   
+-1 swap 4 3   -1 swap 7 6   -1 swap 9 8   3732 h -1 2   
+3735 t -1 2   
+-1 swap 1 0   
+-1 swap 4 3   -1 swap 6 5   3736 cx 7 8   
+3737 cx 2 7   
+-1 swap 1 0   -1 swap 8 7   
+
+-1 swap 6 5   
+-1 swap 1 0   3738 cx 7 2   3739 tdg -1 8   
+3740 cx 7 8   3743 t -1 2   
+-1 swap 7 2   3742 tdg -1 8   
+3749 t -1 1   3750 t -1 0   
+-1 swap 6 1   
+-1 swap 5 0   -1 swap 9 4   3741 tdg -1 2   3744 cx 7 8   
+-1 swap 8 3   3745 cx 2 7   
+3747 h -1 7   
+-1 swap 9 4   -1 swap 6 5   
+3746 cx 3 2   
+-1 swap 7 2   3748 h -1 3   
+3751 t -1 3   3752 cx 6 5   
+-1 swap 5 0   
+-1 swap 3 2   -1 swap 7 6   
+-1 swap 9 4   
+-1 swap 1 0   
+3753 cx 2 7   
+-1 swap 8 3   -1 swap 7 6   
+-1 swap 5 0   3754 cx 1 2   
+-1 swap 9 4   3759 t -1 2   
+-1 swap 7 2   -1 swap 8 3   3755 tdg -1 6   
+-1 swap 5 0   3756 cx 1 6   
+-1 swap 9 4   3757 tdg -1 1   3758 tdg -1 6   
+3760 cx 7 6   3766 t -1 8   
+-1 swap 7 2   -1 swap 6 5   
+-1 swap 4 3   
+
+-1 swap 5 0   -1 swap 7 6   3761 cx 1 2   
+-1 swap 9 4   3763 h -1 2   
+-1 swap 8 3   
+3762 cx 0 1   3765 t -1 7   
+-1 swap 9 4   -1 swap 6 5   3764 h -1 0   
+-1 swap 1 0   -1 swap 3 2   
+
+-1 swap 6 5   -1 swap 9 8   
+-1 swap 4 3   3767 t -1 1   3768 cx 2 7   
+3769 cx 1 2   
+-1 swap 5 0   -1 swap 7 2   
+-1 swap 8 3   -1 swap 9 4   
+
+-1 swap 5 0   3770 cx 2 1   3771 tdg -1 7   
+3772 cx 2 7   3775 t -1 1   
+-1 swap 2 1   -1 swap 4 3   -1 swap 9 8   3774 tdg -1 7   
+-1 swap 5 0   
+
+-1 swap 9 4   3773 tdg -1 1   3776 cx 2 7   3780 h -1 8   
+3777 cx 1 2   3781 t -1 5   3783 t -1 8   
+-1 swap 7 2   
+-1 swap 9 4   
+-1 swap 6 5   
+3778 cx 2 1   3779 h -1 7   
+-1 swap 1 0   -1 swap 4 3   3782 t -1 7   
+3784 cx 7 6   
+3785 cx 8 7   
+-1 swap 2 1   -1 swap 4 3   -1 swap 5 0   -1 swap 7 6   
+
+
+-1 swap 2 1   3786 cx 7 8   3787 tdg -1 6   
+3788 cx 7 6   3791 t -1 8   
+-1 swap 4 3   -1 swap 5 0   -1 swap 8 7   3790 tdg -1 6   3796 h -1 9   
+3799 t -1 9   
+
+-1 swap 4 3   3789 tdg -1 8   3792 cx 7 6   3797 t -1 5   
+3793 cx 8 7   
+-1 swap 2 1   3795 h -1 7   
+-1 swap 5 0   3798 t -1 7   
+-1 swap 4 3   -1 swap 9 8   
+-1 swap 7 2   
+-1 swap 1 0   
+-1 swap 8 3   
+
+-1 swap 7 6   3800 cx 2 1   
+-1 swap 9 8   3801 cx 3 2   
+-1 swap 2 1   
+-1 swap 6 5   
+-1 swap 9 4   3794 cx 7 8   
+3802 cx 2 3   3803 tdg -1 1   
+-1 swap 5 0   -1 swap 7 6   3804 cx 2 1   3807 t -1 3   
+-1 swap 3 2   3806 tdg -1 1   3812 h -1 9   
+-1 swap 9 4   
+-1 swap 8 7   3813 t -1 0   
+-1 swap 5 0   3805 tdg -1 3   3808 cx 2 1   
+3809 cx 3 2   3815 t -1 4   
+-1 swap 9 8   3811 h -1 2   
+-1 swap 2 1   -1 swap 6 5   
+
+-1 swap 4 3   -1 swap 8 7   
+3814 t -1 1   
+3816 cx 1 6   
+-1 swap 3 2   -1 swap 5 0   -1 swap 7 6   -1 swap 9 8   
+
+
+-1 swap 5 0   -1 swap 9 8   3810 cx 3 4   3817 cx 2 1   
+3818 cx 7 2   3819 tdg -1 1   
+-1 swap 2 1   
+-1 swap 9 4   -1 swap 6 5   
+-1 swap 8 3   
+3820 cx 7 2   3823 t -1 1   
+-1 swap 9 4   -1 swap 7 6   3822 tdg -1 2   
+3824 cx 1 2   3830 t -1 8   
+-1 swap 8 3   
+-1 swap 7 2   3821 tdg -1 6   3829 t -1 4   
+3825 cx 6 1   
+-1 swap 5 0   3827 h -1 1   3832 cx 3 4   
+-1 swap 3 2   3826 cx 7 6   
+-1 swap 9 4   3828 h -1 7   
+-1 swap 6 1   3831 t -1 7   
+3833 cx 7 2   
+-1 swap 3 2   -1 swap 9 8   
+-1 swap 1 0   
+
+-1 swap 6 5   3834 cx 8 7   3835 tdg -1 3   
+3836 cx 8 3   3839 t -1 7   
+-1 swap 8 7   3838 tdg -1 3   
+3845 t -1 9   3846 t -1 2   
+
+-1 swap 1 0   3837 tdg -1 7   3840 cx 8 3   
+-1 swap 3 2   -1 swap 9 4   3841 cx 7 8   
+-1 swap 6 5   3843 h -1 8   
+
+3842 cx 2 7   3848 cx 3 4   
+-1 swap 6 1   3844 h -1 2   
+-1 swap 8 7   3847 t -1 2   
+3849 cx 2 3   
+-1 swap 1 0   -1 swap 4 3   
+-1 swap 8 7   
+-1 swap 6 5   
+3850 cx 3 2   3851 tdg -1 4   
+-1 swap 1 0   -1 swap 9 8   3852 cx 3 4   3855 t -1 2   
+-1 swap 3 2   -1 swap 7 6   3854 tdg -1 4   
+
+-1 swap 1 0   3861 t -1 8   
+-1 swap 6 5   -1 swap 9 8   3853 tdg -1 2   3856 cx 3 4   3862 t -1 7   
+3857 cx 2 3   
+-1 swap 4 3   
+-1 swap 6 1   -1 swap 8 7   
+
+3858 cx 3 2   3859 h -1 4   
+-1 swap 2 1   3860 h -1 3   3864 cx 8 9   
+-1 swap 5 0   -1 swap 9 4   -1 swap 7 6   3863 t -1 3   
+3865 cx 3 8   
+3867 tdg -1 8   
+-1 swap 7 6   -1 swap 9 8   3866 cx 4 3   
+-1 swap 2 1   -1 swap 5 0   3871 t -1 3   
+
+3868 cx 4 9   
+-1 swap 4 3   3870 tdg -1 9   3876 h -1 8   3877 t -1 2   
+-1 swap 1 0   -1 swap 6 5   -1 swap 8 7   
+
+3869 tdg -1 3   3872 cx 4 9   
+-1 swap 5 0   -1 swap 7 6   -1 swap 9 8   3873 cx 3 4   
+3875 h -1 4   
+3878 t -1 4   
+-1 swap 4 3   -1 swap 9 8   3879 t -1 6   
+-1 swap 1 0   -1 swap 7 6   
+
+3874 cx 9 4   3880 cx 3 2   
+-1 swap 5 0   -1 swap 7 2   -1 swap 9 4   
+-1 swap 6 1   
+
+-1 swap 9 8   3881 cx 2 3   
+3882 cx 7 2   3883 tdg -1 3   
+-1 swap 3 2   -1 swap 5 0   
+-1 swap 9 4   
+
+-1 swap 5 0   3884 cx 7 2   3887 t -1 3   
+-1 swap 6 1   -1 swap 9 4   -1 swap 8 7   3886 tdg -1 2   
+3888 cx 3 2   
+-1 swap 5 0   
+-1 swap 6 1   -1 swap 7 2   3885 tdg -1 8   3892 h -1 9   
+3889 cx 8 3   3895 t -1 9   
+-1 swap 5 0   3891 h -1 3   
+-1 swap 2 1   3890 cx 7 8   3894 t -1 3   
+-1 swap 7 6   
+-1 swap 9 8   
+3893 t -1 2   
+-1 swap 5 0   -1 swap 6 1   3896 cx 3 2   
+3897 cx 8 3   
+-1 swap 8 7   3899 tdg -1 3   
+-1 swap 5 0   -1 swap 6 1   -1 swap 9 4   
+
+3898 cx 2 7   
+-1 swap 1 0   3900 cx 2 3   3903 t -1 7   
+-1 swap 7 2   3902 tdg -1 3   3908 h -1 5   
+-1 swap 9 4   3911 t -1 5   
+-1 swap 6 1   
+3901 tdg -1 7   3904 cx 2 3   
+-1 swap 8 3   -1 swap 9 4   3905 cx 7 2   
+-1 swap 2 1   -1 swap 5 0   3909 t -1 6   
+
+-1 swap 9 4   3906 cx 8 7   
+-1 swap 7 2   -1 swap 8 3   3907 h -1 1   
+3910 t -1 1   
+-1 swap 9 4   3912 cx 1 6   
+3913 cx 0 1   
+-1 swap 5 0   -1 swap 7 2   3915 tdg -1 1   
+
+-1 swap 9 8   
+-1 swap 4 3   3914 cx 6 5   
+3916 cx 6 1   3919 t -1 5   
+-1 swap 6 5   3918 tdg -1 1   
+-1 swap 3 2   3926 t -1 7   
+
+-1 swap 9 4   3917 tdg -1 5   3920 cx 6 1   
+-1 swap 1 0   3921 cx 5 6   3925 t -1 2   
+-1 swap 7 2   3923 h -1 6   
+-1 swap 9 8   
+-1 swap 4 3   3922 cx 0 5   
+3924 h -1 0   3928 cx 2 7   
+-1 swap 2 1   -1 swap 6 5   3927 t -1 0   
+-1 swap 9 4   
+-1 swap 8 3   
+-1 swap 7 6   3929 cx 0 1   
+-1 swap 5 0   -1 swap 9 4   3931 tdg -1 1   
+
+-1 swap 3 2   -1 swap 8 7   
+3930 cx 6 5   
+-1 swap 9 4   3932 cx 6 1   3935 t -1 5   
+-1 swap 6 5   3934 tdg -1 1   
+-1 swap 3 2   
+-1 swap 9 4   
+3933 tdg -1 5   3936 cx 6 1   
+-1 swap 1 0   3937 cx 5 6   3941 t -1 3   
+-1 swap 4 3   3939 h -1 6   
+
+-1 swap 8 7   3938 cx 0 5   
+-1 swap 1 0   -1 swap 6 5   3942 t -1 3   
+3944 cx 3 4   
+-1 swap 3 2   
+3940 h -1 1   
+-1 swap 7 6   3943 t -1 1   
+-1 swap 4 3   -1 swap 5 0   3945 cx 1 2   
+-1 swap 2 1   
+-1 swap 7 6   -1 swap 9 8   
+
+3946 cx 3 2   3947 tdg -1 1   
+-1 swap 3 2   -1 swap 5 0   -1 swap 9 4   
+-1 swap 7 6   
+
+-1 swap 9 8   3948 cx 2 1   3951 t -1 3   
+-1 swap 3 2   -1 swap 6 5   3950 tdg -1 1   
+
+-1 swap 9 8   
+3949 tdg -1 3   3952 cx 2 1   
+-1 swap 6 5   3953 cx 3 2   
+-1 swap 2 1   3957 t -1 9   3958 t -1 8   
+3960 cx 8 9   
+-1 swap 9 4   -1 swap 6 5   
+-1 swap 8 7   3954 cx 2 3   3955 h -1 1   
+3956 h -1 2   
+-1 swap 1 0   -1 swap 4 3   3959 t -1 2   
+-1 swap 6 5   3961 cx 2 7   
+-1 swap 8 7   
+3962 cx 3 2   
+-1 swap 6 1   -1 swap 9 4   3967 t -1 2   
+-1 swap 5 0   -1 swap 7 2   3963 tdg -1 8   
+3964 cx 3 8   
+-1 swap 9 4   3965 tdg -1 3   3966 tdg -1 8   
+-1 swap 1 0   -1 swap 6 5   3968 cx 7 8   
+-1 swap 7 2   
+3973 t -1 4   
+-1 swap 5 0   3972 h -1 6   
+3969 cx 3 2   3975 t -1 6   
+-1 swap 4 3   -1 swap 9 8   3971 h -1 2   
+-1 swap 5 0   -1 swap 7 6   3974 t -1 2   
+
+-1 swap 9 4   3976 cx 2 3   
+-1 swap 1 0   -1 swap 6 5   3977 cx 7 2   
+-1 swap 8 7   3979 tdg -1 2   
+3970 cx 4 9   
+-1 swap 1 0   
+-1 swap 6 5   3978 cx 3 8   
+-1 swap 9 4   3980 cx 3 2   3983 t -1 8   
+-1 swap 1 0   -1 swap 8 3   3982 tdg -1 2   
+3989 t -1 6   
+-1 swap 6 5   
+3981 tdg -1 8   3984 cx 3 2   3988 h -1 0   
+-1 swap 1 0   -1 swap 8 3   
+-1 swap 9 4   -1 swap 6 5   
+
+3985 cx 3 8   3991 t -1 1   
+-1 swap 7 6   3986 cx 2 3   3987 h -1 8   
+-1 swap 4 3   3990 t -1 8   
+-1 swap 5 0   
+-1 swap 6 1   -1 swap 8 7   
+-1 swap 4 3   
+
+-1 swap 2 1   -1 swap 5 0   3992 cx 7 8   
+3993 cx 6 7   
+-1 swap 9 4   -1 swap 8 7   
+-1 swap 2 1   -1 swap 5 0   
+
+3994 cx 7 6   3995 tdg -1 8   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   3996 cx 7 8   3999 t -1 6   
+-1 swap 7 6   3998 tdg -1 8   
+
+-1 swap 5 0   -1 swap 9 4   
+-1 swap 3 2   3997 tdg -1 6   4000 cx 7 8   
+4001 cx 6 7   
+4003 h -1 7   4004 h -1 0   4005 t -1 5   
+-1 swap 1 0   -1 swap 3 2   -1 swap 9 4   -1 swap 7 6   
+
+
+4002 cx 8 7   4006 t -1 6   4007 t -1 1   
+-1 swap 7 2   -1 swap 9 4   4008 cx 6 5   
+4009 cx 1 6   
+-1 swap 8 3   -1 swap 6 5   
+
+-1 swap 7 2   
+-1 swap 8 3   -1 swap 9 4   4010 cx 6 1   4011 tdg -1 5   
+4012 cx 6 5   4015 t -1 1   
+-1 swap 6 1   4014 tdg -1 5   
+-1 swap 8 7   
+
+-1 swap 4 3   4013 tdg -1 1   4016 cx 6 5   
+-1 swap 5 0   4017 cx 1 6   4021 t -1 8   4022 t -1 7   
+4019 h -1 6   4024 cx 7 8   
+-1 swap 7 6   
+4018 cx 0 1   
+-1 swap 8 3   -1 swap 9 4   4020 h -1 0   
+4023 t -1 0   
+-1 swap 1 0   -1 swap 7 2   
+-1 swap 9 8   
+
+-1 swap 3 2   -1 swap 5 0   4025 cx 1 6   
+-1 swap 7 6   -1 swap 9 8   
+
+-1 swap 4 3   -1 swap 5 0   4026 cx 2 1   
+-1 swap 6 1   4027 tdg -1 7   
+-1 swap 9 8   4028 cx 2 7   
+-1 swap 5 0   4029 tdg -1 2   4030 tdg -1 7   
+-1 swap 2 1   -1 swap 4 3   4031 t -1 6   
+4032 cx 6 7   4037 t -1 8   
+-1 swap 5 0   -1 swap 8 7   
+4033 cx 1 6   
+-1 swap 2 1   -1 swap 9 4   4035 h -1 6   
+-1 swap 6 5   
+
+-1 swap 3 2   -1 swap 9 4   
+4038 t -1 6   
+4040 cx 6 7   
+-1 swap 1 0   -1 swap 9 4   -1 swap 7 6   4034 cx 8 3   
+4036 h -1 8   
+4039 t -1 8   
+4041 cx 8 7   
+-1 swap 1 0   -1 swap 7 6   
+
+-1 swap 3 2   
+-1 swap 5 0   4042 cx 7 8   4043 tdg -1 6   
+4044 cx 7 6   4047 t -1 8   
+-1 swap 2 1   -1 swap 9 4   -1 swap 8 7   4046 tdg -1 6   
+
+
+-1 swap 4 3   4045 tdg -1 8   4048 cx 7 6   4054 t -1 9   
+4049 cx 8 7   
+-1 swap 1 0   -1 swap 7 6   
+-1 swap 4 3   
+
+-1 swap 5 0   4050 cx 7 8   4051 h -1 6   
+-1 swap 3 2   -1 swap 6 1   4052 h -1 7   4053 t -1 4   
+4055 t -1 7   4056 cx 9 4   
+-1 swap 8 7   
+-1 swap 4 3   -1 swap 5 0   
+
+-1 swap 2 1   4057 cx 8 9   
+4058 cx 3 8   4059 tdg -1 9   
+-1 swap 4 3   -1 swap 6 5   4063 t -1 8   
+
+-1 swap 7 2   
+-1 swap 1 0   4060 cx 4 9   
+-1 swap 4 3   4062 tdg -1 9   
+-1 swap 7 2   -1 swap 6 5   4064 cx 8 9   
+-1 swap 1 0   
+-1 swap 9 4   4061 tdg -1 3   
+4065 cx 3 8   4068 h -1 2   4069 t -1 7   
+4067 h -1 8   4071 t -1 2   
+-1 swap 5 0   4066 cx 4 3   4070 t -1 8   
+-1 swap 3 2   -1 swap 9 4   4072 cx 8 7   
+-1 swap 6 1   
+-1 swap 5 0   
+4073 cx 3 8   
+-1 swap 3 2   -1 swap 6 1   4075 tdg -1 8   
+
+-1 swap 5 0   
+-1 swap 9 4   4074 cx 7 2   
+4076 cx 7 8   4079 t -1 2   
+-1 swap 7 2   4078 tdg -1 8   4084 h -1 6   4085 t -1 5   
+-1 swap 6 5   
+
+-1 swap 1 0   -1 swap 9 4   4077 tdg -1 2   4080 cx 7 8   
+-1 swap 8 3   4081 cx 2 7   4087 t -1 5   
+4083 h -1 7   
+-1 swap 1 0   4086 t -1 7   
+-1 swap 3 2   4088 cx 7 6   
+-1 swap 6 5   -1 swap 9 8   
+
+-1 swap 1 0   4082 cx 2 3   
+-1 swap 9 8   4089 cx 6 7   
+4090 cx 5 6   4091 tdg -1 7   
+-1 swap 2 1   -1 swap 6 5   
+-1 swap 9 4   
+-1 swap 8 3   
+4092 cx 6 7   4095 t -1 5   
+-1 swap 2 1   -1 swap 9 4   -1 swap 6 5   4094 tdg -1 7   
+4101 h -1 0   4103 t -1 3   
+4104 t -1 0   
+-1 swap 2 1   -1 swap 8 3   -1 swap 9 4   4093 tdg -1 5   4096 cx 6 7   
+4097 cx 5 6   
+-1 swap 7 6   
+-1 swap 1 0   -1 swap 4 3   
+
+-1 swap 8 7   4098 cx 6 5   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   4102 t -1 6   
+
+-1 swap 8 3   4105 cx 7 6   
+4100 x -1 0   4106 cx 2 7   
+-1 swap 2 1   -1 swap 9 4   4108 tdg -1 7   
+-1 swap 5 0   4099 h -1 3   
+
+-1 swap 8 3   4107 cx 6 1   
+4109 cx 6 7   4112 t -1 1   
+-1 swap 6 1   4111 tdg -1 7   
+-1 swap 9 4   4118 t -1 5   4119 t -1 2   
+-1 swap 5 0   
+4110 tdg -1 1   4113 cx 6 7   
+4114 cx 1 6   
+-1 swap 2 1   -1 swap 9 4   -1 swap 6 5   
+
+
+4115 cx 7 2   4116 h -1 5   4121 cx 1 0   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   4117 h -1 7   
+-1 swap 8 3   4120 t -1 7   
+
+-1 swap 9 4   -1 swap 6 5   4122 cx 7 2   
+-1 swap 2 1   
+
+-1 swap 5 0   -1 swap 8 3   -1 swap 9 4   4123 cx 6 7   
+-1 swap 7 2   4124 tdg -1 1   
+4125 cx 6 1   
+4126 tdg -1 6   4127 tdg -1 1   
+-1 swap 5 0   -1 swap 9 4   -1 swap 7 6   4128 t -1 2   
+4129 cx 2 1   
+
+-1 swap 4 3   -1 swap 6 5   -1 swap 9 8   4130 cx 7 2   
+4132 h -1 2   
+
+-1 swap 6 1   4134 t -1 3   
+-1 swap 3 2   -1 swap 5 0   
+-1 swap 9 8   
+4131 cx 6 7   4135 t -1 1   
+-1 swap 4 3   4133 h -1 6   4137 cx 1 2   
+-1 swap 5 0   -1 swap 7 2   -1 swap 9 8   4136 t -1 6   
+4138 cx 6 1   
+4140 tdg -1 1   
+-1 swap 2 1   -1 swap 4 3   4139 cx 7 6   
+-1 swap 5 0   -1 swap 9 8   4144 t -1 6   
+
+4141 cx 7 2   
+-1 swap 5 0   -1 swap 8 3   -1 swap 7 6   4143 tdg -1 2   
+-1 swap 9 4   
+
+-1 swap 5 0   4142 tdg -1 6   4145 cx 7 2   4150 t -1 3   
+-1 swap 2 1   -1 swap 4 3   4146 cx 6 7   4151 t -1 9   
+-1 swap 9 8   4148 h -1 7   
+
+-1 swap 5 0   -1 swap 7 2   4147 cx 1 6   
+-1 swap 4 3   4149 h -1 1   
+4152 t -1 1   
+-1 swap 2 1   
+4153 cx 8 3   
+-1 swap 5 0   -1 swap 8 7   
+-1 swap 9 4   
+
+-1 swap 1 0   -1 swap 6 5   4154 cx 2 7   
+-1 swap 9 4   4155 cx 3 2   4156 tdg -1 7   
+-1 swap 7 2   
+-1 swap 6 1   
+-1 swap 9 8   
+4157 cx 3 2   4160 t -1 7   
+-1 swap 6 1   4158 tdg -1 3   4159 tdg -1 2   4165 h -1 0   4166 t -1 5   
+-1 swap 9 4   4161 cx 7 2   4168 t -1 0   
+-1 swap 3 2   
+
+
+-1 swap 6 5   4162 cx 2 7   
+-1 swap 1 0   4163 cx 3 2   4164 h -1 7   
+-1 swap 3 2   4167 t -1 7   
+4169 cx 7 6   
+-1 swap 6 1   -1 swap 9 8   
+-1 swap 4 3   
+-1 swap 5 0   
+4170 cx 6 7   
+4171 cx 1 6   4172 tdg -1 7   
+-1 swap 2 1   4176 t -1 6   
+-1 swap 9 4   
+
+4173 cx 2 7   
+-1 swap 2 1   4175 tdg -1 7   4181 h -1 4   4182 t -1 3   
+-1 swap 5 0   4177 cx 6 7   4184 t -1 4   
+-1 swap 8 3   
+-1 swap 7 2   4174 tdg -1 1   
+-1 swap 5 0   4178 cx 1 6   
+-1 swap 4 3   4180 h -1 6   
+-1 swap 7 6   4179 cx 2 1   
+-1 swap 1 0   
+-1 swap 3 2   -1 swap 9 4   
+-1 swap 6 5   4183 t -1 7   
+-1 swap 1 0   4185 cx 7 8   
+4186 cx 2 7   
+-1 swap 3 2   4188 tdg -1 7   
+-1 swap 5 0   -1 swap 6 1   
+
+4187 cx 8 3   
+4189 cx 8 7   4192 t -1 3   
+-1 swap 1 0   -1 swap 8 3   4191 tdg -1 7   4197 h -1 5   
+4200 t -1 5   
+
+-1 swap 1 0   4190 tdg -1 3   4193 cx 8 7   
+4194 cx 3 8   
+-1 swap 6 5   4196 h -1 8   
+-1 swap 2 1   -1 swap 9 4   -1 swap 8 7   
+
+-1 swap 5 0   
+4195 cx 8 3   4198 t -1 2   4199 t -1 7   
+-1 swap 8 3   4201 cx 7 2   
+-1 swap 9 4   4202 cx 6 7   
+-1 swap 6 1   4204 tdg -1 7   
+
+-1 swap 9 4   
+4203 cx 2 1   
+4205 cx 2 7   4208 t -1 1   
+-1 swap 2 1   -1 swap 8 3   -1 swap 9 4   4207 tdg -1 7   
+-1 swap 6 5   
+
+4206 tdg -1 1   4209 cx 2 7   4214 t -1 3   4215 t -1 8   
+-1 swap 9 4   -1 swap 7 6   4210 cx 1 2   4217 cx 8 3   
+4212 h -1 2   
+
+-1 swap 5 0   -1 swap 9 4   -1 swap 8 7   4211 cx 6 1   
+-1 swap 2 1   4213 h -1 6   
+4216 t -1 6   
+-1 swap 5 0   4218 cx 6 7   
+-1 swap 3 2   -1 swap 6 1   4220 tdg -1 7   
+-1 swap 9 8   
+-1 swap 5 0   
+4219 cx 2 1   
+4221 cx 2 7   4224 t -1 1   
+-1 swap 2 1   -1 swap 4 3   -1 swap 6 5   -1 swap 9 8   4223 tdg -1 7   
+4231 t -1 0   
+
+4222 tdg -1 1   4225 cx 2 7   4230 t -1 6   
+4226 cx 1 2   
+-1 swap 2 1   -1 swap 5 0   
+-1 swap 8 3   -1 swap 9 4   
+
+4227 cx 7 2   4228 h -1 1   4233 cx 5 6   
+-1 swap 6 5   4229 h -1 7   
+-1 swap 8 3   4232 t -1 7   
+
+-1 swap 9 4   4234 cx 7 6   
+-1 swap 1 0   -1 swap 6 5   
+-1 swap 8 3   
+-1 swap 9 4   
+4235 cx 6 7   4236 tdg -1 5   
+-1 swap 8 3   4237 cx 6 5   4240 t -1 7   
+-1 swap 9 4   -1 swap 7 6   4239 tdg -1 5   
+
+-1 swap 2 1   4246 t -1 3   4247 t -1 8   
+-1 swap 9 8   4238 tdg -1 7   4241 cx 6 5   
+4242 cx 7 6   
+-1 swap 6 5   
+-1 swap 9 8   
+
+-1 swap 2 1   4243 cx 6 7   4244 h -1 5   
+4245 h -1 6   4249 cx 8 3   
+-1 swap 9 4   -1 swap 8 7   4248 t -1 6   
+-1 swap 2 1   -1 swap 5 0   
+
+-1 swap 9 4   4250 cx 6 7   
+-1 swap 3 2   -1 swap 6 1   4252 tdg -1 7   
+-1 swap 5 0   
+-1 swap 9 8   
+4251 cx 2 1   
+-1 swap 5 0   4253 cx 2 7   4256 t -1 1   
+-1 swap 2 1   4255 tdg -1 7   4262 t -1 9   
+-1 swap 9 8   
+4261 h -1 0   
+4254 tdg -1 1   4257 cx 2 7   4264 t -1 0   
+-1 swap 7 6   4258 cx 1 2   
+-1 swap 8 3   4260 h -1 2   
+-1 swap 1 0   4263 t -1 2   
+-1 swap 6 5   
+-1 swap 8 7   4265 cx 2 3   
+4266 cx 1 2   
+-1 swap 3 2   -1 swap 5 0   
+-1 swap 9 8   
+
+4259 cx 0 5   4267 cx 2 1   4268 tdg -1 3   
+-1 swap 7 6   -1 swap 9 8   4269 cx 2 3   4272 t -1 1   
+-1 swap 2 1   -1 swap 5 0   4271 tdg -1 3   
+
+-1 swap 9 8   4277 h -1 7   
+-1 swap 7 6   4270 tdg -1 1   4273 cx 2 3   
+4274 cx 1 2   
+-1 swap 3 2   4278 t -1 9   
+-1 swap 7 6   
+-1 swap 9 4   
+-1 swap 2 1   -1 swap 5 0   4276 h -1 3   
+-1 swap 8 7   4279 t -1 3   
+4281 cx 3 4   
+-1 swap 6 5   4275 cx 1 2   
+-1 swap 7 2   -1 swap 9 4   4280 t -1 8   
+4282 cx 8 3   
+-1 swap 1 0   -1 swap 6 5   4284 tdg -1 3   
+-1 swap 4 3   -1 swap 7 2   4283 cx 9 8   
+4288 t -1 8   
+-1 swap 5 0   
+-1 swap 7 6   4285 cx 9 4   
+-1 swap 9 8   4287 tdg -1 4   
+-1 swap 1 0   
+-1 swap 7 6   
+4286 tdg -1 8   4289 cx 9 4   
+-1 swap 4 3   4290 cx 8 9   4296 t -1 2   
+4292 h -1 9   4294 h -1 6   
+4297 t -1 6   
+-1 swap 5 0   -1 swap 6 1   -1 swap 9 4   4291 cx 3 8   
+4293 x -1 3   
+4295 t -1 3   
+-1 swap 5 0   -1 swap 7 6   4298 cx 2 3   
+4299 cx 1 2   
+-1 swap 3 2   -1 swap 9 4   
+-1 swap 6 5   
+
+-1 swap 8 7   4300 cx 2 1   4301 tdg -1 3   
+4302 cx 2 3   4305 t -1 1   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   4304 tdg -1 3   
+-1 swap 8 7   
+
+-1 swap 9 4   4303 tdg -1 1   4306 cx 2 3   
+4307 cx 1 2   4311 t -1 8   
+-1 swap 2 1   -1 swap 6 5   
+-1 swap 9 8   4312 t -1 4   
+
+-1 swap 7 6   4308 cx 3 2   4309 h -1 1   
+4310 h -1 3   4314 cx 4 9   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 8   4313 t -1 3   
+4315 cx 3 4   
+4317 tdg -1 4   
+-1 swap 9 4   4316 cx 8 3   
+-1 swap 7 2   4321 t -1 3   
+
+4318 cx 8 9   
+-1 swap 8 3   -1 swap 7 6   4320 tdg -1 9   
+-1 swap 1 0   4327 t -1 2   
+
+-1 swap 6 5   4319 tdg -1 3   4322 cx 8 9   
+-1 swap 9 4   4323 cx 3 8   4328 t -1 1   
+-1 swap 2 1   -1 swap 8 7   
+
+-1 swap 5 0   4324 cx 4 3   
+-1 swap 8 7   4326 h -1 4   4330 cx 2 1   
+-1 swap 4 3   -1 swap 6 1   
+-1 swap 5 0   
+-1 swap 9 8   
+-1 swap 7 6   4329 t -1 3   
+4331 cx 3 2   
+-1 swap 1 0   -1 swap 8 3   4325 h -1 9   4333 tdg -1 2   
+-1 swap 6 5   
+
+-1 swap 9 4   4332 cx 7 8   
+-1 swap 5 0   -1 swap 6 1   4334 cx 7 2   4337 t -1 8   
+-1 swap 8 7   4336 tdg -1 2   
+4343 t -1 3   
+-1 swap 6 1   4344 t -1 0   
+-1 swap 5 0   -1 swap 9 4   4335 tdg -1 8   4338 cx 7 2   
+-1 swap 3 2   4339 cx 8 7   
+-1 swap 7 6   
+
+-1 swap 2 1   -1 swap 5 0   4340 cx 3 8   
+-1 swap 9 4   -1 swap 7 6   4342 h -1 3   
+4345 t -1 3   
+-1 swap 3 2   4346 cx 0 1   
+-1 swap 1 0   -1 swap 7 6   
+-1 swap 9 8   
+
+-1 swap 4 3   4341 h -1 6   4347 cx 2 1   
+-1 swap 1 0   -1 swap 7 6   
+
+-1 swap 9 8   
+4348 cx 1 2   4349 tdg -1 0   
+-1 swap 6 5   4350 cx 1 0   4353 t -1 2   
+-1 swap 2 1   -1 swap 8 3   -1 swap 9 4   4352 tdg -1 0   4358 h -1 7   
+4361 t -1 7   
+-1 swap 7 6   
+-1 swap 4 3   -1 swap 9 8   4351 tdg -1 2   4354 cx 1 0   
+4355 cx 2 1   
+-1 swap 2 1   -1 swap 7 6   
+-1 swap 4 3   
+-1 swap 9 8   
+4356 cx 0 1   4357 h -1 2   
+4359 t -1 3   4360 t -1 2   
+-1 swap 6 1   -1 swap 9 8   4362 cx 2 3   
+4363 cx 7 2   
+-1 swap 3 2   
+-1 swap 1 0   -1 swap 9 4   
+
+4364 cx 2 7   4365 tdg -1 3   
+-1 swap 1 0   4366 cx 2 3   4369 t -1 7   
+-1 swap 7 2   -1 swap 6 5   -1 swap 9 8   4368 tdg -1 3   4374 h -1 4   
+4377 t -1 4   
+
+-1 swap 1 0   4367 tdg -1 7   4370 cx 2 3   4375 t -1 8   
+-1 swap 8 3   4371 cx 7 2   
+4373 h -1 2   
+-1 swap 6 1   4376 t -1 2   
+-1 swap 5 0   -1 swap 8 7   4378 cx 2 3   
+-1 swap 3 2   
+
+-1 swap 6 1   4372 cx 7 8   
+4379 cx 4 3   
+-1 swap 3 2   -1 swap 5 0   -1 swap 8 7   
+
+-1 swap 6 1   
+-1 swap 8 7   4380 cx 3 4   4381 tdg -1 2   
+4382 cx 3 2   4385 t -1 4   
+-1 swap 1 0   -1 swap 4 3   -1 swap 6 5   4384 tdg -1 2   4391 t -1 9   
+
+
+-1 swap 6 1   4383 tdg -1 4   4386 cx 3 2   4390 h -1 0   
+4387 cx 4 3   4393 t -1 0   
+-1 swap 9 8   4389 h -1 3   
+-1 swap 1 0   -1 swap 6 5   4392 t -1 3   
+-1 swap 3 2   
+-1 swap 8 7   
+-1 swap 5 0   
+4388 cx 3 4   
+-1 swap 4 3   4394 cx 2 7   
+-1 swap 6 5   4395 cx 1 2   
+-1 swap 7 2   
+
+
+-1 swap 8 3   -1 swap 9 4   4396 cx 2 1   4397 tdg -1 7   
+4398 cx 2 7   4401 t -1 1   
+-1 swap 2 1   -1 swap 6 5   4400 tdg -1 7   
+-1 swap 8 3   4408 t -1 9   
+-1 swap 9 4   
+4399 tdg -1 1   4402 cx 2 7   
+-1 swap 7 6   4403 cx 1 2   4407 t -1 3   
+-1 swap 5 0   -1 swap 8 3   -1 swap 9 4   4405 h -1 2   
+
+-1 swap 7 2   4404 cx 6 1   
+-1 swap 4 3   -1 swap 5 0   -1 swap 9 8   4406 h -1 6   
+4409 t -1 6   
+-1 swap 7 6   
+-1 swap 2 1   -1 swap 5 0   4410 cx 8 9   
+
+4411 cx 7 8   
+-1 swap 1 0   -1 swap 3 2   -1 swap 6 5   -1 swap 9 8   
+
+
+-1 swap 6 1   4412 cx 8 7   4413 tdg -1 9   
+4414 cx 8 9   4417 t -1 7   
+-1 swap 3 2   -1 swap 5 0   -1 swap 8 7   4416 tdg -1 9   
+4424 t -1 4   
+
+-1 swap 6 1   4415 tdg -1 7   4418 cx 8 9   4423 t -1 3   
+4419 cx 7 8   4426 cx 4 3   
+-1 swap 8 7   
+
+-1 swap 2 1   
+4420 cx 9 8   4421 h -1 7   
+-1 swap 8 3   4422 h -1 9   
+-1 swap 5 0   -1 swap 6 1   4425 t -1 9   
+-1 swap 7 2   4427 cx 9 4   
+4428 cx 8 9   4429 tdg -1 4   
+-1 swap 6 1   -1 swap 8 3   4433 t -1 9   
+-1 swap 5 0   
+-1 swap 7 2   
+-1 swap 6 1   4430 cx 3 4   
+-1 swap 5 0   -1 swap 8 3   4432 tdg -1 4   
+4434 cx 9 4   4439 t -1 2   
+-1 swap 7 2   
+-1 swap 4 3   -1 swap 5 0   4431 tdg -1 8   
+4435 cx 8 9   
+4437 h -1 9   
+-1 swap 1 0   -1 swap 6 5   4436 cx 3 8   
+4438 h -1 3   
+-1 swap 3 2   -1 swap 9 8   
+-1 swap 5 0   4440 t -1 6   
+4442 cx 6 7   
+-1 swap 6 1   4441 t -1 2   
+-1 swap 9 4   
+-1 swap 8 3   
+-1 swap 6 5   4443 cx 2 1   
+4444 cx 7 2   4445 tdg -1 1   
+-1 swap 2 1   -1 swap 8 3   -1 swap 9 4   
+-1 swap 6 5   
+
+-1 swap 4 3   -1 swap 9 8   4446 cx 7 2   4449 t -1 1   
+-1 swap 5 0   -1 swap 7 6   4448 tdg -1 2   
+4450 cx 1 2   
+-1 swap 9 8   
+-1 swap 4 3   -1 swap 5 0   -1 swap 7 2   4447 tdg -1 6   
+-1 swap 6 1   
+-1 swap 9 8   
+-1 swap 4 3   -1 swap 5 0   -1 swap 7 2   
+4451 cx 1 6   
+4453 h -1 6   4454 h -1 9   4455 t -1 8   
+-1 swap 8 7   4452 cx 2 1   4456 t -1 6   4457 t -1 9   
+-1 swap 2 1   
+
+-1 swap 4 3   -1 swap 7 6   -1 swap 9 8   
+-1 swap 5 0   
+-1 swap 2 1   
+-1 swap 4 3   4458 cx 7 6   
+4459 cx 8 7   
+-1 swap 1 0   -1 swap 7 6   
+
+-1 swap 3 2   
+-1 swap 5 0   -1 swap 9 4   4460 cx 7 8   4461 tdg -1 6   
+4462 cx 7 6   4465 t -1 8   
+-1 swap 3 2   -1 swap 8 7   4464 tdg -1 6   
+4470 h -1 9   
+-1 swap 9 4   
+-1 swap 5 0   4463 tdg -1 8   4466 cx 7 6   4471 t -1 3   
+4467 cx 8 7   
+-1 swap 2 1   -1 swap 9 4   4469 h -1 7   
+4472 t -1 7   
+-1 swap 8 7   
+-1 swap 1 0   4473 t -1 9   
+
+-1 swap 7 6   4474 cx 8 3   
+4475 cx 9 8   
+-1 swap 8 3   
+4468 cx 7 6   
+-1 swap 2 1   
+4476 cx 8 9   4477 tdg -1 3   
+-1 swap 6 5   4478 cx 8 3   4481 t -1 9   
+-1 swap 7 2   -1 swap 9 8   4480 tdg -1 3   
+
+4486 h -1 6   4487 t -1 5   
+4479 tdg -1 9   4482 cx 8 3   4489 t -1 6   
+-1 swap 1 0   -1 swap 4 3   4483 cx 9 8   
+4485 h -1 8   
+-1 swap 6 5   -1 swap 8 7   
+-1 swap 3 2   4484 cx 4 9   
+-1 swap 1 0   -1 swap 9 4   
+4488 t -1 7   
+-1 swap 3 2   4490 cx 7 6   
+-1 swap 1 0   -1 swap 9 4   -1 swap 6 5   
+
+-1 swap 8 3   
+-1 swap 2 1   4491 cx 6 7   
+4492 cx 5 6   4493 tdg -1 7   
+-1 swap 6 5   
+-1 swap 2 1   -1 swap 8 3   
+
+4494 cx 6 7   4497 t -1 5   
+-1 swap 1 0   -1 swap 6 5   -1 swap 9 8   4496 tdg -1 7   
+-1 swap 4 3   
+
+-1 swap 9 8   4495 tdg -1 5   4498 cx 6 7   4504 t -1 0   
+-1 swap 1 0   4499 cx 5 6   
+-1 swap 6 5   
+-1 swap 8 3   
+-1 swap 2 1   
+4500 cx 7 6   4501 h -1 5   
+-1 swap 9 4   4502 h -1 7   4503 t -1 3   
+-1 swap 6 5   4505 t -1 7   4506 cx 2 3   
+-1 swap 1 0   4507 cx 7 2   
+-1 swap 3 2   
+-1 swap 9 8   
+-1 swap 5 0   -1 swap 6 1   
+4508 cx 2 7   4509 tdg -1 3   
+4510 cx 2 3   4513 t -1 7   
+-1 swap 7 2   -1 swap 6 5   -1 swap 9 8   4512 tdg -1 3   4518 h -1 1   4519 t -1 0   
+4521 t -1 1   
+
+-1 swap 1 0   4511 tdg -1 7   4514 cx 2 3   
+-1 swap 8 3   4515 cx 7 2   
+4517 h -1 2   
+-1 swap 6 5   4520 t -1 2   
+4516 cx 8 7   4522 cx 2 1   
+-1 swap 1 0   
+-1 swap 6 5   
+-1 swap 9 8   
+-1 swap 4 3   4523 cx 1 2   
+4524 cx 0 1   4525 tdg -1 2   
+-1 swap 1 0   -1 swap 6 5   
+-1 swap 8 3   
+
+-1 swap 9 4   4526 cx 1 2   4529 t -1 0   
+-1 swap 1 0   -1 swap 6 5   4528 tdg -1 2   
+-1 swap 8 3   4535 t -1 7   
+-1 swap 9 4   
+-1 swap 6 5   4527 tdg -1 0   4530 cx 1 2   
+4531 cx 0 1   
+-1 swap 1 0   -1 swap 4 3   -1 swap 9 8   
+-1 swap 6 5   
+
+-1 swap 9 4   -1 swap 8 7   4532 cx 2 1   4533 h -1 0   
+-1 swap 1 0   -1 swap 6 5   4534 h -1 2   
+4537 t -1 2   
+4536 t -1 7   
+-1 swap 4 3   -1 swap 5 0   4538 cx 7 8   
+4539 cx 2 7   
+-1 swap 8 7   
+-1 swap 5 0   -1 swap 6 1   -1 swap 9 4   
+
+4540 cx 7 2   4541 tdg -1 8   
+4542 cx 7 8   4545 t -1 2   
+-1 swap 5 0   -1 swap 7 2   -1 swap 9 4   4544 tdg -1 8   4550 h -1 3   4551 t -1 6   
+4553 t -1 3   
+-1 swap 6 1   
+-1 swap 5 0   -1 swap 9 4   4543 tdg -1 2   4546 cx 7 8   
+-1 swap 8 3   4547 cx 2 7   
+4549 h -1 7   
+-1 swap 9 4   
+-1 swap 8 7   4548 cx 3 2   
+4552 t -1 2   
+-1 swap 5 0   4554 cx 2 1   
+4555 cx 7 2   
+-1 swap 7 6   4557 tdg -1 2   
+-1 swap 8 3   
+-1 swap 5 0   
+4556 cx 1 6   
+-1 swap 9 8   4558 cx 1 2   4561 t -1 6   
+-1 swap 4 3   -1 swap 5 0   -1 swap 6 1   4560 tdg -1 2   
+4567 t -1 7   
+4568 t -1 9   
+-1 swap 5 0   4559 tdg -1 6   4562 cx 1 2   
+4563 cx 6 1   
+-1 swap 4 3   -1 swap 6 1   -1 swap 9 8   
+-1 swap 5 0   
+
+4564 cx 2 1   4565 h -1 6   4570 cx 8 7   
+-1 swap 8 3   -1 swap 9 4   4566 h -1 2   
+-1 swap 5 0   -1 swap 6 1   4569 t -1 2   
+
+4571 cx 2 3   
+-1 swap 1 0   -1 swap 8 3   4572 cx 7 2   
+-1 swap 9 4   -1 swap 6 5   4577 t -1 2   
+
+-1 swap 3 2   4573 tdg -1 8   
+-1 swap 5 0   4574 cx 7 8   
+-1 swap 6 1   4575 tdg -1 7   4576 tdg -1 8   
+4578 cx 3 8   4583 t -1 2   4584 t -1 4   
+-1 swap 3 2   
+-1 swap 6 1   
+
+4579 cx 7 2   4586 cx 4 3   
+-1 swap 4 3   4580 cx 8 7   4581 h -1 2   
+4582 h -1 8   
+-1 swap 2 1   -1 swap 5 0   4585 t -1 8   
+-1 swap 7 6   4587 cx 8 3   
+-1 swap 4 3   
+
+-1 swap 2 1   
+-1 swap 5 0   4588 cx 3 8   4589 tdg -1 4   
+4590 cx 3 4   4593 t -1 8   
+-1 swap 8 3   4592 tdg -1 4   4598 h -1 2   4599 t -1 6   
+-1 swap 2 1   
+
+-1 swap 5 0   4591 tdg -1 8   4594 cx 3 4   
+-1 swap 2 1   -1 swap 7 6   4595 cx 8 3   
+4597 h -1 3   
+-1 swap 9 4   4600 t -1 3   
+-1 swap 3 2   -1 swap 5 0   -1 swap 6 1   
+
+-1 swap 9 8   
+-1 swap 5 0   -1 swap 6 1   4601 t -1 3   4602 cx 2 7   
+4603 cx 3 2   
+-1 swap 7 2   4596 cx 8 9   
+-1 swap 6 5   
+
+4604 cx 2 3   4605 tdg -1 7   
+-1 swap 6 1   4606 cx 2 7   4609 t -1 3   
+-1 swap 3 2   -1 swap 9 8   4608 tdg -1 7   4614 h -1 0   
+4617 t -1 0   
+-1 swap 6 1   
+-1 swap 5 0   -1 swap 9 4   4607 tdg -1 3   4610 cx 2 7   
+-1 swap 8 7   4611 cx 3 2   
+4613 h -1 2   4615 t -1 6   
+-1 swap 2 1   
+-1 swap 5 0   4612 cx 8 3   
+
+4616 t -1 1   
+-1 swap 7 2   -1 swap 9 4   4618 cx 1 6   
+-1 swap 8 3   4619 cx 0 1   
+-1 swap 5 0   4621 tdg -1 1   
+-1 swap 9 4   
+-1 swap 7 2   -1 swap 8 3   
+4620 cx 6 5   
+-1 swap 9 4   4622 cx 6 1   4625 t -1 5   
+-1 swap 6 5   4624 tdg -1 1   
+-1 swap 8 7   4631 t -1 3   
+
+-1 swap 4 3   4623 tdg -1 5   4626 cx 6 1   
+-1 swap 1 0   -1 swap 8 7   4627 cx 5 6   
+4629 h -1 6   
+
+-1 swap 8 3   4628 cx 0 5   
+-1 swap 2 1   4630 h -1 0   
+4633 t -1 0   
+-1 swap 6 5   -1 swap 9 8   4632 t -1 3   
+-1 swap 1 0   -1 swap 7 2   4634 cx 3 4   
+
+
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   -1 swap 7 6   
+
+
+-1 swap 6 1   4635 cx 2 3   
+-1 swap 5 0   -1 swap 7 2   -1 swap 9 8   4637 tdg -1 3   
+
+
+-1 swap 1 0   4636 cx 8 7   
+-1 swap 9 4   4638 cx 8 3   4641 t -1 7   
+-1 swap 8 7   4640 tdg -1 3   
+-1 swap 1 0   -1 swap 6 5   
+-1 swap 9 4   
+4639 tdg -1 7   4642 cx 8 3   
+-1 swap 6 5   4643 cx 7 8   
+-1 swap 7 2   -1 swap 9 8   
+
+4647 t -1 6   
+-1 swap 7 6   4644 cx 3 2   4645 h -1 9   4648 t -1 8   
+-1 swap 2 1   -1 swap 5 0   4646 h -1 3   
+-1 swap 9 4   4649 t -1 3   
+4650 cx 8 7   
+-1 swap 1 0   -1 swap 6 5   4651 cx 3 8   
+-1 swap 8 7   
+
+
+-1 swap 1 0   4652 cx 8 3   4653 tdg -1 7   
+4654 cx 8 7   4657 t -1 3   
+-1 swap 8 3   4656 tdg -1 7   4662 h -1 4   
+4663 t -1 1   4665 t -1 4   
+-1 swap 1 0   -1 swap 9 4   
+4655 tdg -1 3   4658 cx 8 7   
+-1 swap 8 3   -1 swap 6 5   
+-1 swap 1 0   -1 swap 9 4   
+
+4659 cx 8 3   
+-1 swap 2 1   -1 swap 5 0   4660 cx 7 8   4661 h -1 3   
+-1 swap 7 6   4664 t -1 3   
+-1 swap 9 8   
+4666 cx 3 2   
+-1 swap 6 1   4667 cx 4 3   
+-1 swap 3 2   
+-1 swap 8 7   
+-1 swap 6 1   
+4668 cx 3 4   4669 tdg -1 2   
+-1 swap 5 0   -1 swap 9 8   4670 cx 3 2   4673 t -1 4   
+-1 swap 3 2   
+
+-1 swap 1 0   -1 swap 6 5   -1 swap 8 7   4678 h -1 9   
+4671 tdg -1 2   4672 tdg -1 3   4681 t -1 9   
+-1 swap 4 3   
+-1 swap 9 8   4679 t -1 6   4680 t -1 7   
+4682 cx 7 6   
+-1 swap 5 0   4674 cx 3 4   
+4675 cx 2 3   4683 cx 8 7   
+-1 swap 3 2   -1 swap 7 6   
+-1 swap 1 0   
+
+4676 cx 4 3   4677 h -1 2   4684 cx 7 8   4685 tdg -1 6   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   4686 cx 7 6   4689 t -1 8   
+-1 swap 8 7   4688 tdg -1 6   
+
+-1 swap 4 3   4695 t -1 1   4696 t -1 9   
+-1 swap 2 1   4687 tdg -1 8   4690 cx 7 6   
+4691 cx 8 7   
+-1 swap 8 7   
+-1 swap 4 3   
+
+-1 swap 1 0   -1 swap 9 8   4692 cx 6 7   
+-1 swap 3 2   4694 h -1 6   
+-1 swap 7 6   
+-1 swap 1 0   4693 h -1 9   
+4698 cx 8 3   
+-1 swap 3 2   -1 swap 9 4   4697 t -1 7   
+-1 swap 6 1   4699 cx 7 8   
+4701 tdg -1 8   
+-1 swap 8 3   -1 swap 9 4   4700 cx 2 7   
+-1 swap 1 0   -1 swap 6 5   4705 t -1 7   
+
+4702 cx 2 3   
+-1 swap 7 2   -1 swap 6 5   -1 swap 9 8   4704 tdg -1 3   4711 t -1 0   
+
+
+-1 swap 1 0   4703 tdg -1 7   4706 cx 2 3   4710 h -1 8   
+-1 swap 8 3   4707 cx 7 2   
+4709 h -1 2   
+4712 t -1 2   
+-1 swap 9 4   -1 swap 6 5   4708 cx 8 7   4713 t -1 3   4714 cx 2 1   
+4715 cx 3 2   
+-1 swap 2 1   
+-1 swap 9 4   -1 swap 6 5   
+
+4716 cx 2 3   4717 tdg -1 1   
+4718 cx 2 1   4721 t -1 3   
+-1 swap 3 2   4720 tdg -1 1   
+-1 swap 9 4   4727 t -1 7   4728 t -1 8   
+-1 swap 5 0   
+-1 swap 7 6   4719 tdg -1 3   4722 cx 2 1   
+4723 cx 3 2   
+-1 swap 2 1   -1 swap 5 0   
+-1 swap 9 4   -1 swap 8 7   
+
+4724 cx 2 3   4725 h -1 1   
+-1 swap 8 3   4726 h -1 2   4730 cx 7 6   
+-1 swap 6 1   4729 t -1 2   
+-1 swap 5 0   4731 cx 2 7   
+-1 swap 4 3   -1 swap 9 8   4733 tdg -1 7   
+-1 swap 7 6   4732 cx 1 2   
+4737 t -1 2   
+-1 swap 8 3   
+-1 swap 5 0   4734 cx 1 6   
+-1 swap 2 1   4736 tdg -1 6   4743 t -1 7   
+-1 swap 9 8   
+-1 swap 4 3   4742 h -1 5   
+4735 tdg -1 2   4738 cx 1 6   4745 t -1 5   
+-1 swap 7 6   4739 cx 2 1   
+-1 swap 4 3   4741 h -1 1   
+-1 swap 5 0   
+-1 swap 9 8   4740 cx 7 2   
+-1 swap 7 6   4744 t -1 2   
+-1 swap 1 0   
+-1 swap 9 8   
+-1 swap 4 3   -1 swap 6 5   4746 cx 2 7   
+4747 cx 1 2   
+-1 swap 7 2   
+
+-1 swap 4 3   
+-1 swap 5 0   -1 swap 9 8   4748 cx 2 1   4749 tdg -1 7   
+4750 cx 2 7   4753 t -1 1   
+-1 swap 2 1   -1 swap 4 3   4752 tdg -1 7   
+-1 swap 6 5   -1 swap 9 8   4760 t -1 0   
+
+4751 tdg -1 1   4754 cx 2 7   4759 t -1 4   
+-1 swap 4 3   -1 swap 7 6   4755 cx 1 2   
+4757 h -1 2   
+
+4756 cx 6 1   
+-1 swap 1 0   -1 swap 3 2   4758 h -1 6   
+-1 swap 8 7   4761 t -1 6   
+
+-1 swap 9 4   4762 cx 1 2   
+4763 cx 6 1   
+-1 swap 2 1   
+-1 swap 9 4   
+
+-1 swap 5 0   -1 swap 8 3   4764 cx 1 6   4765 tdg -1 2   
+4766 cx 1 2   4769 t -1 6   
+-1 swap 6 1   4768 tdg -1 2   
+-1 swap 8 7   4775 t -1 3   4776 t -1 4   
+
+4767 tdg -1 6   4770 cx 1 2   
+-1 swap 7 2   4771 cx 6 1   4778 cx 4 3   
+-1 swap 5 0   -1 swap 8 3   -1 swap 9 4   4773 h -1 1   
+
+4772 cx 7 6   
+-1 swap 9 8   4774 h -1 7   
+-1 swap 1 0   -1 swap 6 5   4777 t -1 7   
+
+4779 cx 7 8   
+-1 swap 3 2   -1 swap 5 0   -1 swap 6 1   -1 swap 9 8   
+
+
+-1 swap 6 1   4780 cx 8 7   4781 tdg -1 9   
+4782 cx 8 9   4785 t -1 7   
+-1 swap 3 2   -1 swap 8 7   4784 tdg -1 9   4790 h -1 5   4791 t -1 0   
+4793 t -1 5   
+-1 swap 6 5   
+-1 swap 1 0   4783 tdg -1 7   4786 cx 8 9   
+4787 cx 7 8   
+4789 h -1 8   
+-1 swap 2 1   4792 t -1 8   
+-1 swap 8 7   
+-1 swap 4 3   -1 swap 5 0   
+
+-1 swap 9 8   4794 cx 7 2   
+-1 swap 1 0   -1 swap 4 3   4795 cx 6 7   
+-1 swap 7 2   
+4788 cx 8 9   
+-1 swap 4 3   
+-1 swap 1 0   -1 swap 9 8   4796 cx 7 6   4797 tdg -1 2   
+4798 cx 7 2   4801 t -1 6   
+-1 swap 7 6   4800 tdg -1 2   4807 t -1 5   
+-1 swap 5 0   -1 swap 9 4   4806 h -1 1   
+-1 swap 8 3   4809 t -1 1   
+4799 tdg -1 6   4802 cx 7 2   
+4803 cx 6 7   
+4805 h -1 7   
+4808 t -1 7   
+-1 swap 5 0   -1 swap 8 3   -1 swap 7 6   
+-1 swap 9 4   
+
+-1 swap 7 2   -1 swap 8 3   4810 cx 6 5   
+4811 cx 1 6   
+-1 swap 1 0   4813 tdg -1 6   
+-1 swap 9 8   4804 cx 7 2   
+
+-1 swap 3 2   4812 cx 5 0   
+-1 swap 8 7   4814 cx 5 6   4817 t -1 0   
+-1 swap 5 0   -1 swap 9 4   4816 tdg -1 6   
+-1 swap 2 1   4823 t -1 3   
+4824 t -1 8   
+-1 swap 9 4   4815 tdg -1 0   4818 cx 5 6   
+-1 swap 6 1   4819 cx 0 5   4826 cx 8 3   
+-1 swap 8 7   4821 h -1 5   
+-1 swap 4 3   
+4820 cx 1 0   
+-1 swap 7 2   4822 h -1 1   
+-1 swap 4 3   4825 t -1 1   
+-1 swap 6 5   
+-1 swap 9 8   4827 cx 1 2   
+-1 swap 3 2   
+-1 swap 7 6   
+
+-1 swap 9 8   4828 cx 2 1   4829 tdg -1 3   
+4830 cx 2 3   4833 t -1 1   
+-1 swap 2 1   4832 tdg -1 3   
+-1 swap 9 4   -1 swap 8 7   4839 t -1 5   
+-1 swap 5 0   
+4831 tdg -1 1   4834 cx 2 3   
+4835 cx 1 2   4840 t -1 7   
+-1 swap 3 2   -1 swap 5 0   -1 swap 7 6   -1 swap 9 8   
+
+
+-1 swap 4 3   -1 swap 9 8   4836 cx 2 1   4842 cx 6 5   
+-1 swap 2 1   
+-1 swap 5 0   
+4837 h -1 4   
+4838 h -1 1   
+-1 swap 4 3   4841 t -1 1   
+-1 swap 7 2   4843 cx 1 6   
+-1 swap 9 8   4844 cx 0 1   4845 tdg -1 6   
+-1 swap 6 1   
+
+-1 swap 3 2   -1 swap 8 7   
+4846 cx 0 1   4849 t -1 6   
+-1 swap 5 0   -1 swap 9 4   4848 tdg -1 1   
+-1 swap 8 7   4850 cx 6 1   4854 h -1 2   
+4857 t -1 2   
+-1 swap 1 0   -1 swap 3 2   4847 tdg -1 5   
+4851 cx 5 6   4855 t -1 7   
+4853 h -1 6   
+-1 swap 3 2   4852 cx 0 5   4856 t -1 6   
+4858 cx 6 7   
+-1 swap 5 0   -1 swap 6 1   
+
+-1 swap 4 3   
+-1 swap 5 0   -1 swap 9 8   4859 cx 2 1   
+4860 cx 7 2   4861 tdg -1 1   
+-1 swap 2 1   
+-1 swap 9 4   -1 swap 6 5   
+-1 swap 8 3   
+4862 cx 7 2   4865 t -1 1   
+-1 swap 5 0   -1 swap 7 6   4864 tdg -1 2   4872 h -1 9   
+-1 swap 9 8   4866 cx 1 2   4873 t -1 3   
+-1 swap 4 3   
+-1 swap 5 0   -1 swap 7 2   4863 tdg -1 6   
+4867 cx 6 1   4875 t -1 8   
+4869 h -1 1   
+4868 cx 7 6   4870 x -1 0   4871 x -1 2   4874 t -1 1   
+-1 swap 2 1   -1 swap 4 3   
+-1 swap 5 0   -1 swap 8 7   
+
+-1 swap 6 1   -1 swap 9 4   4876 cx 2 3   
+4877 cx 7 2   
+-1 swap 3 2   
+-1 swap 5 0   -1 swap 6 1   -1 swap 9 8   
+
+4878 cx 2 7   4879 tdg -1 3   
+-1 swap 1 0   4880 cx 2 3   4883 t -1 7   
+-1 swap 7 2   -1 swap 6 5   -1 swap 9 8   4882 tdg -1 3   
+
+4890 t -1 0   
+4881 tdg -1 7   4884 cx 2 3   4889 t -1 9   
+-1 swap 4 3   -1 swap 5 0   -1 swap 9 8   4885 cx 7 2   
+-1 swap 6 1   4887 h -1 2   
+
+-1 swap 9 4   -1 swap 8 7   
+-1 swap 1 0   -1 swap 6 5   
+
+-1 swap 3 2   4886 cx 9 8   
+4888 h -1 9   4892 cx 6 7   
+-1 swap 5 0   4891 t -1 9   
+-1 swap 7 6   -1 swap 9 8   
+-1 swap 4 3   
+-1 swap 1 0   
+4893 cx 8 7   
+-1 swap 9 4   -1 swap 7 6   
+
+-1 swap 2 1   
+-1 swap 5 0   -1 swap 9 4   4894 cx 7 8   4895 tdg -1 6   
+4896 cx 7 6   4899 t -1 8   
+-1 swap 3 2   -1 swap 8 7   4898 tdg -1 6   
+4904 h -1 4   4905 t -1 9   
+-1 swap 5 0   4907 t -1 4   
+-1 swap 2 1   -1 swap 4 3   4897 tdg -1 8   4900 cx 7 6   
+4901 cx 8 7   
+-1 swap 8 7   
+
+-1 swap 1 0   
+4902 cx 6 7   4903 h -1 8   
+4906 t -1 8   
+-1 swap 5 0   -1 swap 6 1   -1 swap 7 2   4908 cx 8 9   
+4909 cx 3 8   
+-1 swap 9 8   
+-1 swap 6 5   
+
+4910 cx 8 3   4911 tdg -1 9   
+4912 cx 8 9   4915 t -1 3   
+-1 swap 1 0   -1 swap 8 3   -1 swap 7 6   4914 tdg -1 9   
+4921 t -1 2   
+
+-1 swap 2 1   4913 tdg -1 3   4916 cx 8 9   4922 t -1 0   
+-1 swap 9 4   4917 cx 3 8   
+-1 swap 8 7   
+-1 swap 1 0   
+4918 cx 4 3   
+4919 h -1 7   4920 h -1 4   
+-1 swap 8 3   4923 t -1 4   4924 cx 1 0   
+-1 swap 2 1   -1 swap 5 0   
+
+-1 swap 4 3   -1 swap 9 8   
+-1 swap 1 0   -1 swap 6 5   
+
+4925 cx 3 2   
+-1 swap 5 0   -1 swap 8 3   -1 swap 7 6   4927 tdg -1 2   
+-1 swap 9 4   
+
+-1 swap 6 1   4926 cx 7 8   
+4928 cx 7 2   4931 t -1 8   
+-1 swap 5 0   -1 swap 8 7   4930 tdg -1 2   4936 x -1 9   
+
+-1 swap 9 4   
+-1 swap 6 1   4929 tdg -1 8   4932 cx 7 2   4937 h -1 0   
+-1 swap 3 2   4933 cx 8 7   4940 t -1 0   
+4935 h -1 7   
+-1 swap 1 0   -1 swap 9 4   -1 swap 6 5   
+4934 cx 3 8   
+4938 t -1 8   4939 t -1 3   
+-1 swap 2 1   -1 swap 6 5   4941 cx 3 8   
+-1 swap 8 7   
+-1 swap 9 4   
+-1 swap 6 1   4942 cx 2 3   
+4943 cx 7 2   4944 tdg -1 3   
+-1 swap 5 0   -1 swap 8 7   4948 t -1 2   
+-1 swap 9 4   
+
+-1 swap 5 0   -1 swap 6 1   4945 cx 8 3   
+-1 swap 8 7   4947 tdg -1 3   
+4949 cx 2 3   4955 t -1 9   
+-1 swap 1 0   -1 swap 9 4   -1 swap 6 5   
+-1 swap 8 3   4946 tdg -1 7   
+4950 cx 7 2   
+-1 swap 6 5   4952 h -1 2   
+-1 swap 2 1   4951 cx 8 7   4954 t -1 3   
+4953 h -1 8   4957 cx 4 3   
+-1 swap 5 0   -1 swap 9 4   -1 swap 7 6   4956 t -1 8   
+-1 swap 2 1   
+
+-1 swap 5 0   4958 cx 8 9   
+-1 swap 2 1   -1 swap 7 6   4959 cx 3 8   4960 tdg -1 9   
+-1 swap 9 8   
+
+-1 swap 1 0   -1 swap 6 5   
+4961 cx 3 8   4964 t -1 9   
+-1 swap 4 3   -1 swap 7 2   4963 tdg -1 8   
+-1 swap 5 0   -1 swap 6 1   4965 cx 9 8   
+
+-1 swap 7 2   -1 swap 8 3   4962 tdg -1 4   
+4966 cx 4 9   4969 h -1 5   
+-1 swap 1 0   -1 swap 6 5   4968 h -1 9   
+-1 swap 4 3   -1 swap 9 8   4970 t -1 7   
+
+4972 t -1 6   
+-1 swap 2 1   -1 swap 5 0   4967 cx 4 3   4971 t -1 8   
+4973 cx 8 7   
+-1 swap 7 6   
+-1 swap 2 1   -1 swap 4 3   -1 swap 5 0   
+
+4974 cx 7 8   
+-1 swap 2 1   4975 cx 6 7   4976 tdg -1 8   
+-1 swap 7 6   
+-1 swap 5 0   
+-1 swap 4 3   
+4977 cx 7 8   4980 t -1 6   
+-1 swap 7 6   4979 tdg -1 8   
+-1 swap 4 3   -1 swap 5 0   
+-1 swap 2 1   
+4978 tdg -1 6   4981 cx 7 8   
+-1 swap 4 3   4982 cx 6 7   
+-1 swap 1 0   -1 swap 7 6   
+
+4986 t -1 3   4987 t -1 4   
+4983 cx 8 7   4984 h -1 6   4989 cx 4 3   
+-1 swap 5 0   -1 swap 7 2   -1 swap 9 4   4985 h -1 8   
+4988 t -1 8   
+
+-1 swap 2 1   4990 cx 8 9   
+-1 swap 5 0   4991 cx 3 8   4992 tdg -1 9   
+-1 swap 9 8   
+-1 swap 7 2   
+
+-1 swap 6 1   4993 cx 3 8   4996 t -1 9   
+-1 swap 5 0   -1 swap 7 2   4994 tdg -1 3   4995 tdg -1 8   
+4997 cx 9 8   
+-1 swap 9 4   5002 t -1 1   
+-1 swap 2 1   -1 swap 5 0   
+
+-1 swap 7 6   4998 cx 3 4   
+-1 swap 9 4   4999 cx 8 3   5001 h -1 1   
+-1 swap 5 0   5003 t -1 3   5004 t -1 1   
+5005 cx 3 2   
+-1 swap 2 1   5000 h -1 9   
+-1 swap 9 4   
+-1 swap 5 0   
+-1 swap 7 6   5006 cx 2 3   
+5007 cx 1 2   5008 tdg -1 3   
+-1 swap 2 1   -1 swap 5 0   
+-1 swap 9 4   -1 swap 8 7   
+
+5009 cx 2 3   5012 t -1 1   
+-1 swap 2 1   -1 swap 7 6   5011 tdg -1 3   
+-1 swap 9 8   
+
+-1 swap 5 0   -1 swap 7 6   5010 tdg -1 1   5013 cx 2 3   
+5014 cx 1 2   5018 t -1 9   
+-1 swap 3 2   -1 swap 9 8   
+-1 swap 5 0   5019 t -1 7   
+
+5015 cx 2 1   5016 h -1 3   5021 cx 7 8   
+-1 swap 1 0   -1 swap 8 3   -1 swap 9 4   5017 h -1 2   
+-1 swap 6 5   5020 t -1 2   
+5022 cx 2 7   
+-1 swap 1 0   5023 cx 3 2   5024 tdg -1 7   
+-1 swap 7 2   
+
+-1 swap 1 0   
+-1 swap 9 4   5025 cx 3 2   5028 t -1 7   
+-1 swap 8 3   -1 swap 6 5   5027 tdg -1 2   
+5029 cx 7 2   5035 t -1 1   
+-1 swap 1 0   5034 t -1 9   
+-1 swap 3 2   -1 swap 9 4   -1 swap 6 5   5026 tdg -1 8   
+5030 cx 8 7   
+-1 swap 1 0   5032 h -1 7   
+-1 swap 6 5   5031 cx 3 8   
+5033 h -1 3   
+-1 swap 2 1   -1 swap 4 3   
+-1 swap 8 7   
+
+5036 t -1 4   5037 cx 2 3   
+-1 swap 1 0   -1 swap 4 3   
+-1 swap 6 5   -1 swap 9 8   
+
+-1 swap 1 0   5038 cx 3 2   
+5039 cx 4 3   5040 tdg -1 2   
+-1 swap 4 3   -1 swap 6 5   -1 swap 9 8   
+-1 swap 1 0   
+
+-1 swap 7 6   5041 cx 3 2   5044 t -1 4   
+-1 swap 4 3   5043 tdg -1 2   5049 h -1 8   
+5052 t -1 8   
+-1 swap 6 1   
+-1 swap 8 7   5042 tdg -1 4   5045 cx 3 2   
+5046 cx 4 3   
+-1 swap 3 2   -1 swap 6 5   5050 t -1 1   
+
+-1 swap 9 8   
+5047 cx 3 4   5048 h -1 2   
+5051 t -1 2   
+-1 swap 5 0   5053 cx 2 1   
+5054 cx 7 2   
+-1 swap 2 1   
+-1 swap 4 3   -1 swap 6 5   
+-1 swap 9 8   
+5055 cx 2 7   5056 tdg -1 1   
+-1 swap 6 5   5057 cx 2 1   5060 t -1 7   
+-1 swap 7 2   -1 swap 9 8   5059 tdg -1 1   5066 t -1 0   
+
+-1 swap 5 0   
+-1 swap 9 4   5058 tdg -1 7   5061 cx 2 1   
+5062 cx 7 2   
+-1 swap 2 1   5065 h -1 0   
+-1 swap 8 3   -1 swap 6 5   5068 t -1 0   
+-1 swap 9 4   
+5063 cx 2 7   5064 h -1 1   
+-1 swap 7 2   5067 t -1 1   
+-1 swap 4 3   5069 cx 1 6   
+-1 swap 9 8   5070 cx 0 1   
+-1 swap 5 0   5072 tdg -1 1   
+
+
+-1 swap 8 3   -1 swap 9 4   5071 cx 6 5   
+5073 cx 6 1   5076 t -1 5   
+-1 swap 6 5   5075 tdg -1 1   
+5082 t -1 2   5083 t -1 7   
+-1 swap 8 3   
+-1 swap 9 4   5074 tdg -1 5   5077 cx 6 1   
+-1 swap 1 0   5078 cx 5 6   5085 cx 7 2   
+-1 swap 7 6   
+-1 swap 9 4   
+5079 cx 0 5   
+-1 swap 2 1   -1 swap 8 3   -1 swap 6 5   5080 h -1 7   5081 h -1 0   
+5084 t -1 0   
+
+-1 swap 9 4   -1 swap 7 6   5086 cx 0 5   
+5087 cx 1 0   5088 tdg -1 5   
+-1 swap 5 0   
+-1 swap 3 2   
+-1 swap 8 7   
+-1 swap 9 4   5089 cx 1 0   5092 t -1 5   
+-1 swap 3 2   -1 swap 6 1   5091 tdg -1 0   
+-1 swap 8 7   5093 cx 5 0   
+5098 t -1 4   
+-1 swap 1 0   5090 tdg -1 6   
+-1 swap 3 2   -1 swap 9 4   5094 cx 6 5   5099 t -1 8   
+5096 h -1 5   
+5095 cx 1 6   
+-1 swap 8 3   -1 swap 9 4   -1 swap 7 6   5097 h -1 1   
+-1 swap 2 1   -1 swap 5 0   
+
+-1 swap 9 8   5101 cx 3 4   
+-1 swap 5 0   -1 swap 7 6   5100 t -1 2   
+5102 cx 2 3   
+-1 swap 4 3   
+-1 swap 6 5   
+-1 swap 8 7   
+5103 cx 3 2   5104 tdg -1 4   
+5105 cx 3 4   5108 t -1 2   
+-1 swap 3 2   -1 swap 5 0   -1 swap 7 6   -1 swap 9 8   5107 tdg -1 4   
+
+
+-1 swap 1 0   -1 swap 6 5   -1 swap 9 8   5106 tdg -1 2   5109 cx 3 4   5113 h -1 7   
+5110 cx 2 3   5116 t -1 7   
+-1 swap 3 2   
+5114 t -1 1   
+
+-1 swap 5 0   5111 cx 4 3   5112 h -1 2   
+5115 t -1 2   
+-1 swap 4 3   -1 swap 9 8   5117 cx 2 1   
+5118 cx 7 2   
+-1 swap 2 1   -1 swap 6 5   
+-1 swap 9 4   
+-1 swap 8 3   
+-1 swap 6 5   5119 cx 2 7   5120 tdg -1 1   
+5121 cx 2 1   5124 t -1 7   
+-1 swap 1 0   -1 swap 8 3   5122 tdg -1 2   5129 h -1 4   5131 t -1 9   
+-1 swap 6 5   5132 t -1 4   
+
+5123 tdg -1 0   
+-1 swap 4 3   -1 swap 5 0   -1 swap 7 6   -1 swap 9 8   
+-1 swap 2 1   
+
+5125 cx 6 5   5130 t -1 7   
+-1 swap 6 1   5133 cx 8 7   
+-1 swap 9 4   5134 cx 3 8   
+-1 swap 8 7   
+5126 cx 6 1   
+-1 swap 1 0   5127 cx 5 6   
+-1 swap 6 5   5135 cx 8 3   5136 tdg -1 7   
+5137 cx 8 7   5140 t -1 3   
+-1 swap 1 0   -1 swap 8 3   -1 swap 9 4   5139 tdg -1 7   
+-1 swap 6 5   
+
+5128 h -1 1   5138 tdg -1 3   5141 cx 8 7   
+-1 swap 7 2   -1 swap 6 5   5142 cx 3 8   5146 t -1 1   
+5144 h -1 8   
+
+-1 swap 9 8   5143 cx 2 3   5147 t -1 6   
+5145 h -1 2   5149 cx 6 1   
+-1 swap 4 3   -1 swap 7 6   5148 t -1 2   
+-1 swap 9 8   
+-1 swap 5 0   
+-1 swap 4 3   5150 cx 2 7   
+-1 swap 7 6   5151 cx 1 2   
+5156 t -1 2   
+-1 swap 4 3   
+-1 swap 5 0   -1 swap 7 2   -1 swap 9 8   5152 tdg -1 6   
+5153 cx 1 6   
+-1 swap 4 3   5154 tdg -1 1   5155 tdg -1 6   
+5157 cx 7 6   5161 h -1 9   
+-1 swap 5 0   -1 swap 7 2   5164 t -1 9   
+-1 swap 9 8   5162 t -1 3   
+
+5158 cx 1 2   
+-1 swap 8 7   5159 cx 6 1   5160 h -1 2   
+-1 swap 1 0   5163 t -1 2   
+5165 cx 2 3   
+5166 cx 7 2   
+-1 swap 3 2   
+-1 swap 1 0   -1 swap 6 5   
+
+-1 swap 9 4   5167 cx 2 7   5168 tdg -1 3   
+-1 swap 5 0   -1 swap 6 1   5169 cx 2 3   5172 t -1 7   
+-1 swap 7 2   5171 tdg -1 3   
+-1 swap 9 8   
+-1 swap 5 0   -1 swap 6 1   
+5170 tdg -1 7   5173 cx 2 3   
+5174 cx 7 2   
+-1 swap 1 0   -1 swap 3 2   5179 t -1 5   
+-1 swap 9 8   
+
+-1 swap 4 3   -1 swap 5 0   5175 cx 2 7   
+-1 swap 7 6   -1 swap 9 8   5177 h -1 2   
+-1 swap 2 1   
+-1 swap 4 3   5178 t -1 5   
+-1 swap 7 6   -1 swap 9 8   5181 cx 0 5   
+5180 t -1 1   
+-1 swap 3 2   5182 cx 1 0   
+-1 swap 5 0   
+
+-1 swap 3 2   
+-1 swap 8 7   5183 cx 0 1   5184 tdg -1 5   
+5185 cx 0 5   5188 t -1 1   
+-1 swap 1 0   5176 h -1 3   5187 tdg -1 5   5193 h -1 6   
+-1 swap 4 3   5196 t -1 6   
+
+5186 tdg -1 1   5189 cx 0 5   
+-1 swap 4 3   -1 swap 6 5   -1 swap 9 8   5190 cx 1 0   
+-1 swap 7 2   5192 h -1 0   
+
+-1 swap 5 0   -1 swap 9 4   5191 cx 6 1   5194 t -1 3   
+-1 swap 3 2   -1 swap 7 6   5195 t -1 1   
+
+-1 swap 9 8   
+-1 swap 4 3   -1 swap 7 6   5197 cx 1 2   
+5198 cx 0 1   
+-1 swap 2 1   -1 swap 9 8   
+-1 swap 6 5   
+
+-1 swap 9 8   5199 cx 1 0   5200 tdg -1 2   
+-1 swap 4 3   -1 swap 7 6   5201 cx 1 2   5204 t -1 0   
+-1 swap 1 0   5203 tdg -1 2   
+-1 swap 9 8   5211 t -1 5   
+-1 swap 4 3   5210 t -1 6   
+-1 swap 6 5   5202 tdg -1 0   5205 cx 1 2   
+5206 cx 0 1   
+-1 swap 2 1   
+-1 swap 9 8   5213 cx 6 5   
+
+5207 cx 1 0   5208 h -1 2   
+-1 swap 4 3   -1 swap 5 0   -1 swap 7 2   5209 h -1 1   
+5212 t -1 1   
+5214 cx 1 6   
+-1 swap 4 3   5215 cx 0 1   5216 tdg -1 6   
+-1 swap 5 0   -1 swap 8 7   5220 t -1 1   
+
+-1 swap 3 2   -1 swap 9 4   
+5217 cx 5 6   
+-1 swap 5 0   -1 swap 8 7   5219 tdg -1 6   
+-1 swap 3 2   -1 swap 9 4   5221 cx 1 6   
+
+-1 swap 6 5   5218 tdg -1 0   
+-1 swap 3 2   5222 cx 0 1   5227 t -1 9   
+-1 swap 9 8   5224 h -1 1   
+-1 swap 7 6   5223 cx 5 0   
+5225 h -1 5   5226 t -1 3   
+5228 t -1 5   5229 cx 8 3   
+-1 swap 9 4   -1 swap 6 5   -1 swap 8 7   
+-1 swap 2 1   
+
+-1 swap 5 0   5230 cx 6 7   
+-1 swap 3 2   -1 swap 6 1   5232 tdg -1 7   
+-1 swap 9 8   
+
+5231 cx 2 1   
+-1 swap 4 3   -1 swap 5 0   5233 cx 2 7   5236 t -1 1   
+-1 swap 2 1   5235 tdg -1 7   
+-1 swap 9 8   
+5241 h -1 4   5242 t -1 0   
+5234 tdg -1 1   5237 cx 2 7   5244 t -1 4   
+-1 swap 4 3   -1 swap 7 6   -1 swap 9 8   5238 cx 1 2   
+5240 h -1 2   
+-1 swap 1 0   5243 t -1 2   
+-1 swap 6 5   -1 swap 8 7   
+
+5245 cx 2 1   
+5239 cx 5 0   5246 cx 3 2   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   
+-1 swap 7 6   
+
+-1 swap 9 8   5247 cx 2 3   5248 tdg -1 1   
+5249 cx 2 1   5252 t -1 3   
+-1 swap 3 2   -1 swap 6 5   5251 tdg -1 1   5257 h -1 7   5258 t -1 4   
+5260 t -1 7   
+-1 swap 9 4   -1 swap 8 7   
+5250 tdg -1 3   5253 cx 2 1   
+-1 swap 3 2   -1 swap 6 5   
+-1 swap 9 4   -1 swap 8 7   
+
+5254 cx 2 3   
+-1 swap 6 5   -1 swap 8 7   5255 cx 1 2   5256 h -1 3   
+-1 swap 1 0   5259 t -1 3   
+5261 cx 3 4   
+-1 swap 7 2   -1 swap 9 4   5262 cx 8 3   
+-1 swap 5 0   -1 swap 6 1   5264 tdg -1 3   
+
+-1 swap 4 3   -1 swap 7 2   5263 cx 9 8   
+-1 swap 5 0   5268 t -1 8   
+-1 swap 6 1   
+-1 swap 3 2   5265 cx 9 4   
+-1 swap 5 0   -1 swap 9 8   5267 tdg -1 4   
+-1 swap 7 6   
+-1 swap 2 1   5274 t -1 3   
+5266 tdg -1 8   5269 cx 9 4   5275 t -1 5   
+-1 swap 5 0   5270 cx 8 9   
+-1 swap 3 2   -1 swap 9 8   
+
+-1 swap 1 0   
+5271 cx 4 9   5272 h -1 8   
+-1 swap 8 7   5273 h -1 4   
+-1 swap 4 3   5277 cx 1 2   
+-1 swap 2 1   
+-1 swap 9 8   
+-1 swap 5 0   5276 t -1 3   
+5278 cx 3 2   
+-1 swap 2 1   -1 swap 9 8   
+-1 swap 5 0   -1 swap 7 6   
+
+-1 swap 9 8   5279 cx 2 3   5280 tdg -1 1   
+5281 cx 2 1   5284 t -1 3   
+-1 swap 3 2   -1 swap 5 0   -1 swap 7 6   5283 tdg -1 1   
+-1 swap 9 4   
+
+-1 swap 5 0   -1 swap 8 7   5282 tdg -1 3   5285 cx 2 1   
+5286 cx 3 2   5290 t -1 4   5291 t -1 9   
+-1 swap 2 1   -1 swap 9 4   
+
+-1 swap 8 7   
+5287 cx 2 3   5288 h -1 1   5293 cx 4 9   
+-1 swap 1 0   5289 h -1 2   
+-1 swap 4 3   -1 swap 9 8   5292 t -1 2   
+-1 swap 7 6   
+-1 swap 5 0   
+5294 cx 2 3   
+-1 swap 6 1   -1 swap 8 3   
+-1 swap 9 4   
+
+-1 swap 1 0   5295 cx 3 2   5296 tdg -1 8   
+5297 cx 3 8   5300 t -1 2   
+-1 swap 3 2   5299 tdg -1 8   5305 h -1 5   5306 t -1 9   
+5308 t -1 5   
+-1 swap 9 4   -1 swap 6 5   
+5298 tdg -1 2   5301 cx 3 8   
+-1 swap 8 7   5302 cx 2 3   
+5304 h -1 3   
+-1 swap 2 1   5307 t -1 3   
+-1 swap 7 6   5309 cx 3 4   
+-1 swap 5 0   -1 swap 8 3   
+
+5303 cx 6 1   
+-1 swap 1 0   -1 swap 4 3   5310 cx 7 8   
+-1 swap 7 2   5312 tdg -1 8   
+
+-1 swap 5 0   
+5311 cx 3 2   
+5313 cx 3 8   5316 t -1 2   
+-1 swap 3 2   5315 tdg -1 8   
+-1 swap 1 0   -1 swap 9 4   
+
+5314 tdg -1 2   5317 cx 3 8   
+-1 swap 6 1   -1 swap 8 7   5318 cx 2 3   
+5320 h -1 3   
+
+5319 cx 7 2   
+search node number: 34066240
+pattern number: 1103
+cycle num is 22095068
+how many path has done: 5970
+time is 67322.6
+
+

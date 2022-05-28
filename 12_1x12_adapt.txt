@@ -1,0 +1,4 @@
+qubit num is 12 chip is linear method is adapt 1200
+qubit num is 12 chip is linear method is adapt 1200
+qubit num is 12 chip is linear method is adapt 1200
+qubit num is 12 chip is linear method is adapt 1200

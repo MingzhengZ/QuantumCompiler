@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="Remote Host (a2d3ce14-1a51-4ae5-a1a6-de3e91292e3d)" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
       <paths name="Remote Host (a2d3ce14-1a51-4ae5-a1a6-de3e91292e3d)">
         <serverdata>
           <mappings>
-            <mapping deploy="/tmp/tmp.8ApPJar9Ec" local="$PROJECT_DIR$" />
+            <mapping deploy="/home/qtest/QuantumCompiler" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
-            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
+            <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug-remote-host" />
           </excludedPaths>
         </serverdata>
       </paths>
     </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

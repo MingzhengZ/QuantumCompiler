@@ -1,0 +1,224 @@
+2x5 top N = 10 smooth =5 filename is ../circuits/large/qft_10.qasm
+-1 swap 9 4   -1 swap 7 6   0 h -1 0   
+1 rz(-0.7854) -1 0   
+-1 swap 8 3   2 cx 0 1   
+-1 swap 9 4   -1 swap 6 5   3 rz(0.7854) -1 0   
+4 cx 0 1   
+-1 swap 2 1   5 rz(-0.3927) -1 0   
+-1 swap 8 7   
+
+-1 swap 4 3   6 cx 0 1   
+-1 swap 6 5   -1 swap 9 8   7 rz(0.3927) -1 0   
+-1 swap 7 2   8 cx 0 1   
+9 rz(-0.19635) -1 0   
+-1 swap 1 0   -1 swap 6 5   -1 swap 9 8   
+
+
+10 cx 1 2   
+11 rz(0.19635) -1 1   
+-1 swap 7 6   -1 swap 9 8   12 cx 1 2   
+-1 swap 3 2   13 rz(-0.09815) -1 1   
+
+-1 swap 7 6   
+14 cx 1 2   
+-1 swap 5 0   -1 swap 9 4   15 rz(0.09815) -1 1   
+16 cx 1 2   
+-1 swap 7 2   17 rz(-0.0491) -1 1   
+-1 swap 4 3   18 cx 1 6   
+19 rz(0.0491) -1 1   
+-1 swap 5 0   20 cx 1 6   
+-1 swap 3 2   -1 swap 9 8   21 rz(-0.02455) -1 1   
+
+
+-1 swap 8 3   -1 swap 9 4   22 cx 1 2   
+-1 swap 5 0   23 rz(0.02455) -1 1   
+24 cx 1 2   
+25 rz(-0.01225) -1 1   
+-1 swap 9 4   -1 swap 7 6   26 cx 1 0   
+-1 swap 3 2   27 rz(0.01225) -1 1   
+28 cx 1 0   
+-1 swap 7 6   29 rz(-0.00615) -1 1   
+-1 swap 4 3   30 cx 1 2   
+-1 swap 2 1   -1 swap 9 8   
+
+-1 swap 5 0   
+-1 swap 9 4   -1 swap 8 7   31 rz(0.00615) -1 2   
+32 cx 2 1   
+-1 swap 1 0   33 rz(-0.00305) -1 2   
+34 cx 2 7   37 h -1 4   
+-1 swap 7 6   -1 swap 9 8   35 rz(0.00305) -1 2   38 rz(-0.7854) -1 4   
+-1 swap 2 1   -1 swap 4 3   
+
+
+-1 swap 8 7   36 cx 1 6   39 cx 3 2   
+40 rz(0.7854) -1 3   
+-1 swap 1 0   -1 swap 6 5   41 cx 3 2   
+42 rz(-0.3927) -1 3   
+-1 swap 9 8   43 cx 3 4   
+44 rz(0.3927) -1 3   
+-1 swap 1 0   -1 swap 6 5   45 cx 3 4   
+46 rz(-0.19635) -1 3   
+-1 swap 7 2   -1 swap 9 4   47 cx 3 8   
+48 rz(0.19635) -1 3   
+-1 swap 6 1   49 cx 3 8   
+50 rz(-0.09815) -1 3   
+-1 swap 9 8   51 cx 3 4   
+52 rz(0.09815) -1 3   
+-1 swap 7 6   53 cx 3 4   
+-1 swap 9 4   54 rz(-0.0491) -1 3   
+-1 swap 1 0   55 cx 3 2   
+-1 swap 3 2   -1 swap 6 5   -1 swap 8 7   
+
+
+-1 swap 6 1   -1 swap 9 4   56 rz(0.0491) -1 2   
+57 cx 2 3   
+-1 swap 8 7   58 rz(-0.02455) -1 2   
+-1 swap 5 0   59 cx 2 1   
+60 rz(0.02455) -1 2   
+-1 swap 7 6   61 cx 2 1   
+62 rz(-0.01225) -1 2   
+-1 swap 5 0   -1 swap 9 4   
+63 cx 2 7   
+64 rz(0.01225) -1 2   
+-1 swap 9 4   65 cx 2 7   70 h -1 5   
+-1 swap 1 0   -1 swap 8 7   66 rz(-0.00615) -1 2   71 rz(-0.7854) -1 5   
+-1 swap 6 5   
+
+-1 swap 9 8   67 cx 2 1   
+-1 swap 2 1   -1 swap 4 3   72 cx 6 7   
+73 rz(0.7854) -1 6   
+74 cx 6 7   
+-1 swap 5 0   -1 swap 9 4   -1 swap 8 7   68 rz(0.00615) -1 1   75 rz(-0.3927) -1 6   
+69 cx 1 2   
+-1 swap 3 2   
+-1 swap 5 0   76 cx 6 7   
+-1 swap 9 4   77 rz(0.3927) -1 6   
+-1 swap 2 1   78 cx 6 7   
+-1 swap 5 0   -1 swap 8 7   79 rz(-0.19635) -1 6   
+
+-1 swap 9 4   80 cx 6 1   
+-1 swap 8 7   81 rz(0.19635) -1 6   
+82 cx 6 1   
+-1 swap 1 0   83 rz(-0.09815) -1 6   
+-1 swap 7 6   -1 swap 9 8   
+-1 swap 3 2   
+
+-1 swap 1 0   -1 swap 6 5   84 cx 7 8   
+-1 swap 4 3   85 rz(0.09815) -1 7   
+86 cx 7 8   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 8   87 rz(-0.0491) -1 7   
+88 cx 7 6   
+89 rz(0.0491) -1 7   
+-1 swap 2 1   -1 swap 8 3   -1 swap 9 4   90 cx 7 6   
+-1 swap 5 0   91 rz(-0.02455) -1 7   
+
+-1 swap 4 3   92 cx 7 8   
+-1 swap 6 5   93 rz(0.02455) -1 7   
+-1 swap 2 1   94 cx 7 8   
+95 rz(-0.01225) -1 7   99 h -1 4   
+-1 swap 8 3   -1 swap 7 6   100 rz(-0.7854) -1 4   
+
+
+-1 swap 1 0   -1 swap 4 3   -1 swap 7 2   -1 swap 6 5   
+-1 swap 9 8   
+
+96 cx 5 0   101 cx 3 2   
+-1 swap 8 7   97 rz(0.01225) -1 5   102 rz(0.7854) -1 3   
+98 cx 5 0   103 cx 3 2   
+104 rz(-0.3927) -1 3   
+105 cx 3 8   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 4   -1 swap 7 6   106 rz(0.3927) -1 3   
+107 cx 3 8   
+108 rz(-0.19635) -1 3   
+-1 swap 6 1   109 cx 3 4   
+-1 swap 5 0   -1 swap 7 2   -1 swap 9 8   110 rz(0.19635) -1 3   
+111 cx 3 4   
+112 rz(-0.09815) -1 3   
+-1 swap 6 1   -1 swap 9 4   113 cx 3 2   
+114 rz(0.09815) -1 3   
+-1 swap 5 0   115 cx 3 2   
+116 rz(-0.0491) -1 3   
+-1 swap 6 1   117 cx 3 8   
+-1 swap 5 0   -1 swap 7 2   118 rz(0.0491) -1 3   
+-1 swap 9 4   119 cx 3 8   
+120 rz(-0.02455) -1 3   124 h -1 6   
+-1 swap 1 0   125 rz(-0.7854) -1 6   
+-1 swap 3 2   -1 swap 7 6   -1 swap 9 8   
+
+
+-1 swap 4 3   -1 swap 5 0   121 cx 2 1   126 cx 7 8   
+122 rz(0.02455) -1 2   127 rz(0.7854) -1 7   
+123 cx 2 1   128 cx 7 8   
+-1 swap 1 0   -1 swap 8 3   -1 swap 9 4   129 rz(-0.3927) -1 7   
+
+
+130 cx 7 8   
+-1 swap 4 3   131 rz(0.3927) -1 7   
+132 cx 7 8   
+-1 swap 2 1   -1 swap 5 0   -1 swap 9 8   133 rz(-0.19635) -1 7   
+134 cx 7 6   
+135 rz(0.19635) -1 7   
+-1 swap 2 1   -1 swap 8 3   -1 swap 9 4   136 cx 7 6   
+-1 swap 5 0   137 rz(-0.09815) -1 7   
+
+-1 swap 3 2   138 cx 7 8   
+-1 swap 9 4   -1 swap 6 5   139 rz(0.09815) -1 7   
+-1 swap 1 0   140 cx 7 8   
+-1 swap 7 2   
+145 h -1 4   
+146 rz(-0.7854) -1 4   
+-1 swap 6 5   -1 swap 8 7   141 rz(-0.0491) -1 2   147 cx 4 9   
+-1 swap 9 4   142 cx 2 1   
+143 rz(0.0491) -1 2   
+-1 swap 5 0   -1 swap 8 3   -1 swap 7 6   144 cx 2 1   
+148 rz(0.7854) -1 9   
+149 cx 9 4   
+-1 swap 4 3   -1 swap 6 5   -1 swap 8 7   150 rz(-0.3927) -1 9   
+-1 swap 2 1   
+
+-1 swap 6 5   151 cx 9 8   
+-1 swap 3 2   152 rz(0.3927) -1 9   
+153 cx 9 8   
+-1 swap 1 0   -1 swap 7 6   -1 swap 9 8   
+
+
+154 rz(-0.19635) -1 8   
+155 cx 8 7   
+156 rz(0.19635) -1 8   
+-1 swap 4 3   -1 swap 5 0   157 cx 8 7   162 h -1 2   
+-1 swap 7 2   -1 swap 9 8   
+
+
+-1 swap 3 2   -1 swap 5 0   158 rz(-0.09815) -1 9   163 rz(-0.7854) -1 7   
+-1 swap 6 1   159 cx 9 4   164 cx 7 8   
+160 rz(0.09815) -1 9   165 rz(0.7854) -1 7   
+-1 swap 3 2   161 cx 9 4   166 cx 7 8   
+-1 swap 5 0   -1 swap 9 8   167 rz(-0.3927) -1 7   
+
+-1 swap 4 3   168 cx 7 2   
+-1 swap 6 5   169 rz(0.3927) -1 7   
+170 cx 7 2   175 h -1 9   
+171 rz(-0.19635) -1 7   176 rz(-0.7854) -1 9   
+-1 swap 7 2   -1 swap 6 5   -1 swap 9 8   
+
+
+172 cx 2 3   177 cx 8 7   
+-1 swap 5 0   -1 swap 9 4   173 rz(0.19635) -1 2   178 rz(0.7854) -1 8   
+174 cx 2 3   179 cx 8 7   
+-1 swap 6 1   180 rz(-0.3927) -1 8   184 h -1 7   
+-1 swap 7 2   -1 swap 9 4   181 cx 8 3   
+-1 swap 5 0   182 rz(0.3927) -1 8   
+-1 swap 6 1   183 cx 8 3   
+185 rz(-0.7854) -1 2   190 h -1 4   195 h -1 9   196 h -1 7   197 h -1 8   
+-1 swap 5 0   -1 swap 9 4   186 cx 2 3   
+187 rz(0.7854) -1 2   191 h -1 6   193 h -1 1   
+188 cx 2 3   
+189 h -1 3   192 h -1 5   194 h -1 0   198 h -1 2   
+199 h -1 3   
+search node number: 304006
+pattern number: 11
+cycle num is 112347
+how many path has done: 216
+time is 30.744
+
+

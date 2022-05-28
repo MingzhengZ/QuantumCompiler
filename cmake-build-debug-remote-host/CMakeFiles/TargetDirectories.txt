@@ -1,0 +1,3 @@
+/home/qtest/QuantumCompiler/cmake-build-debug-remote-host/CMakeFiles/rebuild_cache.dir
+/home/qtest/QuantumCompiler/cmake-build-debug-remote-host/CMakeFiles/edit_cache.dir
+/home/qtest/QuantumCompiler/cmake-build-debug-remote-host/CMakeFiles/QuantumComper.dir
