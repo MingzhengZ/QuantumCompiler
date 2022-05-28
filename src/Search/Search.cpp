@@ -15,14 +15,14 @@ SearchResult Search::SearchCircuit(SearchNode *sn) {
     DefaultExpander nodeExpander(this->env);
     vector<int> searchNum;
     int cycleNum=0;
-    int whilecount=1;
+    int whilecount=0;
     while (nodeQueue->size() >= 0) {
         whilecount++;
-        cout<<"while count = "<<whilecount<<"and the queue size is "<<nodeQueue->size()<<endl;
+//        cout<<"while count = "<<whilecount<<"and the queue size is "<<nodeQueue->size()<<endl;
         bool ifFind;
         SearchNode *expandeNode;
         expandeNode = nodeQueue->pop();
-        expandeNode->PrintNode();
+//        expandeNode->PrintNode();
         ifFind=nodeExpander.ExpandWithoutCnotCheck(nodeQueue, expandeNode,filterT);
         searchNum.push_back(nodeExpander.expandeNum);
         cycleNum=cycleNum+nodeExpander.cycleNum;
@@ -33,7 +33,44 @@ SearchResult Search::SearchCircuit(SearchNode *sn) {
     SearchResult sr;
     sr.finalPath = nodeExpander.actionPath;
     sr.searchNodeNum = searchNum;
-    int count;
+    int count=0;
+    for (int i = 0; i < sr.searchNodeNum.size(); i++) {
+        count = count + sr.searchNodeNum[i];
+    }
+    cout << "search node number: " << count << endl;
+    vector<int> queueNum;
+    queueNum.push_back(nodeQueue->numPushed);
+    sr.queueNum = queueNum;
+    sr.cycleNum=cycleNum;
+    return sr;
+}
+
+SearchResult Search::SearchCircuitCnotGreedy(SearchNode *sn) {
+    DefaultQueue *nodeQueue = new DefaultQueue();
+    HashFilter_TOQM * filterT =new HashFilter_TOQM();
+    nodeQueue->push(sn);
+    DefaultExpander nodeExpander(this->env);
+    vector<int> searchNum;
+    int cycleNum=0;
+    int whilecount=0;
+    while (nodeQueue->size() >= 0) {
+        whilecount++;
+//        cout<<"while count = "<<whilecount<<"and the queue size is "<<nodeQueue->size()<<endl;
+        bool ifFind;
+        SearchNode *expandeNode;
+        expandeNode = nodeQueue->pop();
+//        expandeNode->PrintNode();
+        ifFind=nodeExpander.ExpandWithCnotCheck(nodeQueue, expandeNode,filterT);
+        searchNum.push_back(nodeExpander.expandeNum);
+        cycleNum=cycleNum+nodeExpander.cycleNum;
+        if (ifFind == true) {
+            break;
+        }
+    }
+    SearchResult sr;
+    sr.finalPath = nodeExpander.actionPath;
+    sr.searchNodeNum = searchNum;
+    int count=0;
     for (int i = 0; i < sr.searchNodeNum.size(); i++) {
         count = count + sr.searchNodeNum[i];
     }
@@ -259,13 +296,13 @@ SearchResult Search::SearchSmoothWithInitialMapping(vector<int> mapping, int k) 
         vector<int> executedgateIDs;
         while(topoGate.size()>0){
             vector<ActionPath> newPath;
-            cout<<"executedgateIDs: ";
-            for(int i=0;i<executedgateIDs.size();i++){
-                cout<<executedgateIDs[i]<<" ";
-            }
-            cout<<endl;
+//            cout<<"executedgateIDs: ";
+//            for(int i=0;i<executedgateIDs.size();i++){
+//                cout<<executedgateIDs[i]<<" ";
+//            }
+//            cout<<endl;
             vector<vector<int>> kDag=env->getNewKLayerDag(executedgateIDs,k);
-            if(1){
+            if(0){
                 cout<<"========================================"<<endl;
                 for(int i=0;i<kDag[0].size();i++){
                     for(int j=0;j<kDag.size();j++){
@@ -278,7 +315,7 @@ SearchResult Search::SearchSmoothWithInitialMapping(vector<int> mapping, int k) 
             if(kDag[0].size()<k){
                 //如果最新的只有k层了，那么就直接搜索完
                 SearchNode *sn = new SearchNode(nowMapping, nowQubitState, kDag, env, nowTime, newPath);
-                cout<<"search node done"<<endl;
+                //cout<<"search node done"<<endl;
                 Search *sr = new Search(env);
                 SearchResult a = sr->SearchCircuit(sn);
                 //把最后的每层的数据放到原来的final path里，统计计算swapNum的数目
@@ -316,12 +353,12 @@ SearchResult Search::SearchSmoothWithInitialMapping(vector<int> mapping, int k) 
                 //cout<<"k=5 begin search node"<<endl;
                 SearchNode *sn =new SearchNode(nowMapping,nowQubitState,kDag, env, nowTime, newPath);
 //                cout<<"search node done"<<endl;
-                sn->PrintNode();
+                //sn->PrintNode();
                 Search *sr = new Search(env);
                 SearchResult a = sr->SearchCircuit(sn);
                 //取完第一层后的结点状态
                 finalPath.push_back(a.finalPath[0]);
-                if(debug){
+                if(0){
                     cout<<"search one layer "<<endl;
                     for(int i=0;i<a.finalPath.size();i++){
                         for(int j=0;j<a.finalPath[i].actions.size();j++){
@@ -370,6 +407,7 @@ SearchResult Search::SearchSmoothWithInitialMapping(vector<int> mapping, int k) 
                 searR.queueNum.push_back(queueNum);
                 searR.cycleNum=searR.cycleNum+a.cycleNum;
                 searR.swapNum=searR.swapNum+swapNum;
+
                 delete sr;
             }
         }
@@ -378,7 +416,7 @@ SearchResult Search::SearchSmoothWithInitialMapping(vector<int> mapping, int k) 
 }
 
 SearchResult Search::SearchSmoothWithInitialMappingAdpat(vector<int> mapping, int searchNodeNum) {
-    int k=5;
+    int k=3;
     vector<int> originMapping = mapping;
     int qubitNum = this->env->circuit_num;
     vector<int> qubitState(qubitNum, 0);
@@ -390,7 +428,7 @@ SearchResult Search::SearchSmoothWithInitialMappingAdpat(vector<int> mapping, in
         //如果层数小于k层，那么自己搜索完就好
         SearchNode *sn = new SearchNode(mapping, qubitState, allDag, env, nowTime, path);
         Search *sr = new Search(env);
-        SearchResult a = this->SearchCircuit(sn);
+        SearchResult a = this->SearchCircuitCnotGreedy(sn);
         return a;
     }
     else{
@@ -407,12 +445,18 @@ SearchResult Search::SearchSmoothWithInitialMappingAdpat(vector<int> mapping, in
         while(topoGate.size()>0){
             vector<ActionPath> newPath;
             vector<vector<int>> kDag=env->getNewKLayerDag(executedgateIDs,k);
-            //cout<<"the k-dag depth is "<<kDag[0].size()<<endl;
+            cout<<"the k-dag depth is "<<kDag[0].size()<<endl;
+            for(int i=0;i<kDag[0].size();i++){
+                for(int j=0;j<kDag.size();j++){
+                    cout<<kDag[j][i]<<" ";
+                }
+                cout<<endl;
+            }
             if(kDag[0].size()<k){
                 //如果最新的只有k层了，那么就直接搜索完
                 SearchNode *sn = new SearchNode(nowMapping, nowQubitState, kDag, env, nowTime, newPath);
                 Search *sr = new Search(env);
-                SearchResult a = sr->SearchCircuit(sn);
+                SearchResult a = sr->SearchCircuitCnotGreedy(sn);
                 //把最后的每层的数据放到原来的final path里，统计计算swapNum的数目
                 for(int i=0;i<a.finalPath.size();i++){
                     finalPath.push_back(a.finalPath[i]);
@@ -445,11 +489,11 @@ SearchResult Search::SearchSmoothWithInitialMappingAdpat(vector<int> mapping, in
                 return searR;
             }
             else{
-                //cout<<"a new layer "<<endl;
+                cout<<"a new layer "<<endl;
                 SearchNode *sn = new SearchNode(nowMapping, nowQubitState, kDag, env, nowTime, newPath);
                 //sn->PrintNode();
                 Search *sr = new Search(env);
-                SearchResult a = sr->SearchCircuit(sn);
+                SearchResult a = sr->SearchCircuitCnotGreedy(sn);
                 //取完第一层后的结点状态
                 finalPath.push_back(a.finalPath[0]);
                 int swapNum;

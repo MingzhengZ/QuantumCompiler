@@ -28,6 +28,8 @@ public:
 //    void DeleteVectorElement(vector<int> V,int element);
     DefaultExpander(Environment* env);
 
+    bool IsMoreCnot(SearchNode* node);
+
     /*Given the ready gates, give their combination,
      * if not all of them are combined, then the pattern is encountered
      */
@@ -43,8 +45,11 @@ public:
      */
     vector<vector<vector<int>>> SwapCom(vector<int> qubitState,vector<int> l2pmapping);
     vector<vector<vector<int>>> SwapCom1(vector<int> qubitState,vector<int> l2pmapping,int qubit_num,set<int> cnot_qubit);
+    vector<vector<vector<int>>> SwapCom2(vector<int> qubitState,vector<int> l2pmapping,int qubit_num,set<int> cnot_qubit);
+
 
     bool ExpandWithoutCnotCheck( DefaultQueue* nodes,SearchNode* node,HashFilter_TOQM* filter_T);
+    bool ExpandWithCnotCheck( DefaultQueue* nodes,SearchNode* node,HashFilter_TOQM* filter_T);
     bool ExpandWithoutCnotCheckTopN(DefaultQueue *nodes, SearchNode *node, HashFilter_TOQM* filter_T ,int topN);
     bool IsCycle(vector<ActionPath> actionPath,int qubitNum);
 };

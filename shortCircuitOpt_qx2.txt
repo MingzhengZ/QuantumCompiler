@@ -1,0 +1,762 @@
+/home/qtest/QuantumCompiler/circuits/small/ham3_102.qasm
+how many path has done: 13
+0 h -1 0   1 t -1 1   2 t -1 2   
+3 t -1 0   4 cx 2 1   
+5 cx 0 2   
+6 cx 1 0   7 tdg -1 2   
+8 cx 1 2   11 t -1 0   
+9 tdg -1 1   10 tdg -1 2   
+12 cx 0 2   
+13 cx 1 0   
+14 cx 2 1   15 h -1 0   
+16 cx 2 1   
+17 cx 1 2   
+18 cx 0 2   
+19 cx 2 1   
+search node number: 96
+pattern number: 0
+cycle num is 0
+how many path has done: 13
+time is 0.019968
+
+
+/home/qtest/QuantumCompiler/circuits/small/rd32-v0_66.qasm
+how many path has done: 26
+0 h -1 3   1 t -1 1   2 t -1 0   18 t -1 2   
+3 t -1 3   4 cx 0 1   
+-1 swap 1 0   -1 swap 3 2   
+
+
+5 cx 2 1   
+6 cx 0 2   7 tdg -1 1   
+8 cx 0 1   11 t -1 2   
+9 tdg -1 0   10 tdg -1 1   
+12 cx 2 1   
+13 cx 0 2   
+-1 swap 4 2   14 cx 1 0   
+16 cx 1 0   
+19 t -1 0   
+-1 swap 2 0   15 h -1 4   
+17 h -1 4   
+20 t -1 4   
+21 cx 2 3   
+22 cx 4 2   
+23 cx 3 4   24 tdg -1 2   
+25 cx 3 2   28 t -1 4   
+26 tdg -1 3   27 tdg -1 2   
+29 cx 4 2   
+30 cx 3 4   
+31 cx 2 3   32 h -1 4   
+33 cx 2 3   
+search node number: 3826
+pattern number: 1
+cycle num is 807
+how many path has done: 26
+time is 0.772374
+
+
+/home/qtest/QuantumCompiler/circuits/small/alu-v1_29.qasm
+how many path has done: 25
+0 cx 3 4   2 cx 1 2   
+-1 swap 4 2   1 x -1 3   3 h -1 1   
+4 t -1 3   6 t -1 1   
+
+-1 swap 2 1   5 t -1 4   
+7 cx 4 3   
+
+-1 swap 1 0   8 cx 2 4   
+9 cx 3 2   10 tdg -1 4   
+11 cx 3 4   14 t -1 2   
+12 tdg -1 3   13 tdg -1 4   22 t -1 0   
+15 cx 2 4   
+16 cx 3 2   
+17 cx 4 3   18 h -1 2   
+19 cx 2 1   
+20 x -1 2   23 t -1 1   
+21 h -1 2   25 cx 1 0   
+24 t -1 2   
+26 cx 2 1   
+27 cx 0 2   28 tdg -1 1   
+29 cx 0 1   32 t -1 2   
+30 tdg -1 0   31 tdg -1 1   
+33 cx 2 1   
+34 cx 0 2   
+35 cx 1 0   36 h -1 2   
+search node number: 531
+pattern number: 3
+cycle num is 101
+how many path has done: 25
+time is 0.082031
+
+
+/home/qtest/QuantumCompiler/circuits/small/rd32-v1_68.qasm
+how many path has done: 27
+0 x -1 3   2 t -1 1   3 t -1 0   19 t -1 2   
+-1 swap 1 0   1 h -1 3   
+4 t -1 3   
+-1 swap 3 2   
+5 cx 1 0   
+
+-1 swap 4 3   6 cx 2 1   
+7 cx 0 2   8 tdg -1 1   
+9 cx 0 1   12 t -1 2   
+10 tdg -1 0   11 tdg -1 1   
+13 cx 2 1   
+14 cx 0 2   
+-1 swap 3 2   15 cx 1 0   
+17 cx 1 0   
+20 t -1 0   
+-1 swap 2 0   16 h -1 3   
+18 h -1 3   
+21 t -1 3   
+22 cx 2 4   
+23 cx 3 2   
+24 cx 4 3   25 tdg -1 2   
+26 cx 4 2   29 t -1 3   
+27 tdg -1 4   28 tdg -1 2   
+30 cx 3 2   
+31 cx 4 3   
+32 cx 2 4   33 h -1 3   
+34 x -1 3   35 cx 2 4   
+search node number: 5696
+pattern number: 2
+cycle num is 1048
+how many path has done: 27
+time is 1.27319
+
+
+/home/qtest/QuantumCompiler/circuits/small/3_17_13.qasm
+how many path has done: 22
+0 x -1 2   
+1 cx 0 2   
+2 cx 2 1   3 h -1 0   
+4 t -1 1   5 t -1 2   6 t -1 0   
+7 cx 2 1   
+8 cx 0 2   
+9 cx 1 0   10 tdg -1 2   
+11 cx 1 2   14 t -1 0   
+12 tdg -1 1   13 tdg -1 2   
+15 cx 0 2   
+16 cx 1 0   
+17 cx 2 1   18 h -1 0   
+19 h -1 2   20 t -1 0   21 t -1 1   
+22 t -1 2   23 cx 1 0   
+24 cx 2 1   
+25 cx 0 2   26 tdg -1 1   
+27 cx 0 1   30 t -1 2   
+28 tdg -1 0   29 tdg -1 1   
+31 cx 2 1   
+32 cx 0 2   
+33 cx 1 0   34 h -1 2   
+35 cx 1 2   
+search node number: 168
+pattern number: 0
+cycle num is 0
+how many path has done: 22
+time is 0.02672
+
+
+/home/qtest/QuantumCompiler/circuits/small/4mod5-v0_19.qasm
+how many path has done: 26
+-1 swap 2 1   0 x -1 3   21 t -1 0   
+
+
+1 cx 2 3   5 t -1 1   
+-1 swap 2 1   2 cx 3 4   
+3 h -1 4   4 t -1 3   
+6 t -1 4   
+-1 swap 1 0   7 cx 2 3   
+8 cx 4 2   
+9 cx 3 4   10 tdg -1 2   
+11 cx 3 2   14 t -1 4   
+12 tdg -1 3   13 tdg -1 2   
+15 cx 4 2   
+16 cx 3 4   
+17 cx 2 3   18 h -1 4   
+-1 swap 2 1   19 h -1 4   20 t -1 3   
+22 t -1 4   
+
+23 cx 2 3   
+24 cx 4 2   
+25 cx 3 4   26 tdg -1 2   
+27 cx 3 2   30 t -1 4   
+28 tdg -1 3   29 tdg -1 2   
+31 cx 4 2   
+32 cx 3 4   
+33 cx 2 3   34 h -1 4   
+search node number: 1181
+pattern number: 1
+cycle num is 158
+how many path has done: 26
+time is 0.330681
+
+
+/home/qtest/QuantumCompiler/circuits/small/alu-v0_27.qasm
+how many path has done: 28
+0 cx 3 4   1 cx 2 1   
+-1 swap 2 1   3 t -1 3   21 t -1 4   
+
+
+-1 swap 4 2   2 h -1 1   
+5 t -1 1   
+
+-1 swap 2 1   4 t -1 4   
+6 cx 4 3   
+
+7 cx 2 4   
+8 cx 3 2   9 tdg -1 4   
+10 cx 3 4   13 t -1 2   
+11 tdg -1 3   12 tdg -1 4   
+14 cx 2 4   
+15 cx 3 2   
+16 cx 4 3   17 h -1 2   
+18 cx 2 0   
+19 x -1 2   22 t -1 0   
+-1 swap 4 3   20 h -1 2   24 cx 0 1   
+23 t -1 2   
+25 cx 2 0   
+26 cx 1 2   27 tdg -1 0   
+28 cx 1 0   31 t -1 2   
+29 tdg -1 1   30 tdg -1 0   
+32 cx 2 0   
+33 cx 1 2   
+34 cx 0 1   35 h -1 2   
+search node number: 2874
+pattern number: 2
+cycle num is 563
+how many path has done: 28
+time is 0.648987
+
+
+/home/qtest/QuantumCompiler/circuits/small/alu-v3_35.qasm
+how many path has done: 28
+-1 swap 2 0   0 cx 4 3   
+4 t -1 4   21 t -1 3   
+
+-1 swap 4 2   1 cx 0 1   
+2 x -1 0   5 t -1 1   
+3 h -1 0   
+-1 swap 4 3   6 t -1 0   7 cx 1 2   
+8 cx 0 1   
+9 cx 2 0   10 tdg -1 1   
+11 cx 2 1   14 t -1 0   
+12 tdg -1 2   13 tdg -1 1   
+15 cx 0 1   
+16 cx 2 0   
+-1 swap 2 0   
+
+
+17 cx 1 0   18 h -1 2   
+19 cx 2 3   
+20 h -1 2   22 t -1 3   
+23 t -1 2   24 cx 3 4   
+25 cx 2 3   
+26 cx 4 2   27 tdg -1 3   
+28 cx 4 3   31 t -1 2   
+29 tdg -1 4   30 tdg -1 3   
+32 cx 2 3   
+33 cx 4 2   
+34 cx 3 4   35 h -1 2   
+36 cx 2 4   
+search node number: 2087
+pattern number: 2
+cycle num is 353
+how many path has done: 28
+time is 0.402195
+
+
+/home/qtest/QuantumCompiler/circuits/small/4gt13_92.qasm
+how many path has done: 41
+-1 swap 1 0   -1 swap 4 2   18 t -1 3   
+
+
+0 cx 2 1   2 t -1 0   19 t -1 4   
+1 h -1 1   3 t -1 2   21 cx 4 3   
+-1 swap 4 3   4 t -1 1   5 cx 2 0   
+6 cx 1 2   
+7 cx 0 1   8 tdg -1 2   
+9 cx 0 2   12 t -1 1   
+10 tdg -1 0   11 tdg -1 2   
+13 cx 1 2   
+14 cx 0 1   
+15 cx 2 0   16 h -1 1   
+-1 swap 1 0   17 h -1 2   
+20 t -1 2   
+22 cx 2 3   
+23 cx 4 2   24 tdg -1 3   33 h -1 0   34 t -1 1   
+25 cx 4 3   28 t -1 2   36 t -1 0   
+26 tdg -1 4   27 tdg -1 3   
+29 cx 2 3   
+30 cx 4 2   
+31 cx 3 4   32 h -1 2   
+35 t -1 2   50 t -1 4   51 t -1 3   
+37 cx 2 1   53 cx 3 4   
+38 cx 0 2   
+39 cx 1 0   40 tdg -1 2   
+41 cx 1 2   44 t -1 0   
+42 tdg -1 1   43 tdg -1 2   
+45 cx 0 2   
+46 cx 1 0   
+47 cx 2 1   48 h -1 0   
+-1 swap 1 0   49 h -1 2   
+52 t -1 2   
+54 cx 2 3   
+55 cx 4 2   56 tdg -1 3   
+57 cx 4 3   60 t -1 2   
+58 tdg -1 4   59 tdg -1 3   
+61 cx 2 3   
+62 cx 4 2   
+63 cx 3 4   64 h -1 2   
+65 cx 1 2   
+search node number: 645
+pattern number: 2
+cycle num is 129
+how many path has done: 41
+time is 0.174124
+
+
+/home/qtest/QuantumCompiler/circuits/small/alu-v2_33.qasm
+how many path has done: 27
+-1 swap 2 0   0 x -1 4   
+1 cx 3 4   
+4 t -1 3   22 t -1 4   
+-1 swap 3 2   2 cx 0 1   
+3 h -1 0   5 t -1 1   
+6 t -1 0   
+7 cx 1 2   
+8 cx 0 1   
+9 cx 2 0   10 tdg -1 1   
+11 cx 2 1   14 t -1 0   
+-1 swap 2 0   13 tdg -1 1   
+
+
+12 tdg -1 0   15 cx 2 1   
+16 cx 0 2   
+17 cx 1 0   18 h -1 2   
+-1 swap 1 0   19 cx 3 2   
+20 x -1 3   23 t -1 2   
+21 h -1 3   25 cx 2 4   
+24 t -1 3   
+26 cx 3 2   
+27 cx 4 3   28 tdg -1 2   
+29 cx 4 2   32 t -1 3   
+30 tdg -1 4   31 tdg -1 2   
+33 cx 3 2   
+34 cx 4 3   
+35 cx 2 4   36 h -1 3   
+search node number: 871
+pattern number: 2
+cycle num is 144
+how many path has done: 27
+time is 0.158513
+
+
+/home/qtest/QuantumCompiler/circuits/small/4gt11_82.qasm
+how many path has done: 23
+0 cx 2 1   6 h -1 0   
+1 cx 1 2   9 t -1 0   
+2 cx 3 2   7 t -1 1   
+3 cx 2 3   
+4 cx 4 3   
+5 cx 3 4   
+-1 swap 4 2   
+
+
+8 t -1 2   
+10 cx 2 1   
+11 cx 0 2   
+12 cx 1 0   13 tdg -1 2   
+14 cx 1 2   17 t -1 0   
+15 tdg -1 1   16 tdg -1 2   
+18 cx 0 2   
+19 cx 1 0   
+20 cx 2 1   21 h -1 0   
+22 cx 2 3   
+23 cx 2 4   
+24 cx 2 1   
+25 cx 0 2   
+26 cx 2 0   
+search node number: 1081
+pattern number: 1
+cycle num is 189
+how many path has done: 23
+time is 0.239902
+
+
+/home/qtest/QuantumCompiler/circuits/small/4mod5-v0_20.qasm
+how many path has done: 18
+-1 swap 2 1   -1 swap 4 3   1 x -1 0   
+
+
+0 cx 4 2   2 cx 0 1   4 h -1 3   
+3 cx 1 2   7 t -1 3   
+-1 swap 2 0   5 t -1 1   
+
+
+-1 swap 3 2   6 t -1 0   
+8 cx 0 1   
+
+9 cx 2 0   
+-1 swap 4 3   10 cx 1 2   11 tdg -1 0   
+12 cx 1 0   15 t -1 2   
+13 tdg -1 1   14 tdg -1 0   
+16 cx 2 0   
+17 cx 1 2   
+18 cx 0 1   19 h -1 2   
+search node number: 1266
+pattern number: 2
+cycle num is 215
+how many path has done: 18
+time is 0.162793
+
+
+/home/qtest/QuantumCompiler/circuits/small/mod5d1_63.qasm
+how many path has done: 23
+1 cx 2 0   
+-1 swap 4 2   
+
+
+-1 swap 2 1   -1 swap 4 3   
+
+
+0 cx 4 2   
+2 cx 2 1   
+3 cx 0 1   5 t -1 2   
+4 h -1 1   6 t -1 0   
+7 t -1 1   8 cx 0 2   
+9 cx 1 0   
+10 cx 2 1   11 tdg -1 0   
+12 cx 2 0   15 t -1 1   
+13 tdg -1 2   14 tdg -1 0   
+-1 swap 4 3   16 cx 1 0   
+17 cx 2 1   
+18 cx 0 2   19 h -1 1   
+-1 swap 1 0   -1 swap 4 2   
+
+
+20 cx 3 4   21 cx 2 1   
+search node number: 5011
+pattern number: 1
+cycle num is 790
+how many path has done: 23
+time is 0.817695
+
+
+/home/qtest/QuantumCompiler/circuits/small/miller_11.qasm
+how many path has done: 29
+0 cx 2 1   3 t -1 0   
+1 h -1 2   2 t -1 1   
+4 t -1 2   5 cx 0 1   
+6 cx 2 0   
+7 cx 1 2   8 tdg -1 0   
+9 cx 1 0   12 t -1 2   
+10 tdg -1 1   11 tdg -1 0   
+13 cx 2 0   
+14 cx 1 2   
+15 cx 0 1   16 h -1 2   
+17 h -1 0   18 t -1 2   19 t -1 1   
+20 t -1 0   21 cx 1 2   
+22 cx 0 1   
+23 cx 2 0   24 tdg -1 1   
+25 cx 2 1   28 t -1 0   
+26 tdg -1 2   27 tdg -1 1   
+29 cx 0 1   
+30 cx 2 0   
+31 cx 1 2   32 h -1 0   
+33 h -1 2   34 t -1 1   35 t -1 0   
+36 t -1 2   37 cx 0 1   
+38 cx 2 0   
+39 cx 1 2   40 tdg -1 0   
+41 cx 1 0   44 t -1 2   
+42 tdg -1 1   43 tdg -1 0   
+45 cx 2 0   
+46 cx 1 2   
+47 cx 0 1   48 h -1 2   
+49 cx 2 1   
+search node number: 228
+pattern number: 0
+cycle num is 0
+how many path has done: 29
+time is 0.037492
+
+
+/home/qtest/QuantumCompiler/circuits/small/alu-v4_37.qasm
+how many path has done: 28
+0 cx 3 4   1 cx 2 1   
+-1 swap 2 1   4 t -1 3   21 t -1 4   
+
+
+-1 swap 4 2   2 x -1 1   
+3 h -1 1   
+6 t -1 1   
+-1 swap 2 1   5 t -1 4   
+7 cx 4 3   
+
+8 cx 2 4   
+9 cx 3 2   10 tdg -1 4   
+11 cx 3 4   14 t -1 2   
+12 tdg -1 3   13 tdg -1 4   
+15 cx 2 4   
+16 cx 3 2   
+17 cx 4 3   18 h -1 2   
+19 cx 2 0   
+20 h -1 2   22 t -1 0   
+-1 swap 4 3   23 t -1 2   24 cx 0 1   
+25 cx 2 0   
+26 cx 1 2   27 tdg -1 0   
+28 cx 1 0   31 t -1 2   
+29 tdg -1 1   30 tdg -1 0   
+32 cx 2 0   
+33 cx 1 2   
+34 cx 0 1   35 h -1 2   
+36 cx 2 1   
+search node number: 2241
+pattern number: 2
+cycle num is 412
+how many path has done: 28
+time is 0.419146
+
+
+/home/qtest/QuantumCompiler/circuits/small/4gt11_84.qasm
+how many path has done: 14
+0 h -1 0   1 t -1 2   2 t -1 1   
+3 t -1 0   4 cx 1 2   
+5 cx 0 1   
+6 cx 2 0   7 tdg -1 1   
+8 cx 2 1   11 t -1 0   
+9 tdg -1 2   10 tdg -1 1   
+12 cx 0 1   
+13 cx 2 0   
+-1 swap 2 0   
+
+
+14 cx 1 0   15 h -1 2   
+16 cx 4 2   
+17 cx 2 4   
+search node number: 466
+pattern number: 1
+cycle num is 102
+how many path has done: 14
+time is 0.055837
+
+
+/home/qtest/QuantumCompiler/circuits/small/alu-v1_28.qasm
+how many path has done: 25
+0 cx 4 3   1 cx 1 2   
+-1 swap 3 2   3 h -1 1   
+6 t -1 1   
+
+-1 swap 2 1   2 cx 3 4   
+4 t -1 4   5 t -1 3   
+7 cx 3 4   
+-1 swap 1 0   8 cx 2 3   
+9 cx 4 2   10 tdg -1 3   
+11 cx 4 3   14 t -1 2   
+12 tdg -1 4   13 tdg -1 3   22 t -1 0   
+15 cx 2 3   
+16 cx 4 2   
+17 cx 3 4   18 h -1 2   
+19 cx 2 1   
+20 h -1 2   21 t -1 1   
+23 t -1 2   24 cx 0 1   
+-1 swap 4 3   25 cx 2 0   
+26 cx 1 2   27 tdg -1 0   
+28 cx 1 0   31 t -1 2   
+29 tdg -1 1   30 tdg -1 0   
+32 cx 2 0   
+33 cx 1 2   
+34 cx 0 1   35 h -1 2   
+36 x -1 2   
+search node number: 406
+pattern number: 3
+cycle num is 93
+how many path has done: 25
+time is 0.060659
+
+
+/home/qtest/QuantumCompiler/circuits/small/ex-1_166.qasm
+how many path has done: 12
+0 cx 0 1   3 t -1 2   
+1 h -1 0   2 t -1 1   
+4 t -1 0   5 cx 2 1   
+6 cx 0 2   
+7 cx 1 0   8 tdg -1 2   
+9 cx 1 2   12 t -1 0   
+10 tdg -1 1   11 tdg -1 2   
+13 cx 0 2   
+14 cx 1 0   
+15 cx 2 1   16 h -1 0   
+17 cx 0 1   
+18 x -1 0   
+search node number: 88
+pattern number: 0
+cycle num is 0
+how many path has done: 12
+time is 0.006955
+
+
+/home/qtest/QuantumCompiler/circuits/small/4mod5-v1_24.qasm
+how many path has done: 30
+-1 swap 2 1   0 x -1 4   2 h -1 0   
+3 t -1 4   5 t -1 0   
+
+-1 swap 4 2   4 t -1 1   
+
+
+1 cx 3 4   6 cx 1 2   
+-1 swap 4 3   7 cx 0 1   
+8 cx 2 0   9 tdg -1 1   
+10 cx 2 1   13 t -1 0   
+11 tdg -1 2   12 tdg -1 1   
+14 cx 0 1   
+15 cx 2 0   
+16 cx 1 2   17 h -1 0   
+18 cx 3 2   22 t -1 0   
+-1 swap 1 0   19 x -1 3   20 h -1 2   
+-1 swap 4 2   21 t -1 3   
+
+
+-1 swap 2 1   -1 swap 4 3   
+
+
+23 t -1 3   24 cx 2 4   
+25 cx 3 2   
+26 cx 4 3   27 tdg -1 2   
+28 cx 4 2   31 t -1 3   
+29 tdg -1 4   30 tdg -1 2   
+32 cx 3 2   
+33 cx 4 3   
+34 cx 2 4   35 h -1 3   
+search node number: 9642
+pattern number: 4
+cycle num is 1701
+how many path has done: 30
+time is 2.87834
+
+
+/home/qtest/QuantumCompiler/circuits/small/qft_4.qasm
+how many path has done: 9
+-1 swap 4 3   0 cx 0 1   
+1 cx 0 2   
+3 cx 1 2   
+-1 swap 1 0   -1 swap 4 2   
+
+
+2 cx 1 2   
+4 cx 0 2   
+5 cx 4 2   
+search node number: 345
+pattern number: 0
+cycle num is 88
+how many path has done: 9
+time is 0.025621
+
+
+/home/qtest/QuantumCompiler/circuits/small/4mod5-v1_22.qasm
+how many path has done: 16
+0 x -1 4   1 cx 0 2   
+-1 swap 1 0   -1 swap 3 2   3 h -1 4   
+6 t -1 4   
+
+2 cx 0 2   4 t -1 3   
+5 t -1 2   
+7 cx 2 3   
+8 cx 4 2   
+9 cx 3 4   10 tdg -1 2   
+11 cx 3 2   14 t -1 4   
+12 tdg -1 3   13 tdg -1 2   
+15 cx 4 2   
+16 cx 3 4   
+17 cx 2 3   18 h -1 4   
+19 cx 3 2   
+20 cx 2 4   
+search node number: 329
+pattern number: 1
+cycle num is 40
+how many path has done: 16
+time is 0.046716
+
+
+/home/qtest/QuantumCompiler/circuits/small/mod5mils_65.qasm
+how many path has done: 27
+-1 swap 2 1   2 h -1 4   4 t -1 0   
+5 t -1 4   
+
+0 cx 2 3   20 t -1 1   
+-1 swap 2 0   1 x -1 3   
+3 t -1 3   
+
+-1 swap 1 0   6 cx 2 3   
+7 cx 4 2   
+8 cx 3 4   9 tdg -1 2   
+10 cx 3 2   13 t -1 4   
+11 tdg -1 3   12 tdg -1 2   
+14 cx 4 2   
+15 cx 3 4   
+16 cx 2 3   17 h -1 4   
+-1 swap 2 0   18 h -1 4   19 t -1 3   
+21 t -1 4   
+
+22 cx 2 3   
+23 cx 4 2   
+24 cx 3 4   25 tdg -1 2   
+-1 swap 1 0   26 cx 3 2   29 t -1 4   
+27 tdg -1 3   28 tdg -1 2   
+30 cx 4 2   
+31 cx 3 4   
+32 cx 2 3   33 h -1 4   
+34 cx 3 4   
+search node number: 1000
+pattern number: 1
+cycle num is 119
+how many path has done: 27
+time is 0.187771
+
+
+/home/qtest/QuantumCompiler/circuits/small/alu-v3_34.qasm
+how many path has done: 38
+-1 swap 2 0   0 h -1 1   1 t -1 4   
+3 t -1 1   
+
+-1 swap 4 2   2 t -1 0   
+
+
+-1 swap 4 3   4 cx 0 2   
+5 cx 1 0   
+6 cx 2 1   7 tdg -1 0   
+8 cx 2 0   11 t -1 1   
+9 tdg -1 2   10 tdg -1 0   
+12 cx 1 0   
+13 cx 2 1   
+14 cx 0 2   15 h -1 1   
+16 x -1 0   17 cx 2 4   19 t -1 1   
+18 h -1 0   20 t -1 2   37 t -1 4   
+21 t -1 0   22 cx 2 1   
+23 cx 0 2   
+24 cx 1 0   25 tdg -1 2   
+26 cx 1 2   29 t -1 0   
+27 tdg -1 1   28 tdg -1 2   
+30 cx 0 2   
+31 cx 1 0   
+-1 swap 2 0   
+
+
+32 cx 0 1   33 h -1 2   
+34 cx 2 3   
+35 h -1 2   36 t -1 3   
+38 t -1 2   39 cx 4 3   
+40 cx 2 4   
+-1 swap 1 0   41 cx 3 2   42 tdg -1 4   
+43 cx 3 4   46 t -1 2   
+44 tdg -1 3   45 tdg -1 4   
+47 cx 2 4   
+48 cx 3 2   
+49 cx 4 3   50 h -1 2   
+51 cx 2 4   
+search node number: 5137
+pattern number: 2
+cycle num is 1146
+how many path has done: 38
+time is 1.47896
+
+

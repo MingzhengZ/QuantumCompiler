@@ -38,6 +38,8 @@ public:
 
     SearchResult SearchCircuit(SearchNode* sn);
 
+    SearchResult SearchCircuitCnotGreedy(SearchNode* sn);
+
     SearchResult SearchCircuitGreedy(SearchNode *sn,int topNnum);
 
     //搜索完这个线路的所有节点

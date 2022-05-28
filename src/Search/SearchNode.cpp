@@ -79,6 +79,7 @@ int SearchNode::getReadyGateSize(){
             frontLayerGate.insert(this->dagTable[j][0]);
         }
     }
+//    cout<<"getReadyGateSize() 1"<<endl;
     //判断比特空闲,如果在上一个set里，并且空闲，那么就可以加入到newReadyGate
     for (set<int>::iterator iter = frontLayerGate.begin(); iter != frontLayerGate.end(); ++iter){
         ParsedGate nowGate=this->environment->gate_info[*iter];
