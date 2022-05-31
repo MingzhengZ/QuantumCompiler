@@ -115,7 +115,7 @@ void DefaultExpander::expandWithoutSwap(SearchNode *node) {
             //dagTable update
             vector<vector<int>> newDtable=env->generateDag(remainGate);
             //new ready gates
-            vector<int> newReadyGate;
+            newReadyGate.clear();
             set<int> frontLayerGate;//判断是在第一层，没有依赖关系
             for(int j=0;j<node->dagTable.size();j++){
                 if(node->dagTable[j][0]!=-1){
@@ -136,6 +136,7 @@ void DefaultExpander::expandWithoutSwap(SearchNode *node) {
                     }
                 }
             }
+
         }
     }
     this->findBestNode=true;
@@ -352,11 +353,6 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
                 }
             }
         }
-//        cout<<"cnot_qubit are:  ";
-//        for(auto iter=cnot_qubit.begin();iter!=cnot_qubit.end();iter++){
-//            cout<<*iter<<" ";
-//        }
-//        cout<<endl;
         vector<vector<vector<int>>> possibleSwap=this->SwapCom1(node->logicalQubitState,node->l2pMapping,node->environment->qubitUsed,cnot_qubit);
         if(0){
             cout<<"logical qubit state and mapping ";
@@ -417,9 +413,7 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
             }
             //判断比特空闲,如果在上一个set里，并且空闲，那么就可以加入到newReadyGate
             for (set<int>::iterator iter = frontLayerGate.begin(); iter != frontLayerGate.end(); ++iter){
-//                cout<<"gate id is "<<*iter<<endl;
                 ParsedGate nowGate=this->env->gate_info[*iter];
-//                cout<<"target is :"<<nowGate.target<<" control is "<<nowGate.control<<endl;
                 if (nowGate.control == -1) {
                     if (qubitState1[nowGate.target] == 0) {
                         newReadyGate.push_back(*iter);
@@ -485,7 +479,7 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
                 cout<<endl;
             }
             //执行完ready gate后，当前结点的状态
-            vector<int> remainGate;
+            vector<int> newremainGate;
             for(int j=0;j<node->remainGate.size();j++){
                 bool flag=true;
                 for(int k=0;k<newReadyGate.size();k++){
@@ -495,16 +489,16 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
                     }
                 }
                 if(flag==true){
-                    remainGate.push_back(node->remainGate[j]);
+                    newremainGate.push_back(node->remainGate[j]);
                 }
             }
             if(0){
-                cout<<"remainGate size is:"<<remainGate.size()<<endl;
-                for(int j=0;j<remainGate.size();j++){
-                    cout<<remainGate[j]<<" ";
+                cout<<"remainGate size is:"<<newremainGate.size()<<endl;
+                for(int j=0;j<newremainGate.size();j++){
+                    cout<<newremainGate[j]<<" ";
                 }
             }
-            if(remainGate.size()==0){
+            if(newremainGate.size()==0){
                 ActionPath thisAction;
                 thisAction.actions=thisTimeSchduledGate;
                 bool IsPattern;
@@ -548,7 +542,7 @@ bool DefaultExpander::ExpandWithoutCnotCheck(DefaultQueue *nodes, SearchNode *no
             int timeStamp=node->timeStamp+1;
             if(this->IsCycle(path,qubitState1.size())==false){
                 countNum++;
-                SearchNode* sn= new SearchNode(mapping,qubitState1,remainGate,env,timeStamp,path);
+                SearchNode* sn= new SearchNode(mapping,qubitState1,newremainGate,env,timeStamp,path);
 //                sn->PrintNode();
 //                cout<<"i will in queue "<<endl;
                 if(!filter_T->filter(sn)){
@@ -892,6 +886,11 @@ bool DefaultExpander::ExpandWithCnotCheck(DefaultQueue *nodes, SearchNode *node,
                 cout<<"newReadyGate : ";
                 for(int j=0;j<newReadyGate.size();j++){
                     cout<<newReadyGate[j]<<" ";
+                }
+                cout<<endl;
+                cout<<"qubit state is ";
+                for(int j=0;j<qubitState1.size();j++){
+                    cout<<qubitState1[j]<<" ";
                 }
                 cout<<endl;
                 cout<<"mapping is ";

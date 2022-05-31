@@ -53,16 +53,48 @@ vector<string> GetFileName(string a){
 }
 
 
-int main() {
-    vector<int>mapping_11={0,1,2,3,4,5,6,7,8,9,10,11};
-
-//    outputFile.open("../11_1x11_adapt_new.txt",ios::app);
+int main(int argc,char *argv[]) {
+    vector<int>mapping_11={0,1,2,3,4,5,6,7,8,9,10};
+    vector<int>mapping_14={0,1,2,3,4,5,6,7,8,9,10,11,12,13};
+    ofstream outputFile;
+    string readfile("/home/qtest/QuantumCompiler/circuits/large/");
+    string outputf("../");
+    readfile.append(argv[1]);
+    outputf.append(argv[2]);
+    outputFile.open(outputf,ios::app);
+    clock_t startTime,endTime;
     vector<vector<int>> coupling_map_list_1x11={{0,1},{1,2},{2,3},{3,4},{4,5},{5,6},{6,7},{7,8},{8,9},{9,10}};
-    Environment *env = new Environment(coupling_map_list_1x11,"/home/qtest/QuantumCompiler/circuits/large/11/z4_268.qasm");
-    //Environment *env = new Environment(coupling_map_list_1x11,"/home/qtest/QuantumCompiler/circuits/tt11.qasm");
+    vector<vector<int>> coupling_map_list_mel={{0,1},{1,2},{2,3},{3,4},{4,5},{5,6},{6,8},{7,8},{8,9},{9,10},{10,11},{11,12},{12,13},{1,13},{2,12},{3,11},{4,10},{5,9}};
+    //Environment *env = new Environment(coupling_map_list_1x11,readfile);
+    Environment *env = new Environment(coupling_map_list_1x11,"/home/qtest/QuantumCompiler/circuits/tt11.qasm");
     env->PrintCoupling();
+    startTime=clock();
     Search *sr = new Search(env);
-    SearchResult a= sr->SearchSmoothWithInitialMappingAdpat(mapping_11,1200);
-
+    SearchResult a= sr->SearchSmoothWithInitialMappingAdpat(mapping_11,5000);
+    endTime=clock();
+    outputFile<<readfile<<endl;
+    for (int i = 0; i < a.finalPath.size(); i++) {
+        for (int j = 0; j < a.finalPath[i].actions.size(); j++) {
+            outputFile << a.finalPath[i].actions[j].gateID << " " << a.finalPath[i].actions[j].gateName << " "
+                       << a.finalPath[i].actions[j].controlQubit << " " << a.finalPath[i].actions[j].targetQubit << "   ";
+        }
+        outputFile << endl;
+    }
+    int count = 0;
+    for (int i = 0; i < a.searchNodeNum.size(); i++) {
+        count = count + a.searchNodeNum[i];
+    }
+    outputFile << "search node number: " << count << endl;
+    int pattern = 0;
+    for (int i = 0; i < a.finalPath.size(); i++) {
+        if (a.finalPath[i].pattern == true) {
+            pattern++;
+        }
+    }
+    outputFile << "pattern number: " << pattern << endl;
+    outputFile << "cycle num is " << a.cycleNum << endl;
+    outputFile << "how many path has done: " << a.finalPath.size() << endl;
+    outputFile<<"time is "<<(double)(endTime-startTime)/CLOCKS_PER_SEC<<endl;
+    outputFile<<endl<<endl;
     return 0;
 }

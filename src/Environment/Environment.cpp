@@ -201,6 +201,7 @@ Environment::Environment(vector<vector<int>> coupling_list, string qasm_filename
     //读取线路,确定线路需要的比特数目，这里按照qreg里面给出的数据当作需要的qubit，真实使用的可能会更少一点。
     const char * qasm_file = qasm_filename.c_str();
     this->gate_info=parse(qasm_file);
+    this->gate_num=gate_info.size();
     this->circuit_num=this->chip_num;
     this->qubitUsed=this->qregSize[0];
     //生成门的topo序
@@ -278,6 +279,44 @@ vector<vector<int>> Environment::getNewKLayerDag(vector<int> executedgateIDs,int
     return newKLayerDag;
 }
 
+vector<vector<int>> Environment::getKLayerDag(vector<int> excuted_gateid, int K) {
+    int gate_num=this->gate_num;
+//    cout<<"gate_num"<<gate_num<<endl;
+    vector<int> gate_state(gate_num,0);
+
+    for(int i=0;i<excuted_gateid.size();i++){
+        gate_state[excuted_gateid[i]]=1;
+    }
+    vector<int> unexcuted;
+    for(int i=0;i<gate_num;i++){
+        if(gate_state[i]==0){
+            unexcuted.push_back(i);
+        }
+    }
+//    cout<<"gate state :";
+//    for(int i=0;i<unexcuted.size();i++){
+//        cout<<unexcuted[i]<<" ";
+//    }
+//    cout<<endl;
+    vector<vector<int>> newDag=this->generateDag(unexcuted);
+    if(newDag[0].size()<K){
+        return newDag;
+    }
+    else{
+        vector<vector<int>> newnewDag;
+        for(int i=0;i<newDag.size();i++){
+            vector<int> newqubit(newDag[i].begin(),newDag[i].begin()+K);
+            newnewDag.push_back(newqubit);
+        }
+//        for(int i=0;i<newnewDag[0].size();i++){
+//            for(int j=0;j<newnewDag.size();j++){
+//                cout<<newnewDag[j][i]<<" ";
+//            }
+//            cout<<endl;
+//        }
+        return newnewDag;
+    }
+}
 
 vector<vector<int>> Environment::generateDag(vector<int> gateID) {
     vector<vector<int>> newDag;

@@ -52,6 +52,7 @@ public:
     vector<vector<int>> DagTable;
     vector<vector<int>> generateDag(vector<int> gateID);//gateid是需要排序的门
     vector<vector<int>> getNewKLayerDag(vector<int> excuted_gateid, int K);//excuted_gateids是已经执行了的门的数目
+    vector<vector<int>> getKLayerDag(vector<int> excuted_gateid, int K);//excuted_gateids是已经执行了的门的数目
 
     //necessary info for mapping original cbit IDs to flat array (and back again, if necessary)
     vector<char*> cregName;

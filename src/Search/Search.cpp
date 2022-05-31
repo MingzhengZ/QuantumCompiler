@@ -59,7 +59,8 @@ SearchResult Search::SearchCircuitCnotGreedy(SearchNode *sn) {
         bool ifFind;
         SearchNode *expandeNode;
         expandeNode = nodeQueue->pop();
-//        expandeNode->PrintNode();
+        //cout<<"in expander :\n\n\n";
+        //expandeNode->PrintNode();
         ifFind=nodeExpander.ExpandWithCnotCheck(nodeQueue, expandeNode,filterT);
         searchNum.push_back(nodeExpander.expandeNum);
         cycleNum=cycleNum+nodeExpander.cycleNum;
@@ -416,17 +417,30 @@ SearchResult Search::SearchSmoothWithInitialMapping(vector<int> mapping, int k) 
 }
 
 SearchResult Search::SearchSmoothWithInitialMappingAdpat(vector<int> mapping, int searchNodeNum) {
-    int k=3;
+    int k=2;
     vector<int> originMapping = mapping;
     int qubitNum = this->env->circuit_num;
     vector<int> qubitState(qubitNum, 0);
     vector<vector<int>> allDag = this->env->generateDag(env->gate_id_topo);
+    for(int i=0;i<allDag[0].size();i++){
+        for(int j=0;j<allDag.size();j++){
+            cout<<allDag[j][i]<<" ";
+        }
+        cout<<endl;
+    }
     vector<int> topoGate=this->env->gate_id_topo;
     int nowTime=0;
     vector<ActionPath> path;
+    cout<<"allDag[0].size() "<<allDag[0].size()<<endl;
     if(allDag[0].size()<=k){
         //如果层数小于k层，那么自己搜索完就好
-        SearchNode *sn = new SearchNode(mapping, qubitState, allDag, env, nowTime, path);
+        cout<<"less"<<endl;
+        qubitState[0]=2;
+        qubitState[1]=2;
+        mapping[0]=1;
+        mapping[1]=0;
+        SearchNode *sn = new SearchNode(mapping, qubitState, allDag, this->env, nowTime, path);
+        sn->PrintNode();
         Search *sr = new Search(env);
         SearchResult a = this->SearchCircuitCnotGreedy(sn);
         return a;
@@ -444,7 +458,7 @@ SearchResult Search::SearchSmoothWithInitialMappingAdpat(vector<int> mapping, in
         vector<int> executedgateIDs;
         while(topoGate.size()>0){
             vector<ActionPath> newPath;
-            vector<vector<int>> kDag=env->getNewKLayerDag(executedgateIDs,k);
+            vector<vector<int>> kDag=env->getKLayerDag(executedgateIDs,k);
             cout<<"the k-dag depth is "<<kDag[0].size()<<endl;
             for(int i=0;i<kDag[0].size();i++){
                 for(int j=0;j<kDag.size();j++){
@@ -491,7 +505,7 @@ SearchResult Search::SearchSmoothWithInitialMappingAdpat(vector<int> mapping, in
             else{
                 cout<<"a new layer "<<endl;
                 SearchNode *sn = new SearchNode(nowMapping, nowQubitState, kDag, env, nowTime, newPath);
-                //sn->PrintNode();
+                sn->PrintNode();
                 Search *sr = new Search(env);
                 SearchResult a = sr->SearchCircuitCnotGreedy(sn);
                 //取完第一层后的结点状态
@@ -532,7 +546,9 @@ SearchResult Search::SearchSmoothWithInitialMappingAdpat(vector<int> mapping, in
                     k--;
                 }
                 else{
-                    k++;
+                    if(k<6){
+                        k++;
+                    }
                 }
                 int queueNum=0;
                 for(int i=0;i<a.queueNum.size();i++){
@@ -616,7 +632,7 @@ SearchResult Search::SearchSmoothWithInitialMappingMoreLayer(vector<int> mapping
             else{
                 cout<<"a new layer "<<endl;
                 SearchNode *sn =new SearchNode(nowMapping,nowQubitState,kDag, env, nowTime, newPath);
-                sn->PrintNode();
+                //sn->PrintNode();
                 Search *sr = new Search(env);
                 SearchResult a = sr->SearchCircuit(sn);
                 //取完第一层后的结点状态
@@ -737,7 +753,7 @@ SearchResult Search::SearchSmoothWithInitialMappingAdpatMoreLayer(vector<int> ma
             else{
                 cout<<"a new layer "<<endl;
                 SearchNode *sn =new SearchNode(nowMapping,nowQubitState,kDag, env, nowTime, newPath);
-                sn->PrintNode();
+                //sn->PrintNode();
                 Search *sr = new Search(env);
                 SearchResult a = sr->SearchCircuit(sn);
                 //更新searchResult里面的数据
